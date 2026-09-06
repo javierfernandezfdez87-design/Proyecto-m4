@@ -139,6 +139,8 @@ Recomendación: no lanzar Premium el día 1. Lanzar con todo gratis, medir reten
 
 ### 4.4 Escenarios económicos (mensuales, conversión Premium al 1,5% salvo indicación)
 
+> **Corregido en D-008 (6 de septiembre de 2026): las cifras de esta tabla son BRUTAS.** No descuentan IVA ni comisión de pasarela y suponen que todo el mundo está en plan mensual. Con la mezcla objetivo del catálogo (55 % anual / 45 % mensual) y un *merchant of record*, el neto por suscriptor es **1,53 €/mes**, no 2,93 €: la línea Premium del escenario Base son **1.148 €**, no 2.200 €, y el Base se lee como **≈2.200 €/mes de margen**, no como 3.900 € de ingresos. El detalle del cálculo está en `docs/decisiones.md` (D-008) y en `docs/propuesta-mejoras-producto.md` §7.0. Los escenarios Bueno y Óptimo no se han recalculado: arrastran el mismo sesgo.
+
 | Escenario | Usuarios mensuales | Suscriptores | Premium | Ads | PDF/B2B | Total | Comentario |
 |---|---|---|---|---|---|---|---|
 | Validación | 10.000 | 100 (1%) | 300 € | 150 € | 200 € | ~650 € | Cubre costes (Vercel/Supabase/IA ≈ 100-300 €) |
