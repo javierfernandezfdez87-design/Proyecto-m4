@@ -49,3 +49,22 @@ Una fila por decisión con fecha, contexto, alternativas descartadas y quién la
 - **Decisión:** se aprueba **provisionalmente** Sospechario como marca-concepto y Sabueso (basset hound, nombre común) como mascota y voz narradora, con descriptor fijo "el caso de misterio de cada día". El usuario se reserva cambiar el nombre si surge uno mejor antes del registro. La validación de 7 días de `docs/naming-shortlist.md` §5 sigue en pie: dominio en registrador, búsqueda de anterioridades por `experto-legal`, iconos y test con 100 personas.
 - **Efecto:** `disenador-ux-ui` puede empezar logotipo, icono y mascota con Sospechario como hipótesis de trabajo; el código sigue usando el nombre en clave `caso-diario` con capa de marca aislada hasta D-004.
 - **Pendiente del usuario:** autorización del gasto de registro (ver explicación de costes en la conversación del 2026-09-05 y en `docs/naming-criterios-negocio.md` §"Presupuesto de registro").
+
+## D-006 · Registro de marca escalonado: nada antes de lanzar, OEPM con tracción, EUIPO con el criterio del día 90
+
+- **Fecha:** 2026-09-05
+- **Decide:** usuario (Javier Fernández)
+- **Contexto:** el plan de naming proponía registrar en la EUIPO (~900 €) antes de lanzar. El usuario señala, con razón, que para lanzar el MVP solo hace falta el dominio; el registro es una decisión de riesgo, no un requisito técnico.
+- **Decisión:**
+  1. **Antes de lanzar (≈40 €):** comprar `sospechario.com` y `.es` (y `.app` si está libre) y hacer la **búsqueda gratuita de anterioridades** en TMview y OEPM. Encargada a `experto-legal` el 2026-09-05 (resultado en `docs/legal/anterioridades-sospechario.md`).
+  2. **Con la primera señal de tracción (≈250 €):** registro en la **OEPM**, clases 9 y 41. Da seis meses de prioridad para extender a la UE con la misma fecha.
+  3. **Si se supera el criterio del día 90 (≈900 €):** registro en la **EUIPO**, clases 9 y 41. Latinoamérica (Protocolo de Madrid) solo después.
+- **Disparadores de aviso al usuario (escalón 2).** El equipo debe **avisar al usuario de forma explícita y al principio del informe** en cuanto se cumpla cualquiera de estos hechos, recomendando registrar en la OEPM ya:
+  - 5.000 usuarios activos mensuales, o
+  - un vídeo propio o de un creador con más de 100.000 visualizaciones que mencione la marca, o
+  - una mención de la marca en prensa o medios, o
+  - el inicio de una conversación de licencia B2B o editorial, o
+  - cualquier indicio de que un tercero usa o intenta registrar un nombre igual o parecido.
+- **Responsables del aviso:** `analista-datos` (comprueba los disparadores en cada informe semanal), `creador-social` y `periodista-contenidos` (visualizaciones y prensa), `director-producto` (consolida y avisa). La alerta se anota también en `CLAUDE.md` para que cualquier sesión la vea.
+- **Riesgo aceptado:** en España y la UE la marca es de quien la presenta primero; usarla no da derechos. Entre el lanzamiento y el escalón 2 existe una ventana en la que un tercero podría registrarla. El usuario acepta ese riesgo a cambio de no gastar antes de validar.
+- **Alternativas descartadas:** EUIPO antes de lanzar (1.100 € antes de tener un solo usuario); no registrar nunca (inaceptable en cuanto haya tracción); registrar solo el dominio y confiar en el uso (no genera derechos de marca en la UE).
