@@ -21,7 +21,7 @@ El juego diario de deducción y misterio en español. Web móvil / PWA primero, 
 3. **La lógica la decide el motor determinista.** Todo puzzle publicado tiene exactamente una solución, es resoluble sin adivinar y tiene dificultad medida. La IA escribe historia, nombres, pistas y humor, pero cada pista se valida contra el solver.
 4. **Español neutro con sabor local.** España es el primer mercado; Argentina, Chile y México vienen detrás. Evitar localismos que rompan la comprensión en LatAm.
 5. **Contenido seguro.** Misterio "cozy": sin gore, sin crímenes reales, sin menores como víctimas, sin violencia sexual, sin humillación de colectivos.
-6. **Velocidad.** MVP en 6-8 semanas; decisión de continuar/parar en el día 90.
+6. **Velocidad y diferenciación.** El desarrollo se apoya en los agentes y el coste de cómputo no es la restricción (D-009): se prioriza lo que diferencia el producto y gusta a los jugadores, validado con personas reales. La fecha de lanzamiento se decide de forma consciente por la ventana de mercado (6-12 meses), no por recorte de alcance; decisión de continuar/parar en el día 90.
 
 ## Modelo de negocio
 Gratis: caso del día, racha, estadísticas básicas, compartir, archivo de 7 días. Premium (2,99 €/mes o 19,99-24,99 €/año, no antes de tener hábito medido): archivo completo, casos ilimitados, dificultades, contrarreloj, duelos ilimitados, sin anuncios. Ingresos paralelos: packs PDF imprimibles, licencia del caso diario a medios, anuncios en el tier gratuito.

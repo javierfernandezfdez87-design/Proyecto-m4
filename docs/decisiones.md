@@ -107,3 +107,16 @@ Una fila por decisión con fecha, contexto, alternativas descartadas y quién la
 - **Por qué se registra sin esperar aprobación del usuario:** corrige un error de cálculo, no una preferencia. Las decisiones de producto y catálogo que dependen de esta cifra siguen abiertas y se registrarán como **D-009** si el usuario aprueba la sección 8 de `docs/propuesta-mejoras-producto.md`.
 - **Alternativas descartadas:** dejar §4.4 como estaba y anotar la salvedad solo en la propuesta (el error se seguiría propagando a cada documento que cite el Base); recalcular también los escenarios Bueno y Malo (no hay datos nuevos para hacerlo con rigor: se hará cuando exista una pasarela real y una mezcla observada).
 - **Alerta D-006 comprobada:** ningún disparador cumplido. Sin usuarios, sin prensa, sin conversación B2B ni editorial, y sin terceros usando un nombre parecido al nuestro. Matiz registrado en `docs/propuesta-mejoras-producto.md`: los terceros llamados "Sabueso" (RTVE, Grupo Animal MX) los cubre `docs/legal/anterioridades-sospechario.md` §3.4 y no activan este disparador.
+
+## D-009 · La capacidad de desarrollo no es la restricción; lo son la diferenciación, la calidad y la ventana de mercado
+
+- **Fecha:** 2026-09-06
+- **Decide:** usuario (Javier Fernández)
+- **Contexto:** `docs/propuesta-mejoras-producto.md` v1.2 concluía que el MVP no cabía (20-25 persona-semana frente a 8-16 de capacidad) y ponía como pregunta 0 elegir entre tercera persona, retrasar o recortar. El usuario indica que trabajará con un plan amplio de Claude, que el coste de cómputo no es una restricción relevante y que el objetivo es **un producto diferenciador que funcione**.
+- **Decisión:**
+  1. La pregunta 0 de la propuesta se responde: la "tercera persona" son los agentes del equipo. El alcance no se recorta por capacidad de programación.
+  2. El criterio de priorización pasa de "qué cabe en 8 semanas" a **"qué diferencia el producto y qué disfrutan los jugadores"**, verificado con jugadores reales antes de lanzar.
+  3. Se mantienen tres límites que el cómputo no resuelve: la **ventana de mercado** (6-12 meses; la fecha de lanzamiento sigue siendo una decisión consciente, no una consecuencia del alcance), el **tiempo del usuario** para probar, decidir y validar con personas, y la **calidad** (todo lo que se añade pasa por el motor, por QA y por prueba con jugadores; más alcance no puede significar más errores).
+  4. La ronda de mejoras de jugabilidad en curso (`docs/diseno/ideas-jugabilidad-*.md`, `content/ideas-jugabilidad-guionista.md`, `docs/ideas-jugabilidad-producto.md`) se evalúa con este criterio: diferenciación y diversión primero, esfuerzo después.
+- **Efecto sobre documentos anteriores:** la sección 8.1 de `docs/propuesta-mejoras-producto.md` (orden por impacto en la fecha) y la regla "lo que empuje el lanzamiento más allá de la semana 12 se corta" quedan **suspendidas** hasta que el director de producto reordene con el nuevo criterio. La regla "Velocidad" de `docs/contexto-proyecto.md` se matiza: velocidad de validación, no de recorte.
+- **Alternativas descartadas:** mantener el recorte por capacidad (ignora el cambio de contexto); eliminar toda fecha límite (la ventana de mercado existe aunque el cómputo sea barato).
