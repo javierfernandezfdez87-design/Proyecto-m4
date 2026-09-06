@@ -1,0 +1,1110 @@
+# Mapa de herramientas online relacionadas (fuente primaria)
+
+Fecha: 2026-09-06. Generado por 7 barridos paralelos (deducción/misterio, plataformas de juegos diarios, apps de lógica, mecánicas sociales, ecosistema hispano, educación e imprimibles, monetización y licencia). 110 herramientas únicas de 131 entradas. Datos de Semrush donde constan; el resto son extractos de búsqueda web (WebFetch bloqueado). Datos brutos en `datos/herramientas-online.json`.
+
+| Herramienta | Categoría | Señal de uso | Monetización | Español | Barridos |
+|---|---|---|---|---|---|
+| [Brain Test: Tricky Puzzles (Unico Studio)](https://play.google.com/store/apps/details?id=com.unicostudio.braintest) | Acertijos de ingenio 'trick puzzle' hipercasual | VERIFICADO: más de 50M instalaciones; Unico Studio declara 1.600M descargas de portafolio y 750M partidas web (2025). Sensor Tower (estimación): iOS ~1M descargas/mes y ~60k $/mes; Android ~3M descargas/mes y ~30k $/mes. Keywords: 'brain test' 1.300/mes ES y 6.600/mes MX (Semrush). | Anuncio intersticial tras cada nivel; anuncio recompensado por pista; compra Premium/sin anuncios (también versión 'Premium' de pago en Amazon Appstore). | Sí (inglés, árabe, checo, francés, alemán, indonesio, italiano, japonés, coreano, malayo, polaco, portugués, ruso, chino | logica |
+| [Caseoku – Daily Murdoku (CatLaboratory)](https://play.google.com/store/apps/details?id=com.catlaboratory.crimoku) | App Android · Escena · caso diario | VERIFICADO vía AppBrain (extractos): 9.300 descargas, 3.100 en los últimos 30 días; sin valoraciones en AppBrain (docs internos: 3,0 ★). | Gratis con anuncios (según reseñas). | No verificado. | deduccion |
+| [Murdoku: Endless Cases](https://play.google.com/store/apps/details?id=com.murdokuec.app&hl=es) | App Android · Escena · casos infinitos por semilla + competitivo | NO VERIFICADO: no aparecen descargas ni valoración en AppBrain vía buscador; la búsqueda de reseñas devuelve opiniones del libro, no de la app. Los docs internos lo citan como el «competidor en español que ya tiene Elo, temporadas y salas privadas». | No verificada. | Sí (ficha y descripción en español). | deduccion |
+| [Murdoku (Apo-Games, fan, sin anuncios)](https://play.google.com/store/apps/details?id=com.apogames.murdoku) | App Android · Escena · fan, gratis y sin anuncios | VERIFICADO vía AppBrain (extractos): 810 descargas, ~36/día en los últimos 30 días; tramo 500+ en Google Play. | Ninguna (gratis, sin anuncios). | No verificado (probablemente inglés/alemán). | deduccion |
+| [Murdoku – Resuelve el crimen (Fran del Sol Bermejo)](https://play.google.com/store/apps/details?id=com.murdoku.myapp) | App Android · Escena · indie en español | VERIFICADO vía AppBrain (extractos): 2.400 descargas, 1.300 en los últimos 30 días; sin valoraciones. | No verificada. | Sí (título y ficha en español). | deduccion |
+| [Murdoku (NozCore Tech, app no oficial)](https://play.google.com/store/apps/details?id=com.nozcoretech.games.murdokuapp) | App Android · Escena · no oficial, en español | VERIFICADO vía AppBrain (extractos): 120.000 descargas totales, 63.000 en los últimos 30 días; 2,36/5 con 240 valoraciones. Es el «listón a superar» (4,3) fijado en docs internos para APP-NATIVA. | Gratis; publicidad ligera según reseñas (detalle no verificado). | Sí (idioma por defecto español). | deduccion |
+| [Crimoku: Puzle, lógica, crimen](https://play.google.com/store/apps/details?id=com.crimoku.cluedoku.murder&hl=es) | App Android/iOS/PC · Escena · niveles progresivos | VERIFICADO: tramo 100.000+ descargas en Google Play. Búsqueda «crimoku» en España: 210/mes (KD 35); la única marca de clon con búsquedas propias. Valoración media no obtenida. | No verificada (presumiblemente anuncios). | Sí (ficha de tienda en español). | deduccion |
+| [Enigmic: Crime Puzzle Cases (Infinity Games, Lda)](https://play.google.com/store/apps/details?id=com.tangramgamestudio.enigmic) | App iOS/Android · Escena (espacial) · 800+ niveles | VERIFICADO vía AppBrain/appfigures (extractos): 320.000 descargas totales, 200.000 en los últimos 30 días, n.º 4 en puzles; Android 4,35/5 (5.800 valoraciones), iOS 4,79/5 (1.100). Prensa: Hipertextual (España) y Menéame. Búsqueda «enigmic» en España: 40/mes (la gente no la busca por nombre: llega por «murdoku»). | Gratis con anuncios tras cada nivel + compra única para quitarlos (4,99 €, según Hipertextual). | Sí (español y catalán en la ficha de tienda). | deduccion |
+| [Murdoku (ES GAMES inc. / Eric Selva)](https://apps.apple.com/us/app/murdoku/id6787716218) | App iOS/Android · Escena · reto diario + duelos 1v1 | VERIFICADO parcial: Android 10.000+ descargas (v1.0.1, 30 de junio de 2026); iOS sin valoraciones suficientes. Aparece en páginas «discover» de TikTok («Murdoku App iPhone Español»). | No verificada. | Probable (TikTok y ficha), no verificado. | deduccion |
+| [GridNoir – Murder Sudoku (Racorway)](https://www.gridnoir.com/en/) | App iOS/Android/Windows · Escena · biblioteca de casos + reto diario | VERIFICADO: Google Play 5.000+ descargas, 4,4 ★ con 247 reseñas. Semrush: sin datos para gridnoir.com. | Gratis con anuncios con recompensa (vídeo por pista / acceso anticipado); compras no verificadas. | No verificado. | deduccion |
+| [Sudoku.com (Easybrain)](https://sudoku.com/es) | App y web de puzzle free-to-play con anuncios y suscripción (referencia de RPM y de formatos publicitarios) | Semrush (sept. 2026): sudoku.com 1,06 M visitas orgánicas/mes en Japón, 849k escritorio + 850k móvil en EE. UU., 705k Francia, 640k Polonia, 560k Alemania, 444.054 en España (7.154 kw, rank 906), 437k Italia, 127.544 en México. Búsquedas de marca: 'sudoku.com' 14.800/mes US, 1.900 ES, 1.000 AR, 880 MX. Demanda de categoría: 'sudoku online' 246.000/mes ES, 90.500 AR, 40.500 MX. Descargas de la app  | Publicidad (intersticial tras partida y vídeo con recompensa por pista) más suscripción sin anuncios; la mayoría del ingreso viene de anuncios en el tier gratuito [inferido]. Referencia de RPM útil: e | Sí: web sudoku.com/es y app localizada [verificado la web por SERP; app inferida]. | monetizacion |
+| [Myrdle y Ultra Murdle (clones de Murdle en tiendas)](https://play.google.com/store/apps/details?id=com.morionstudio.murderpuzzle) | Apps Android/iOS · Expediente (cuadrícula lógica) · puzzles diarios / packs | Myrdle: 10.000+ descargas, 3,0/5 con 55 valoraciones (en Google Play desde octubre de 2025). Ultra Murdle: sin cifras (App Store). | Myrdle: anuncios con recompensa por pista; Ultra Murdle: gratis, compras no verificadas. | No (Myrdle no verificado; Ultra Murdle inglés y árabe). | deduccion |
+| [Whodoku y Cluedoku (apps homónimas de terceros)](https://apps.apple.com/us/app/whodoku/id6765963976) | Apps iOS/Android · Escena · caso diario / cuadernos de casos | Whodoku: sin valoraciones suficientes en App Store. One Button: 2,8 ★ (docs internos), v0.0.1697 (2026). MTC: sin cifras. Ninguna con tracción medible. | Whodoku no verificada; One Button: compra de cuadernos de casos; MTC no verificada. | No verificado en ninguna. | deduccion |
+| [Murder Sudoku (Innerblooming LLC y «Murder Sudoku – Murdoku»)](https://play.google.com/store/apps/details?id=com.innerblooming.murdersudoku) | Apps iOS/Android · Escena · niveles | Innerblooming: 4,1 ★ (docs internos). com.murder_sudoku: 4.100 descargas, ~130/día (AppBrain vía extracto). | Gratis; detalle no verificado. | com.murder_sudoku sí (5 idiomas); Innerblooming no verificado. | deduccion |
+| [Cuadernos KDP en Amazon.es que ya usan «murdokus» y «acertijos para niños»](https://www.amazon.es/MURDOKUS-Palabras-Adictivo-Desaf%C3%ADos-Concentraci%C3%B3n/dp/B0GYFV6MT9) | Autoedición (Amazon KDP) de cuadernos de pasatiempos | VERIFICADO: posiciones en Google España citadas; volúmenes «murdokus» 1.000/mes ES, «acertijos para niños» 2.400 ES / 18.100 MX / 6.600 AR. Reseñas y ventas: no verificables. | Venta de libro impreso bajo demanda (KDP) y a veces Kindle; precios típicos 6-12 € (INFERIDO, no verificado). | Sí (títulos en español). | educacion |
+| [Conceptis Puzzles (web y apps por tipo de puzzle)](https://www.conceptispuzzles.com/) | Catálogo editorial de puzzles de lógica (nonogramas, sudoku, hashi, kakuro, etc.) | VERIFICADO (Semrush): conceptispuzzles.com ~16.000 visitas orgánicas/mes EE. UU., 31.000 Japón, 6.300 Alemania; España 915/mes. Valoraciones de las apps no cuantificadas en este barrido (reseñas cualitativas muy positivas: 'high quality, no nonsense'). | Packs de pago único (unas 300 colecciones de 20 puzzles en Pic-a-Pix, algunas de más de 5 $; una reseña estima 'más de 1.000 $' por comprarlo todo); 42-155 puzzles gratis según app; sin anuncios. Una  | No verificado para las apps; la web es en inglés con algunas secciones localizadas (INFERIDO). | logica |
+| [Educaplay](https://www.educaplay.com/) | Creador de actividades educativas interactivas · España | VERIFICADO Semrush: tráfico orgánico ES 258.006/mes (143.759 keywords), MX 207.901, CO 180.451, AR 135.984, PE 100.414. | Freemium: gratis con publicidad; planes Premium para docentes y centros sin anuncios y con informes (INFERIDO, precios no verificados). | Nativo. | educacion |
+| [Genially (plantillas de escape room y breakout educativo)](https://genially.com/es/plantillas/juegos/escape-room/) | Creador de contenido interactivo / gamificación · España | VERIFICADO Semrush: genially.com tráfico orgánico ES 357.379/mes (93.582 keywords), CO 482.665, MX 312.828, AR 178.209, BR 186.969. Marca «genially»: 301.000/mes ES, 246.000 MX, 165.000 AR, 74.000 US. «genially educacion» 9.900 ES (KD 80), «genially gratis» 320. | Freemium: plan gratuito con marca; planes Pro/Master/Team y planes Educación (Edu Pro / Edu Master) con descuento docente; orden de magnitud 5-8 €/mes Pro anual y 4-5 €/mes Edu Pro (INFERIDO, no verif | Nativo (empresa española), interfaz y plantillas en español. | educacion |
+| [Logic Puzzles - Brain Riddles (Easybrain)](https://play.google.com/store/apps/details?id=com.easybrain.cross.logic.puzzle) | Cuadrícula lógica (cross-logic) con historias; el equivalente directo del modo Expediente | VERIFICADO (AppBrain/AppGrooves): más de 12M descargas; 3,95 estrellas con ~84.000 reseñas. Es la app de cuadrícula lógica con más descargas localizada en español. | Gratis con anuncios abundantes (queja principal); compra 'No ads'; pistas. Sin datos de suscripción verificados. | Sí: interfaz y ficha en español (App Store ES id1641732564 'Logic Puzzles - Acertijos'); los textos de los puzzles están | logica |
+| [Logic Grid Puzzles / Logic Puzzles Daily (Egghead Games, licencia Puzzle Baron y Penny Dell)](https://eggheadgames.com/logicpuzzles/) | Cuadrícula lógica clásica premium sin anuncios (app oficial de los puzzles de Puzzle Baron) | VERIFICADO (AppBrain): Android 4,66/5 con ~2.000 valoraciones, 220.000 descargas totales y ~9.700/30 días; iOS más de 30.000 valoraciones. Egghead Games suma ~1M instalaciones en Google Play. Nicho pequeño pero muy fiel. | Sin anuncios. Puzzles gratuitos de base; volúmenes de 100 puzzles de pago único; suscripción 'Unlimited Puzzles' a 4,99 $/mes que desbloquea 10.000 puzzles. | No verificado; los puzzles y pistas están en inglés (INFERIDO por el catálogo Puzzle Baron / Penny Dell). | logica |
+| [Cross Logic: Smart Puzzle Game (Hitapps / Gismart)](https://play.google.com/store/apps/details?id=com.hitapps.logicgram.game) | Cuadrícula lógica por niveles con mini-historias | VERIFICADO: Google Play 10M+ descargas, 4,0 estrellas con 115.000 reseñas; App Store 4,4 con ~49.000 valoraciones (AppBrain); AppGrooves cuenta 107.000 reseñas. Keyword 'cross logic' solo 20 búsquedas/mes en España: la adquisición es de tienda/UA, no de búsqueda. | Gratis con banner en la parte inferior y vídeo intersticial tras cada puzzle; compras in-app (sin anuncios, pistas). | Sí: español, inglés, francés, alemán, japonés, coreano, portugués, ruso y chino simplificado (ficha Google Play). | logica |
+| [Brainzilla (Logic Grid Puzzles)](https://www.brainzilla.com/logic/logic-grid/) | Cuadrículas lógicas online y PDF gratuitos · EE. UU./Brasil | VERIFICADO Semrush: brainzilla.com tráfico orgánico US 52.771/mes (17.271 keywords), IN 13.394, UK 7.688; ahapuzzles.com US 13.910; daydreampuzzles.com US 5.162; murdermysterypuzzles.com US 347 (#2 en «murder mystery logic puzzle»). | Gratuito con publicidad; PDF gratuitos (INFERIDO, no verificado). | No. | educacion |
+| [Cluedo / Clue (Marmalade Game Studio, licencia Hasbro)](https://www.marmaladegamestudio.com/games/cluedo) | Deducción de tablero clásica con multijugador | VERIFICADO: Google Play 4,7 estrellas con 3.350 reseñas; App Store 4,7 con 35.000 valoraciones; AppGrooves cuenta 74.700 reseñas de la edición Classic. Keywords: 'cluedo online' 480/mes ES y 110 MX; 'cluedo app' 210/mes ES. | Pago único (4,99 $ Google Play, 5,99 $ App Store, 14,99 $ Steam; bundle 'La colección Cluedo' 7,99 € en Italia) + compras cosméticas + Season Pass (35,99 $ con descuento del 50 %). | Sí: fichas y juego en español (España y Latinoamérica). | logica |
+| [Sherlock (Everett Kaser Software): Free / Pro / Ultra / Zen](https://www.kaser.com/sherwin.html) | Deducción espacial en cuadrícula con pistas gráficas (el antecedente directo del modo Escena) | VERIFICADO: Sherlock Zen (Google Play) 4,7-4,81 estrellas con 210-270 valoraciones y 5.000+ descargas; Semrush kaser.com ~20 visitas orgánicas/mes (sin presencia web). Señal de uso baja pero valoración altísima. | Pago único por edición: Free gratis, Pro 0,99 $ (iOS), Zen 5,99 $ (Android); sin anuncios ni suscripción. | No: solo inglés. | logica |
+| [Canva para Educación](https://www.canva.com/es_es/education/) | Diseño gratuito para docentes con plantillas de fichas, crucigramas y escape rooms · global | VERIFICADO Semrush: canva.com tráfico orgánico ES 11.369.527/mes (344.531 keywords), Semrush Rank 43 en España. | Canva para Educación gratuito para docentes y alumnos de K-12 verificados; Canva Pro de pago para el resto (política pública conocida; no verificada en esta sesión). | Completo. | educacion |
+| [Wordle Español ilimitado (wordleespanol.org, wordlees.com, wordleespanol.es y clones)](https://wordleespanol.org/) | Ecosistema de clones de Wordle en español con modo ilimitado | Verificado (Semrush, sept. 2026, base España): wordleespanol.org ~31.500 visitas orgánicas/mes; wordlees.com ~18.300; wordleespanol.es ~7.100; wordle.danielfrg.com ~474; lapalabra-deldia.com ~1.000. Demanda: 'wordle' 1.220.000, 'wordle español' 110.000, 'wordle infinito' 5.400, 'wordle ilimitado' 2.900, 'wordle en español' 2.400, 'wordle diario' 1.600 búsquedas/mes en España; 'wordle' 165.000 en M | Gratis con publicidad display (inferido). | Sí, nativo en español. | plataformas, espanol |
+| [Lolita Perrins (cuadernos de actividades y pasatiempos para adultos)](https://lolitaperrins.com/colecciones/cuadernos-de-actividades/pasatiempos-para-adultos/) | Editorial española de cuadernos de pasatiempos en papel | VERIFICADO Semrush: tráfico orgánico ES 11.801/mes (137 keywords), MX 2.276. Valoraciones y precios: no verificables. | Venta directa de cuadernos físicos en su web y distribución en librerías (INFERIDO). | Nativo. | educacion |
+| [Elevate](https://www.elevateapp.com/) | Entrenamiento cerebral móvil por suscripción (referencia de app-first con versión en español) | Semrush (sept. 2026): elevateapp.com solo 1.554 visitas orgánicas/mes en EE. UU. (1.298 kw) y 11 en España, confirmando un negocio app-first invisible en web. Búsquedas: 'elevate app' 3.600/mes US (CPC 1,77 $), 110 ES, 110 MX, 20 AR. Descargas acumuladas por encima de 25 M [inferido]. | Suscripción freemium sin publicidad (mensual, anual, vitalicia, familiar) con límite diario en gratis [inferido]. Contraste con nuestro plan: sin web no hay SEO; nuestra adquisición depende de las lan | Sí, versión en español con contenido creado en español [inferido]. | monetizacion |
+| [Lumosity](https://www.lumosity.com/) | Entrenamiento cerebral por suscripción (referencia de freemium limitado por día y de riesgo regulatorio en las promesas) | Semrush (sept. 2026): lumosity.com 46.724 visitas orgánicas/mes escritorio + 29.343 móvil en EE. UU.; India 29.524; Brasil 19.347; España 6.093 (1.260 kw, rank 41.859) más 487 de pago. Búsquedas de marca: 'lumosity' 22.200/mes US, 2.900 MX, 2.400 ES, 1.900 AR. | Suscripción freemium sin anuncios (mensual, anual, vitalicia, familiar); el tier gratuito diario es el embudo, igual que nuestro caso del día [inferido]. Aprendizaje directo: limitar por día (no por c | Sí, interfaz en español y campañas de pago en España [interfaz inferida; campañas verificadas en Semrush]. | monetizacion |
+| [Escape rooms online en español (escaperoomlover.com, escaperoomonline.es, madescaperoom.com) y apps (101 Room Escape, Cube Escape, Unmemory, Asesinato en los Alpes)](https://www.escaperoomlover.com/es/escape-room-online-gratis) | Escape room digital / enigmas (webs gratuitas + apps móviles) | VERIFICADO (Semrush): escaperoomlover.com 49,5 k visitas orgánicas/mes ES (16.159 keywords); escaperoomonline.es 423 ES; 'escape room online' 1.600 ES / 390 MX / 390 AR; 'juegos de escape' 2.400 ES; 'juegos de misterio' 260 ES / 1.300 MX / 110 AR; 'juego de detectives' 320 ES / 880 MX / 720 AR. Sin datos de descargas verificables de las apps (Google Play/App Store bloqueados). | INFERIDO: directorios → afiliación/publicidad y venta de entradas; apps → pago único (Unmemory, Cube Escape premium) o gratis con anuncios (101 Room Escape). | Webs nativas en español; apps traducidas al español (Unmemory nativo, desarrollado en España). | espanol |
+| [Adventure Escape Mysteries (Haiku Games)](https://www.haikugames.com/) | Escape room narrativo con casos de misterio | PARCIALMENTE VERIFICADO: 'decenas de millones de jugadores' según el propio estudio y media >4,5 estrellas; sin cifra exacta de descargas ni ingresos en este barrido. Keyword 'escape room online' 1.600/mes ES y 390 MX; 'escape room app' solo 20/mes ES. | F2P con compra de pistas y de capítulos/monedas; anuncios (probable, no verificado en detalle). | Sí (INFERIDO por el título localizado de la ficha en Google Play). | logica |
+| [Rooms & Exits: Escape Room Game (Webelinx Games)](https://play.google.com/store/apps/details?id=com.webelinx.Rooms.Exits.EscapeRoom.FreeEscapeGames) | Escape room por niveles | VERIFICADO: Google Play 10M+ descargas, 4,0 estrellas con 60.100 reseñas. | Gratis con anuncios y compras in-app (pistas, sin anuncios). | Sí: inglés, ruso, español, portugués, italiano, francés, alemán y turco. | logica |
+| [Superstar Worksheets (Logic Puzzles) y Woo! Jr.](https://superstarworksheets.com/logic-worksheets/logic-puzzles/) | Fichas imprimibles gratuitas para familias y homeschool · EE. UU. | VERIFICADO Semrush: superstarworksheets.com tráfico orgánico US 606.281/mes (mobile 792.498; 133.552 keywords), PH 130.376, IN 116.036; woojr.com US 100.808/mes (21.655 keywords). | Gratuito con publicidad display (INFERIDO). | No. | educacion |
+| [Educima (generador de crucigramas y sopas de letras en español)](https://www.educima.com/generador-de-crucigramas) | Generador gratuito de pasatiempos de palabras en español | VERIFICADO Semrush: tráfico orgánico ES 21.246/mes (18.435 keywords), MX 46.188, CO 40.350, PE 24.001. Marca «educima»: 720/mes ES. | Gratuito con publicidad (INFERIDO, no verificado). | Nativo. | educacion |
+| [Discovery Education Puzzlemaker](https://puzzlemaker.discoveryeducation.com/) | Generador gratuito de pasatiempos de palabras para docentes · EE. UU. | VERIFICADO Semrush: el subdominio no se separa; discoveryeducation.com tráfico orgánico US 149.647/mes (6.524 keywords), UK 31.195, AU 18.687. Demanda de marca del generador: 8.100 + 880 búsquedas/mes US. | Gratuito (gancho del catálogo de Discovery Education, de pago para centros). INFERIDO. | No (interfaz en inglés; admite listas de palabras en cualquier idioma, INFERIDO). | educacion |
+| [Eduescaperoom](https://eduescaperoom.com/) | Herramientas gratuitas para escape rooms y breakouts educativos · España | VERIFICADO Semrush: tráfico orgánico ES 1.228/mes (220 keywords), MX 2.868, AR 396, CO 382. Marca «eduescaperoom»: 140/mes ES. | Gratuito; sin modelo de pago identificado (no verificable). | Nativo. | educacion |
+| [Britannica Games (Octordle, The Missing Letter, Tightrope, Revealed, Sudoku)](https://www.britannica.com/games) | Hub de juegos diarios de un editor de referencia (adquisición de juegos '-dle') | Verificado (Semrush, sept. 2026): britannica.com/games/ ~72.000 visitas orgánicas/mes en EE. UU. (1.787 palabras clave) y ~15.500/mes en Reino Unido; tráfico modesto frente al de la enciclopedia. No hay cifras públicas de jugadores. | Gratis con publicidad display (inferido; Britannica vende suscripción a la enciclopedia, no a los juegos). | No. Solo inglés. | plataformas |
+| [Duolingo](https://www.duolingo.com) | Hábito y gamificación (aprendizaje de idiomas): referencia de racha, ligas, widget y notificaciones | Verificado (Semrush, base ES, sept. 2026): 331.929 visitas orgánicas/mes y 26.143 palabras clave (rank 1.163 en España). Inferido/prensa: DAU +36 % interanual en 2025; >50 % de los usuarios diarios con racha ≥7 días. | Freemium con anuncios; Super Duolingo ≈ 8,49 €/mes en España y plan familiar 122,88 €/año (según agregadores de precios, no verificado en tienda); Duolingo Max ≈ 29,99 $/mes (EE. UU.). | Sí, completo: interfaz, cursos y blog en español; muy usado en España y LatAm (TikTok en español lleno de 'cómo congelar | social, monetizacion |
+| [Discord (comunidades, Activities y bots de juegos diarios)](https://discord.com) | Infraestructura de comunidad; juegos diarios como Activities y bots por servidor | Terceros: 200-260 M de usuarios activos mensuales en 2025 (Discord no publica cifra auditada); 74 % de los 28,4 M de servidores son de juegos. Verificado (Semrush, ES): discord.com 761.023 visitas orgánicas/mes y 48.586 palabras clave. | Nitro y tienda; para el proyecto es gratuito (bots y Activities tienen coste de desarrollo, no de licencia). | Sí, interfaz en español y comunidades hispanas abundantes. | social |
+| [Google H5 Games Ads (Ad Placement API) y redes de anuncios para juegos web](https://developers.google.com/ad-placement) | Infraestructura publicitaria para juegos HTML5 en web (formatos y RPM del tier gratuito) | No aplica tráfico. Referencias de demanda en el proyecto: el catálogo fija un solo formato (intersticial o banner) en la pantalla de resultado, máximo 1 por sesión, y prohíbe el vídeo con recompensa por pista porque hunde a cuatro productos del género (Caseoku, Myrdle, Tiny Crimes, Enigmic) [docs]. | Reparto de ingresos publicitarios (AdSense retiene ~32 % en display; las redes de juegos 20-40 %) [inferido]. Para nuestro ADS: intersticial único en resultado con CMP conforme a TCF/AEPD, sin vídeo c | Sí: inventario y consentimiento operan en España y LatAm; el RPM en LatAm es sensiblemente inferior al de España [inferi | monetizacion |
+| [Cifras y Letras (apps cadev 'Cifras y Letras 2', jviprz 'Cifras y Letras – Juego TV', chiffresetlettre.com/es)](https://play.google.com/store/apps/details?id=com.cadev.cifrasyletras2&hl=es) | Juego de agilidad mental (letras + cálculo) basado en formato TV | VERIFICADO (Semrush, ES): 'cifras y letras' 22.200/mes, 'cifras y letras juego' 1.000, 'cifras y letras online' 880; la app cadev es #2 y #9 en la SERP. Sin cifras públicas de descargas fiables (no se pudo abrir Google Play). | VERIFICADO (fichas vía búsqueda): mezcla de gratis sin anuncios (iOS cadev), gratis con anuncios y versión de pago sin publicidad (Android). | Nativo en español (desarrolladores españoles); chiffresetlettre.com es traducción del francés. | espanol |
+| [Wordle en español (wordle.danielfrg.com)](https://wordle.danielfrg.com/) | Juego diario de palabras (Wordle en español) — el original de 2022 | VERIFICADO (prensa, 2022): 1.000 jugadores el día 1 (6-ene-2022), 65.000 el 10-ene, más de 1 millón de jugadores en un solo día el 10-feb-2022 (tuit del creador; Infobae y Xataka lo confirman en mayo 2022). VERIFICADO (Semrush, 2026): tráfico orgánico casi nulo (471 visitas/mes ES, 150 AR), solo posiciona para su propio dominio ('wordle.danielfrg.com' 1.900 búsquedas/mes; 'wordle danielfrg' 880).  | VERIFICADO (prensa 2022): sin monetización; gratuito y sin anuncios. Sin cambios detectados. | Nativo en español; diccionario propio; sin localización LatAm específica (crítica de usuarios: la palabra cambia a la ho | espanol |
+| [RTVE Wordlab (lab.rtve.es/lab/wordlab)](https://lab.rtve.es/lab/wordlab/) | Juego diario de palabras de medio público (Wordle institucional) | VERIFICADO (Semrush): ~7,5-9,6 k visitas orgánicas/mes ES; 'wordlab' 320/mes; 6.º para 'palabra del dia' (246 k) y 'palabra del día' (14.800). | VERIFICADO (naturaleza del medio): sin monetización, financiado públicamente. | Nativo en español de España. | espanol |
+| [La Palabra del Día (Wordle en español)](https://lapalabradeldia.com/) | Juego diario de palabras en español (clon de Wordle, líder de tráfico en el idioma) | Verificado (Semrush, sept. 2026): lapalabradeldia.com ~2,09 M de visitas orgánicas/mes desde España (2,14 M en móvil; 4.520 palabras clave; rango 203 en la base española), ~132.000/mes desde Argentina, ~106.000 desde México, ~55.000 desde Chile, ~44.000 desde Colombia y ~31.000 desde Perú. Demanda: 'la palabra del dia' 550.000 búsquedas/mes en España (+246.000 'palabra del dia'), 40.500 en Argenti | Gratis con publicidad display (inferido: no se observa suscripción ni tienda). | Sí, nativo en español; diccionario y variantes regionales por clones asociados. | plataformas, espanol, espanol |
+| [Boludle (boludle.com)](https://www.boludle.com/) | Juego diario de palabras — Wordle localizado en lunfardo argentino | VERIFICADO (Semrush): 21,5 k visitas orgánicas/mes en Argentina (rango AR 5.727); 'boludle' 49.500 búsquedas/mes AR; posición 6 para 'wordle' (110 k AR). Fuera de Argentina, residual (477 ES). | INFERIDO: gratuito, probablemente con publicidad o sin monetización (proyecto comunitario). No verificado. | Español rioplatense exclusivamente (voseo, lunfardo). | espanol |
+| [Wordle (NYT)](https://www.nytimes.com/games/wordle) | Juego diario de palabras; referencia del 'share grid' sin spoiler | Oficial NYT: 4.200 M de resoluciones en 2025 (dentro de 11.200 M de partidas de NYT Games). Estimaciones de terceros dispares: 4,05 M de DAU de media en 2025 frente a 12 M de DAU en el 2T 2025 (inferido, no contrastado). Verificado (Semrush, ES) para nytimes.com/games/: 276.758 visitas orgánicas/mes y 1.923 palabras clave. | Gratis; archivo, WordleBot y resto de juegos vía suscripción NYT Games; anuncios en el tier gratuito. | No; solo inglés. Existen clones no oficiales en español ('Wordle español') con quejas por zona horaria y rachas perdidas | social |
+| [Immaculate Grid (Sports Reference)](https://www.immaculategrid.com/) | Juego diario de trivia deportiva en cuadrícula (propiedad de un editor de datos) | Verificado (Semrush, sept. 2026): sports-reference.com/immaculate-grid/ ~280.000 visitas orgánicas/mes en EE. UU. (2.594 palabras clave); el dominio immaculategrid.com redirige y apenas registra tráfico. Reportado (Wikipedia/Fox43, dic. 2025): más de 200.000 jugadores diarios. 'immaculate grid' 1.300 búsquedas/mes en México y 720 en España. | Gratis con publicidad y contenido patrocinado; refuerza el tráfico y la marca de Sports Reference (que vende suscripción Stathead). | No. Solo inglés y deportes norteamericanos (salvo fútbol). | plataformas, social |
+| [GeoGuessr (Daily Challenge, Duelos, Daily Streak, Clubs)](https://www.geoguessr.com/daily-challenges) | Juego diario geográfico con duelos, clubes y racha unificada | Verificado (Semrush, ES): 550.589 visitas orgánicas/mes y 41.039 palabras clave (rank 734). Terceros: >40 M de usuarios activos (mitad de 2025), 20,6 M de visitas/mes globales (Similarweb, mayo), ≈200.000 descargas y 300.000 $/mes solo en App Store (Sensor Tower, estimación). | Freemium: gratis solo el Daily Challenge (solo, 5 localizaciones); duelos y partidas ilimitadas exigen Pro Unlimited (3,99 $/mes en anual = 47,88 $/año; 6,99 $/mes) o Elite; subida de precios en enero | Sí, interfaz en español (uno de 11 idiomas). | social |
+| [Framed](https://framed.wtf/) | Juego diario independiente de adivinar (cine, formato '-dle') | Verificado (Semrush, sept. 2026): framed.wtf ~145.000 visitas orgánicas/mes en EE. UU., ~50.000 en Reino Unido, ~16.000 en Canadá y ~14.800 desde España en móvil; 'framed' 9.900 búsquedas/mes en España y en México, 5.400 en Argentina. | Gratis con publicidad display (inferido). | No. Interfaz en inglés (las películas son internacionales, así que hispanohablantes lo juegan igualmente: hay tráfico me | plataformas |
+| [Globle](https://globle-game.com/) | Juego diario independiente de geografía (formato '-dle') | Verificado (Semrush, sept. 2026): globle-game.com ~294.000 visitas orgánicas/mes en EE. UU. (406.000 en móvil), ~126.000 en Reino Unido, ~86.000 en Canadá, ~71.000 en Australia y ~25.500 desde España; 'globle' 18.100 búsquedas/mes en España, 14.800 en México y 12.100 en Argentina. Apps en Google Play (valoraciones no verificables desde aquí). | Gratis con publicidad; apps con compras para quitar anuncios (inferido). | Parcial: interfaz en inglés, pero las apps y algunos clones ofrecen español; la mecánica funciona con nombres de países  | plataformas |
+| [Squaredle](https://squaredle.app/) | Juego diario independiente de palabras (búsqueda de palabras en rejilla) con suscripción | Verificado (Semrush, sept. 2026): squaredle.app ~155.000 visitas orgánicas/mes en EE. UU. (1.194 palabras clave) más ~6.650 de pago; ~6.700/mes desde España; 'squaredle' 4.400 búsquedas/mes en España. (squaredle.com es un dominio distinto sin tráfico.) | Freemium: gratis con anuncios; suscripción Squaredle Squared (sin anuncios, archivo, especiales semanales, revelaciones extra; precio no verificado). | No. Solo inglés. | plataformas |
+| [Waffle](https://wafflegame.net/) | Juego diario independiente de palabras (crucigrama de intercambio de letras) | Verificado (Semrush, sept. 2026): wafflegame.net ~437.000 visitas orgánicas/mes en EE. UU. (731.000 en móvil), ~299.000 en Reino Unido (413.000 en móvil), ~112.000 en Canadá, ~110.000 en India y ~10.000 desde España; 'waffle game' 5.400 búsquedas/mes en España, 1.900 en México. Apps en Google Play y App Store (valoraciones no verificables desde aquí). | Gratis con publicidad; apps con compras (Deluxe/sin anuncios, inferido). | No. Solo inglés. | plataformas |
+| [Apple News+ Puzzles (Crossword, Mini, Quartiles, Sudoku, Emoji Game)](https://www.apple.com/apple-news/) | Juegos diarios incluidos en una suscripción de contenidos (solo dentro de la app Apple News) | No hay tráfico web medible (vive dentro de la app). Apple no publica jugadores; solo sabemos que los puzzles llegaron a EE. UU., Canadá, Reino Unido y Australia. Señal indirecta: existen decenas de webs de 'Emoji Game answers today', lo que indica público diario relevante. Mención en prensa: Macworld lo describe como sustituto de Wordle para su autor. | Incluido en la suscripción Apple News+ (≈12,99 $/mes en EE. UU., reportado, no verificado aquí) y en Apple One; sin compra individual ni anuncios. | No. Apple News+ y sus puzzles no están disponibles en España ni en Latinoamérica; solo inglés. | plataformas |
+| [LinkedIn Games (Queens, Tango, Zip, Pinpoint, Crossclimb, Mini Sudoku, Patches)](https://www.linkedin.com/games) | Juegos diarios integrados en una red social (lógica y palabras) | Verificado (Semrush, sept. 2026): linkedin.com/games/ ~202.000 visitas orgánicas/mes en EE. UU. y ~22.600/mes desde España; búsquedas en España 'linkedin games' 6.600/mes, 'juegos linkedin' 2.400, 'queens linkedin' 1.600. Reportado por prensa (The Print, mayo 2026): más de 3,5 M de profesionales juegan cada día (≈2 M a principios de 2026); 80-84 % vuelve al día siguiente; ~830.000 suscriptores a l | Gratis, sin anuncios ni suscripción: es una herramienta de retención y tiempo en la plataforma (y de datos de engagement para LinkedIn Premium). | Interfaz de LinkedIn localizada al español; los puzzles de lógica (Queens, Tango, Zip, Mini Sudoku, Patches) son indepen | plataformas, social |
+| [Escape Kit](https://escape-kit.com/es/escape-room-en-la-escuela/) | Kits de escape room imprimibles (PDF) para casa y colegio · Francia, con versión española | VERIFICADO Semrush: tráfico orgánico FR 19.237/mes (5.674 keywords), IT 12.655, DE 4.365, ES 2.972 (1.415 keywords). Marca «escape kit»: 140/mes ES. | Venta de kits PDF por unidad; orden de magnitud 20-30 € por kit (INFERIDO, no verificado en esta sesión). | Sí, versión /es/ del sitio. | educacion |
+| [Murdoku (M. Garand / Temas de Hoy, Planeta)](https://www.murdoku.com/) | Libro fenómeno en España con web oficial gratuita (competidor directo y referencia de libro + juego) | Semrush (sept. 2026): murdoku.com 26.389 visitas orgánicas/mes escritorio (510 kw, rank 11.020) + 19.729 móvil en España; Portugal 10.621; Argentina 10.459; Chile 9.586; Alemania 10.224; EE. UU. 8.534; Brasil 7.462; México 2.341. Búsquedas: 'murdoku' 33.100/mes ES, 9.900 AR, 4.400 US (tendencia 0,81-1,00 en los últimos dos meses en ES y AR). | Venta de libros a través de Planeta; el juego digital es gratuito y sin publicidad ni suscripción verificadas; los clones y la app no oficial monetizan con anuncios [docs]. Es la prueba de que en esta | Sí en libros; en la web, contradictorio y pendiente de comprobación manual [docs]. | monetizacion |
+| [Arkadium / Arkadium Arena](https://www.arkadium.com/arena/) | Licencia de juegos a medios (competidor B2B directo y modelo de referencia) | Semrush (sept. 2026): arkadium.com 1,04 M visitas orgánicas/mes escritorio + ~1,0 M móvil en EE. UU. (96.227 kw), 344k UK, 199k CA; España 17.643/mes (9.038 kw, rank 15.941) y la subcarpeta /es/ 2.787; México 4.152. Búsquedas de marca: 'arkadium' 90.500/mes US, 1.000 ES, 590 MX, 320 AR; 'arkadium arena' 20 US. Instancias Arena identificadas por patrón de slug: games.aarp.org 2,14 M/mes US (52.282  | B2B: licencia del portal Arena a cambio de reparto de ingresos publicitarios (display + intersticial + vídeo con recompensa dentro del juego), con posible cuota fija por implantación y niveles premium | Sí: catálogo localizado (arkadium.com/es/) y portales en español activos en AS, ABC, El Economista y El País [verificado | monetizacion |
+| [Teachers Pay Teachers (TPT)](https://www.teacherspayteachers.com/) | Marketplace de materiales creados por docentes · EE. UU. | VERIFICADO Semrush: tráfico orgánico US 8.191.117/mes (2.582.859 keywords), CA 511.473, AU 159.912, PH 200.447. Marca «teachers pay teachers»: 1.830.000/mes US, 4.400 ES, 1.900 MX, 390 AR. Precios y valoraciones de productos concretos: no verificables (sitio bloqueado). | Marketplace: recursos gratuitos y de pago, habitualmente 1-10 $ por unidad, con comisión de la plataforma sobre el vendedor y membresía de vendedor premium (INFERIDO, no verificado en esta sesión). | Parcial: hay materiales en español subidos por docentes; interfaz y cobro en inglés/USD. | educacion |
+| [Eduki (antes Lehrermarktplatz)](https://eduki.com/es) | Marketplace de materiales docentes · Alemania, con edición española | VERIFICADO Semrush: tráfico orgánico DE 340.247/mes, AT 27.216, IT 24.436, MX 22.032, ES 17.528 (12.806 keywords). Marca «eduki»: 8.100/mes ES. | Marketplace: venta por unidad con comisión al vendedor; muchos materiales gratuitos (INFERIDO, no verificado). | Sí, edición eduki.com/es. | educacion |
+| [Nonogram.com (Easybrain)](https://nonogram.com/) | Nonogramas / picross; app de lógica de masas | VERIFICADO: Google Play 50M+ descargas, 4,7 estrellas con ~900.000 reseñas (AppBrain estima 71M descargas). Semrush: nonogram.com apenas 562 visitas orgánicas/mes en EE. UU. y 512 en mobile-es (el juego no se juega en web). Keywords ES: 'nonogramas' 12.100/mes, 'nonograma' 2.400, 'picross' 1.000; MX 'nonogramas' 720. | Anuncio a pantalla completa al abrir la app, al completar cada puzzle y al cerrar notificaciones de recompensa; banner animado bajo el tablero; anuncio recompensado para vidas extra; suscripción (~5 $ | Sí: 17 idiomas en App Store, incluido español (verificado en ficha). | logica |
+| [Nonograms Katana (ucdevs)](https://nonograms-katana.com/) | Nonogramas indie con editor comunitario | VERIFICADO: 7,6M descargas (AppBrain); Android 4,73/5 con 170.000 valoraciones; App Store 4,7-4,8. Semrush: nonograms-katana.com ~1.900 visitas orgánicas/mes EE. UU., 566 España. | Gratis con anuncios moderados; compra VIP (sin anuncios, soluciones, pistas extra); sin suscripción documentada. | No verificado (desarrollador ruso con localización amplia; INFERIDO probable). | logica |
+| [June's Journey: Hidden Objects (Wooga / Playtika)](https://www.wooga.com/junes-journey) | Objetos ocultos con narrativa detectivesca; referencia de monetización y eventos | VERIFICADO: Playtika anunció más de 1.000 M$ de ingresos brutos acumulados (primer juego alemán en lograrlo); Google Play 50M+ descargas; Sensor Tower estima ~200.000 descargas y ~4 M$/mes (marzo 2026); en 2022 promediaba 884.000 descargas/mes. Keywords: 'june's journey' 880/mes ES y 590/mes MX. | F2P con energía, diamantes, loot boxes, eventos de pago, anuncios recompensados y suscripción Orchid+. | Sí: español entre 18 idiomas (ficha Google Play). | logica |
+| [Criminal Case (Pretty Simple)](https://www.criminalcase.com/) | Objetos ocultos de investigación criminal | VERIFICADO: Google Play 100M+ descargas (AppBrain estima 190M), 4,54-4,7 estrellas con 3,8M valoraciones; última actualización sept 2025. Wikipedia: ~10M usuarios mensuales (pico histórico 40M/mes en Facebook, iOS y Android). Keywords: 'criminal case' 4.400/mes MX y 320/mes ES; 'juegos de detectives' 320 ES / 880 MX. | F2P con energía, compras in-app, anuncios y suscripción semanal (Pizza, 2,99 $/semana). | Sí (alemán, coreano, español, francés, inglés, italiano, japonés, portugués, ruso). | logica |
+| [Words With Friends 2 (Zynga)](https://www.zynga.com/games/words-with-friends-2/) | Palabras por turnos asíncrono con notificaciones de turno | Wikipedia/App Store: >250 M de descargas acumuladas; 4,6/5 con >735.000 valoraciones en App Store EE. UU. (2025). Estudio citado por terceros: los juegos asíncronos retienen ~30 % más que los síncronos a 6 meses (no auditado). | Anuncios + compras (monedas, power-ups) + suscripción sin anuncios. | Sí, diccionarios en varios idiomas incluido español (verificar en tienda); el equivalente nativo hispano es Apalabrados. | social |
+| [Apalabrados (Etermax)](https://www.apalabrados.com) | Palabras por turnos asíncrono; el 'Words With Friends' del mercado hispano | Oficial Etermax: >100 M de descargas; en España estuvo en 1 de cada 2 smartphones y 'sigue liderando rankings'. Verificado (Semrush, ES): apalabrados.com 7.525 visitas orgánicas/mes y 473 palabras clave (la web es secundaria). | Gratis con anuncios; versión Pro y compras in-app. | Sí, nativo en español. | social, espanol |
+| [ePasatiempos (y Tarkus, Ecognitiva)](https://www.epasatiempos.es/) | Pasatiempos online gratuitos para adultos y mayores · España | VERIFICADO Semrush: epasatiempos.es tráfico orgánico ES 54.143/mes (4.192 keywords), AR 24.534; marca «epasatiempos» 4.400/mes. tarkus.info ES 27.832; ecognitiva.com ES 7.416. | Gratuito con publicidad display (INFERIDO). | Nativo. | educacion, monetizacion |
+| [Wordwall](https://wordwall.net/es) | Plantillas de juegos interactivos e imprimibles para el aula · Reino Unido, interfaz en español | VERIFICADO Semrush: búsquedas de marca 60.500/mes ES, 60.500 MX, 49.500 AR (KD 71 ES); tráfico por país no en top 8 para ES pero marca comparable a Educaplay. | Freemium: plan Basic gratuito con pocos recursos; planes Standard/Pro de pago mensual/anual, orden de magnitud 4-6 €/mes (INFERIDO, no verificado en esta sesión). | Interfaz en español. | educacion |
+| [Breakout EDU](https://breakoutedu.com/) | Plataforma + kits físicos de escape room educativo · EE. UU. | VERIFICADO Semrush: tráfico orgánico US 56.906/mes (mobile-us 63.683), 2.402 keywords; CA 1.694; resto residual. Valoraciones y número de centros: no verificables. | Kit físico (caja + candados) más suscripción anual a la plataforma por docente o por centro; orden de magnitud 150 $ el kit y 50-60 $/año la suscripción individual (INFERIDO, no verificado en esta ses | No (solo inglés). | educacion |
+| [Amuse Labs PuzzleMe (proveedor B2B de juegos para prensa)](https://amuselabs.com/solutions/publishers/) | Plataforma SaaS B2B de puzzles para medios (crucigramas, sudoku, juegos de palabras) | VERIFICADO (prensa): cliente El País desde el relanzamiento de su sección de juegos; fundada en 2014, Bangalore. No hay cifras de tráfico propias relevantes (B2B). | VERIFICADO (modelo): SaaS de pago para editores (precio no público). | Soporta español entre 30+ idiomas; constructores en España. | espanol |
+| [PuzzleMe (Amuse Labs)](https://amuselabs.com/) | Plataforma SaaS de puzzles embebibles para medios y creadores (competidor B2B y modelo) | Semrush (sept. 2026): amuselabs.com 82.883 visitas orgánicas/mes escritorio (31.023 kw) + 49.544 móvil en EE. UU.; UK 35.068; España 612 (652 kw, rank 256.403). Búsquedas: 'puzzleme' 1.000/mes US (CPC 2,21 $) y 10 ES; 'amuse labs' 320 US y 20 ES. Principales entradas: 'custom wordle' 90.500/mes (posición 5), 'crossword puzzle maker' 22.200 (posición 6), 'puzzle online' 14.800 (posición 3). En las  | SaaS de licencia a medios y editoriales (cuota fija anual escalonada por tráfico y funciones, con presupuesto a medida), nivel gratuito limitado para constructores individuales y planes de creador de  | Parcial e inferido: la plataforma admite alfabetos y contenidos en varios idiomas, pero no se ha detectado ningún client | monetizacion |
+| [Washington Post Games (Keyword + hub de Arkadium)](https://www.washingtonpost.com/games/) | Plataforma de juegos diarios de un medio (juego propio + marca blanca de terceros) | Verificado (Semrush, sept. 2026): washingtonpost.com/games/ ~1,2 M de visitas orgánicas/mes en EE. UU. (9.307 palabras clave); el subdominio games.washingtonpost.com ~400.000/mes (37.826 palabras clave); el portal en español games.washingtonpost.com/es/ solo ~2.900/mes desde España (314 palabras clave). No hay cifras públicas de jugadores. | Gratis con publicidad (Arkadium comparte ingresos publicitarios con el medio); los crucigramas del Post forman parte del valor de la suscripción digital pero el hub es abierto. | Parcial: existe un portal de juegos en español (games.washingtonpost.com/es) con juegos genéricos de Arkadium traducidos | plataformas |
+| [NYT Games (Wordle, Connections, Strands, The Mini, Spelling Bee, Pips)](https://www.nytimes.com/games) | Plataforma de juegos diarios de un medio (referencia del sector) | Verificado (Semrush, sept. 2026): nytimes.com/games/ recibe ~31,3 M de visitas orgánicas/mes en EE. UU. (63.076 palabras clave), ~277.000/mes desde España (1.923 palabras clave) y ~69.000/mes desde México. Verificado (prensa): 11.200 millones de partidas en 2025 (Mini 1.400 M, Strands 1.500 M, 1.600 M de Connections resueltas); 12,33 M de suscriptores totales NYT en 3T 2025; 'decenas de millones'  | Freemium: Wordle, Connections y Strands gratis (con anuncios para no suscriptores); suscripción NYT Games ~39,99 $/año o 4,25 $/mes (reportado por terceros, no verificado en la web oficial) que da cru | No. Interfaz y contenido solo en inglés; no existe Wordle oficial en español (la demanda la capturan clones de terceros) | plataformas, social, monetizacion |
+| [Twinkl España](https://www.twinkl.es/) | Plataforma de suscripción de recursos docentes (PDF + interactivos) · global con edición española | VERIFICADO Semrush: twinkl.es tráfico orgánico ES 248.193/mes (76.610 keywords), MX 84.374, EC 67.238, CO 40.999; twinkl.co.uk UK 2,51 M/mes. Marca «twinkl»: 22.200/mes ES, 12.100 MX, 2.900 AR, 60.500 US. | Freemium: recursos gratuitos limitados + suscripción mensual/anual por niveles (Core/Ultimate). Precio en España en el rango habitual de 5-10 €/mes según plan (INFERIDO, no verificado en esta sesión). | Completo: edición twinkl.es con variantes España, México, Chile. | educacion |
+| [Puzzmo (Hearst)](https://www.puzzmo.com) | Plataforma independiente de puzzles diarios con suscripción (propiedad de un grupo de prensa) | Verificado (Semrush, sept. 2026): puzzmo.com ~30.000 visitas orgánicas/mes en EE. UU. (2.650 palabras clave), ~4.100 en Reino Unido, ~2.100 en Canadá y solo ~90 desde España; 'puzzmo' tiene 110 búsquedas/mes en España. Es una plataforma de usuario recurrente y de distribución vía cabeceras de Hearst, por lo que el orgánico infravalora su uso real; Hearst no publica cifras de jugadores. | Freemium: juegos diarios gratis con anuncios; Puzzmo Plus 3,99 $/mes o 39,99 $/año (archivo, sin anuncios, grupos, juegos experimentales); ingresos B2B por integración en cabeceras de Hearst y licenci | No. Solo inglés; juegos de palabras dependientes del idioma (crucigrama, SpellTower, Typeshift). | plataformas, social, monetizacion |
+| [Minijuegos.com (secciones 'juegos diarios', 'wordle' y 'juegos de misterio')](https://www.minijuegos.com/juegos-diarios) | Portal agregador de juegos HTML5 (España/LatAm) — canal de distribución | VERIFICADO (Semrush): 984 k visitas orgánicas/mes AR, 670 k CO, 660 k PE, 639 k ES (103.861 keywords), 392 k ES móvil. | VERIFICADO/INFERIDO: publicidad display y vídeo; reparto de ingresos con desarrolladores (inferido). | Nativo en español (portal español con audiencia LatAm mayoritaria). | espanol |
+| [Orientación Andújar (serie de cuadernos «murdokus» y escape rooms imprimibles)](https://www.orientacionandujar.es/tag/murdokus/) | Portal de recursos docentes gratuitos (PDF imprimibles) · España | VERIFICADO Semrush domain_ranks (sept. 2026): tráfico orgánico mensual estimado ES 182.113 (72.951 keywords), MX 472.368, CO 170.375, AR 105.497, PE 93.095, CL 54.973. Búsqueda de marca «orientacion andujar»: 9.900/mes ES, 880 MX, 880 AR. Valoraciones/descargas: no obtenibles (sitio bloqueado). | Descarga gratuita sin registro. Financiación por publicidad display y enlaces de afiliación/tienda (INFERIDO, no verificado en esta sesión). | Nativo (España), con audiencia mayoritaria en LatAm según tráfico. | educacion |
+| [Sporcle](https://www.sporcle.com/) | Portal de trivia generada por usuarios con publicidad, suscripción sin anuncios y trivia en vivo B2B | Semrush (sept. 2026): sporcle.com 1,31 M visitas orgánicas/mes escritorio (520.019 kw) + 927k móvil en EE. UU.; UK 706k; AU 181k; CA 180k; España 55.254 (16.305 kw, rank 5.677). Búsquedas de marca: 'sporcle' 246.000/mes US, 9.900 ES, 6.600 AR, 3.600 MX. | Publicidad display como ingreso principal, suscripción Orange para quitar anuncios, y licencia B2B de trivia en vivo a locales y eventos [inferido]. Lección: el UGC da escala SEO pero lo descartamos 1 | Parcial: hay quizzes en español creados por usuarios, pero la interfaz es en inglés [inferido]. | monetizacion |
+| [Kongregate](https://www.kongregate.com/) | Portal histórico de juegos web con moneda virtual y reparto a desarrolladores (modelo en declive, referencia de riesgo) | Semrush (sept. 2026): kongregate.com 130.121 visitas orgánicas/mes escritorio (48.652 kw) + 95.212 móvil en EE. UU.; India 28.320; Brasil 19.605; España 6.081 (4.169 kw). Búsquedas de marca: 'kongregate' 22.200/mes US, 1.900 MX, 1.300 ES, 1.000 AR, con tendencia descendente en MX y AR. | Publicidad, microtransacciones en Kreds y publishing; la web ya no es el núcleo del negocio [inferido]. Advertencia trasladable: un portal generalista de juegos web depende de terceros y de tecnología | No: interfaz en inglés [inferido]. | monetizacion |
+| [wordle.global / wordleplay.com / wordly.org (clones internacionales con versión /es)](https://wordle.global/es) | Portales multi-idioma de Wordle y juegos diarios | VERIFICADO (Semrush): wordle.global 96,9 k visitas orgánicas/mes en ES (además 174 k UK, 82 k US, 75 k IN); wordleplay.com 23,5 k ES (55 k US). wordly.org/es aparece en #11 ES y #4 AR para 'wordle'. | INFERIDO: publicidad display programática; sin suscripción detectada. | Traducción/localización básica; diccionarios en español pero sin sabor local. | espanol |
+| [Lichess Puzzle Racer / Puzzle Streak / Puzzle Storm](https://lichess.org/racer) | Puzzle competitivo por enlace y racha sin reloj (ajedrez, open source y gratuito) | Verificado (Semrush, ES): 312.372 visitas orgánicas/mes y 8.419 palabras clave (rank 1.231). No hay cifras públicas de uso de Puzzle Racer. | Gratuito, sin anuncios, financiado por donaciones (asociación sin ánimo de lucro); ser Patron no da ventajas de juego. | Sí, interfaz traducida al español por la comunidad. | social |
+| [Chess.com Puzzles (Daily Puzzle, Puzzle Rush, Puzzle Battle)](https://www.chess.com/puzzles) | Puzzle diario + modos de puzzle competitivos (ajedrez) | Verificado (Semrush, ES): 575.402 visitas orgánicas/mes y 39.567 palabras clave (rank 700 en España). Prensa/oficial: 200 M de miembros (abr. 2025), >225 M (sept. 2025), 1,5 M de pago; 15-20 M de partidas/día. | Freemium: gratis con anuncios y cupos; Gold ≈ 4,17 €/mes (facturación anual), Platinum, Diamond 14,99 $/mes con puzzles y Puzzle Rush ilimitados. | Sí, interfaz completa en español (chess.com/es), foros y contenido en español. | social |
+| [The Guardian Puzzles (crucigramas web + app Guardian Puzzles)](https://www.theguardian.com/crosswords) | Puzzles diarios de un medio con app de suscripción separada | Verificado (Semrush, sept. 2026): theguardian.com/crosswords/ ~436.000 visitas orgánicas/mes en Reino Unido (11.089 palabras clave) y ~35.000/mes en EE. UU.; no hay cifras públicas de suscriptores de la app. | Web gratuita con publicidad; app Guardian Puzzles por suscripción: 3,49 £/mes o 32,99 £/año tras una semana de prueba. | No. Solo inglés. | plataformas |
+| [Pasapalabra: Juego Quiz de TV (develUp Games) y ecosistema de roscos online](https://play.google.com/store/apps/details?id=ar.com.develup.pasapalabra&hl=es_419) | Quiz de TV / juego de palabras (app nativa + webs de roscos) | VERIFICADO (Google Play vía búsqueda): +5 M descargas; una de las apps del formato muestra 4,8/5 con 687 valoraciones (dato de otra app 'Pasapalabra' del mismo nicho; no concluyente). VERIFICADO (Semrush, ES): 'pasapalabra' 135.000/mes, 'rosco pasapalabra' 14.800, 'pasapalabra online' 5.400, 'pasapalabra juego' 6.600; en AR y CL 6.600 cada uno; MX 2.400. La app develUp es #4 en la SERP 'pasapalabr | VERIFICADO (ficha): gratis con compras dentro de la app y anuncios. | Nativo en español (desarrollador argentino) con contenido para España y LatAm. | espanol |
+| [Kahoot!](https://kahoot.com) | Quiz síncrono en grupo (aula, empresa, eventos) con leaderboard en vivo | Verificado (Semrush, ES): kahoot.it 1.770.941 visitas orgánicas/mes (rank 229 en España, la mayor cifra de este barrido) y kahoot.com 157.471. Oficial: >1.000 M de participantes al año, >12.000 M acumulados, 8 M de educadores, 200+ países. | Freemium; planes de pago para docentes, empresas y familias (Kahoot!+); precios no verificados en este barrido. | Sí, interfaz en español y uso masivo en aulas hispanohablantes. | social |
+| [Strava](https://www.strava.com) | Red social de deporte; referencia de comparación con amigos, kudos y clubes | Verificado (Semrush, ES): 123.697 visitas orgánicas/mes y 8.012 palabras clave. Terceros: ≈500 M $ ARR en 2025 y valoración 2.200 M $ (Sacra); 14.000 M de kudos y >1 M de clubs (informe oficial Year in Sport 2025). | Freemium; suscripción mensual/anual para segmentos, análisis y funciones avanzadas (precio no verificado en este barrido). | Sí, app y web en español. | social |
+| [Claringrilla / Clarín Juegos](https://www.clarin.com/claringrilla) | Sección de juegos de periódico (Argentina) — crucigrama diario de marca | VERIFICADO (Semrush AR): 'claringrilla' 9.900/mes, 'claringrilla de hoy' 8.100, 'claringrilla hoy' 1.900, 'claringrilla gratis' 1.600, 'clarin juegos' 6.600; clarin.com/juegos/ solo ~8 k visitas orgánicas/mes AR. Ocupa las 4 primeras posiciones para 'crucigrama clarin'. | INFERIDO: gratuito con publicidad; Clarín tiene muro de pago pero no se ha verificado si los juegos son exclusivos. | Nativo en español rioplatense. | espanol |
+| [LN Juegos — La Nación (lanacion.com.ar/juegos)](https://www.lanacion.com.ar/juegos/) | Sección de juegos de periódico (Argentina) — crucigrama, sudoku, sopa, palabras cruzadas, trivias | VERIFICADO (Semrush): /juegos/ 175 k visitas orgánicas/mes AR (4.456 keywords) + 42,7 k MX + 28,7 k ES + 15 k CL + 13 k CO; 'la nacion juegos' 40.500/mes AR, 'nacion crucigrama' 74.000, 'crucigrama la nacion' 60.500, 'sudoku la nacion' 5.400. #1 para 'crucigrama' en MX y AR, #3 en ES. Tiene además 227 keywords de pago (invierte en SEM para juegos). | VERIFICADO: gratuito con publicidad + juegos exclusivos para suscriptores; la sección se usa como beneficio de suscripción. | Nativo en español rioplatense; audiencia LatAm amplia. | espanol, monetizacion |
+| [Emol Juegos — El Mercurio (Chile)](https://www.emol.com/servicios/juegos/) | Sección de juegos de periódico (Chile) — crucigrama interactivo semanal, sudoku, trivias, clásicos | VERIFICADO (Semrush CL): emol.com/servicios/juegos/ ~1,8 k visitas orgánicas/mes; 'emol juegos' 1.900/mes, 'crucigrama emol' 1.600/mes. Demanda genérica en Chile: 'sudoku' 49.500, 'crucigrama' 14.800, 'sopa de letras' 14.800, 'la palabra del día' 9.900, 'murdoku' 9.900, 'preguntados' 18.100. | INFERIDO: gratuito con publicidad display. | Nativo en español chileno. | espanol |
+| [La Vanguardia Juegos + Lexi Reto (motor Arambee)](https://www.lavanguardia.com/juegos/es/lexireto) | Sección de juegos de periódico (España) con juego diario propio licenciado a otros medios | VERIFICADO (Semrush): lavanguardia.com/juegos/ 71-73 k visitas orgánicas/mes ES; 'la vanguardia juegos' 27.100/mes; 'lexi reto' 12.100 ES y 5.400 AR; SERP 'lexi reto' ES: #1 La Vanguardia, #2 ABC Paraguay, #3 El Comercio Perú, #6 cdnjuegos.arambee.com. arambee.com apenas tiene tráfico propio (79 ES): es proveedor de marca blanca. | VERIFICADO/INFERIDO: juegos gratuitos con publicidad dentro del diario; Arambee cobra a los medios por licencia/SaaS (B2B). No se ha verificado precio. | Nativo en español (y catalán en La Vanguardia); versión /es del motor Arambee. | espanol |
+| [elDiario.es Juegos (Palabra del día, crucigramas, sudokus, memoria, 8 diferencias)](https://www.eldiario.es/juegos/) | Sección de juegos diarios de un medio español (cliente B2B potencial) | Verificado (Semrush, sept. 2026): eldiario.es/juegos/ ~123.000 visitas orgánicas/mes desde España (3.872 palabras clave), el segundo medio español por tráfico de juegos tras EL PAÍS. | Modelo de socios (suscripción) para los crucigramas y publicidad en el resto (inferido). | Sí, en español. | plataformas, espanol, monetizacion |
+| [20minutos Pasatiempos](https://www.20minutos.es/) | Sección de pasatiempos de un medio español gratuito (cliente B2B potencial, baja prioridad) | No verificado: Semrush no devuelve datos para www.20minutos.es/pasatiempos/, /juegos/, juegos.20minutos.es ni pasatiempos.20minutos.es; la búsqueda 'pasatiempos 20minutos' tiene solo 210 búsquedas/mes en España. Señal de uso baja. | Gratis con publicidad (20minutos no tiene suscripción de pago). | Sí, en español. | plataformas |
+| [La Vanguardia Juegos (crucigramas fáciles y difíciles, sudokus, sopas de letras, trivia)](https://www.lavanguardia.com/juegos) | Sección de pasatiempos diarios de un medio español (cliente B2B potencial) | Verificado (Semrush, sept. 2026): lavanguardia.com/juegos/ ~71.000 visitas orgánicas/mes desde España (3.851 palabras clave); el subdominio juegos.lavanguardia.com no devuelve datos en Semrush. Sin cifras públicas de jugadores. | Gratis con publicidad display (inferido; parte del valor de la suscripción digital de La Vanguardia). | Sí, en español (y presumiblemente catalán en la edición correspondiente; no verificado). | plataformas |
+| [EL PAÍS Juegos (crucigramas de Tarkus y Mambrino, mini, sudokus, sopa de letras)](https://elpais.com/juegos/) | Sección de pasatiempos diarios de un medio español (competidor y cliente B2B potencial) | Verificado (Semrush, sept. 2026): elpais.com/juegos/ ~563.000 visitas orgánicas/mes desde España (12.387 palabras clave), la mayor sección de juegos de un medio en español, y ~41.000/mes desde México; 'juegos el pais' 14.800 búsquedas/mes en México. | Parte del paquete de suscripción digital de EL PAÍS (Prisa) y publicidad en la parte abierta (inferido). | Sí, íntegramente en español de España; los crucigramas son de autores españoles. | plataformas, espanol, monetizacion |
+| [Sudoku.com (Easybrain / Miniclip)](https://sudoku.com/) | Sudoku y variantes; referencia de ritual diario, eventos y monetización en puzzles de lógica | VERIFICADO (Semrush domain_ranks, sept 2026): tráfico orgánico mensual estimado 849k EE. UU., 1,06M Japón, 705k Francia, 560k Alemania, 444k ESPAÑA (rank 906 en la base es, 7.154 keywords) y 127k México. Google Play 50M+ descargas; AppBrain: 4,56/5 con 2,1M valoraciones y ~1M descargas/30 días; App Store 4,7. Sensor Tower (estimación): iOS ~1M descargas/mes y ~100k $/mes de ingresos (jul 2025); An | Gratis con intersticiales entre puzzles y banner durante la partida; anuncio recompensado para segunda oportunidad tras 3 errores y para pistas; suscripción Premium sin anuncios + temas + estadísticas | Sí: app localizada (Easybrain habla de 18 idiomas; otra fuente cita 75) y web sudoku.com con 444k visitas orgánicas/mes  | logica |
+| [Brilliant](https://brilliant.org/premium/) | Suscripción de aprendizaje interactivo con puzzles de lógica y matemáticas (referencia de suscripción pura sin anuncios) | Semrush (sept. 2026): brilliant.org 228.013 visitas orgánicas/mes en India, 205.753 escritorio (114.710 kw) + 142.063 móvil en EE. UU., 35.537 UK; España 4.946 (3.234 kw, rank 50.504). Búsquedas: 'brilliant' 33.100/mes US, 2.900 MX, 2.400 ES, 1.600 AR (marca ambigua con el adjetivo). Compra búsqueda de pago en US (206 kw), CA, UK y AU. | Suscripción pura (mensual y anual, regalo, planes de grupo) sin publicidad; prueba gratuita de 7 días como única puerta [inferido]. Contraste útil con nuestro modelo: sin juego diario gratuito, el cos | No: contenido solo en inglés [inferido; tráfico en España residual]. | monetizacion |
+| [SÍNTESIS DEL BARRIDO «EDUCACIÓN» (no es un producto: lectura transversal y huecos)](https://www.orientacionandujar.es/2026/06/07/35-murdokus-listos-para-jugar-y-divertirse/) | Síntesis: qué venden, a qué precio, qué formatos piden, qué falta | Agregado verificado (Semrush, sept. 2026): tráfico orgánico mensual en España de los actores del segmento: Canva 11,4 M; Genially 357k; Liveworksheets 289k; Educaplay 258k; Twinkl 248k; Orientación Andújar 182k; Mundo Primaria 129k; ePasatiempos 54k; Recursosep 38k; actividadesdeinfantilyprimaria 30k; Tarkus 28k; murdoku.com 26k; Educima 21k; Eduki 17,5k; Lolita Perrins 12k; Ecognitiva 7k; Escape  | Ver rasgo 1: gratis+publicidad (mayoría), suscripción 4-10 €/mes, marketplace 1-10 €/unidad, kit PDF 20-30 €, cuaderno 6-15 €. Importes inferidos, modelos verificados por estructura de URL y SERP. | Nativo en Andújar, Genially, Educaplay, Educima, Eduescaperoom, ePasatiempos, Lolita Perrins; completo en Twinkl, Canva, | educacion |
+| [Preguntados / Trivia Crack (Etermax)](https://www.preguntados.com) | Trivia asíncrona por turnos con duelos (Argentina) | Oficial/Wikipedia: Preguntados original >100 M de descargas, >6 M de valoraciones y 4,5★; franquicia >800 M de descargas y >150 M de usuarios activos al año; en su pico (2015) nº 1 en App Store EE. UU. 66 días y 20 M DAU allí. Verificado (Semrush): preguntados.com 3.726 visitas/mes en AR y 1.198 en ES (la web es irrelevante: el producto vive en la app). | Anuncios (intersticiales al perder turno) + compras (monedas, gemas, vidas, giros) + suscripción sin anuncios en Trivia Crack 2 desde 4,99 $/mes (11,99 $/3 meses, 39,99 $/año); versión sin anuncios 2, | Sí, nativo en español (Argentina) con localización por país. | social, espanol |
+| [Cluedoku.app (Detective Sudoku)](https://cluedoku.app/es/murdoku) | Web PWA + iOS/Android · Escena · caso diario, en español | VERIFICADO (Semrush): tráfico casi nulo: Alemania 102, móvil España 87, Portugal 82, móvil México 72, España escritorio 17 (33 palabras clave). «cluedoku» en España: 20/mes. Desarrollador no identificado. | Gratis; sin premium ni anuncios verificados. | Sí, completo (según su propia página). | deduccion |
+| [Logic Puzzles by Puzzle Baron (web)](https://logic.puzzlebaron.com/) | Web de cuadrículas lógicas con competición mensual | VERIFICADO (Semrush domain_ranks, sept 2026): puzzlebaron.com ~85.000 visitas orgánicas/mes en EE. UU. (7.946 keywords), 10.000 Reino Unido, 9.600 Canadá; España solo 663/mes. Keyword 'logic puzzles' 390/mes en España. | Anuncios en el tier gratuito; cuenta Premium de pago (precio no verificado, pago por PayPal) que elimina anuncios; venta de libros; licencia de puzzles a la app de Egghead. | No: solo inglés. | logica, educacion |
+| [sudoku-online.org (y hub de pasatiempos)](https://www.sudoku-online.org/) | Web independiente de puzzles diarios (sudoku, crucigramas, pasatiempos) — pure play SEO | VERIFICADO (Semrush): 305 k visitas orgánicas/mes ES (3.763 keywords) + 117 k AR + 102 k MX móvil + 47 k MX escritorio; 'sudoku' pos. 1 aporta ~167 k visitas/mes. | INFERIDO: publicidad display (AdSense); sin suscripción detectada. | Nativo en español. | espanol |
+| [Murdoku (web oficial, Manuel Garand)](https://murdoku.com/play/) | Web oficial · Escena (espacial) · casos semanales | VERIFICADO (Semrush domain_ranks, tráfico orgánico estimado/mes, sept. 2026): España 26.389 escritorio + 19.729 móvil (510 palabras clave), Portugal 10.621, Argentina 10.459, Alemania 10.224, Chile 9.586, EE. UU. 8.534, Brasil 7.462, Perú 3.302. Demanda de marca (Semrush phrase_these): España «murdoku» 33.100/mes (KD 35), «murdoku online» 9.900, «murdoku en español» 2.400, «murdoku pdf» 2.400, «mu | Web gratuita; el negocio es el libro (17 ediciones, +140.000 ejemplares en España según docs internos). Premium web no verificado. | No en la web (inglés y portugués). Sí en el libro. | deduccion |
+| [Murdle (web oficial, G. T. Karber)](https://murdle.com/) | Web oficial · Expediente (cuadrícula lógica) · caso diario | VERIFICADO (Semrush): EE. UU. 44.473 móvil + 14.062 escritorio (998 palabras clave), Reino Unido 17.942 + 15.434 móvil, Australia ~15.600, Canadá ~13.300, Brasil 3.039; España no aparece entre los 12 primeros mercados. Demanda en España: «murdle» 3.600/mes (KD 20), «murdle online» 170, «murdle en español» 20. Libros: ~3 M de ejemplares (docs internos). | Web gratuita, sin premium ni anuncios detectados; ingresos por libros (St. Martin's Press / Macmillan), juego de mesa (Goliath / Endless Games) y merchandising. | No en la web (solo inglés). Los libros traducidos al español acumulan quejas de traducción (docs internos). | deduccion, monetizacion |
+| [EveryClue](https://everyclue.com/) | Web · Expediente (cuadrícula lógica, 5 sospechosos) · caso diario | VERIFICADO (Semrush): EE. UU. 99 escritorio + 42 móvil (9 palabras clave); resto ≈0. | Gratis + suscripción Sleuth+ (precio no verificado) que desbloquea el archivo completo. | Probable (8 idiomas), no verificado cuáles. | deduccion |
+| [Clues by Sam (Ad Artis Oy)](https://cluesbysam.com/) | Web · deducción en cuadrícula con pistas en lenguaje natural · caso diario | VERIFICADO: >50.000 jugadores activos diarios a principios de 2026 (Wikipedia vía extracto). Semrush: EE. UU. 32.848 escritorio + 32.323 móvil (245 palabras clave), Canadá ~12.400, Reino Unido ~10.700, Francia ~9.100, Australia ~6.300. España: «clues by sam» 1.300/mes (KD 33). Prensa: Aftermath («mi juego diario favorito»), Thinky Games, Show HN, TV Tropes, Dave Rupert. | Diario gratis; packs de 50 puzzles «paga lo que quieras» (mínimo 1 $); membresía premium / compra del archivo diario; newsletter. | No encontrado (inferido: solo inglés). | deduccion, logica |
+| [Mystery-o-matic](https://mystery-o-matic.com/es/) | Web · misterio diario generado (asesino, arma y hora) · código abierto | VERIFICADO (Semrush): EE. UU. 1.230 escritorio + 1.082 móvil (447 palabras clave), Reino Unido 458, India 367, España 94 (136 palabras clave). Prensa: Show HN (julio 2023), Gigazine (diciembre 2023), Playlin, dailydle. | Donaciones (cripto, drips.network); sin anuncios ni premium. | Sí (en/es/ru verificados en el repositorio). | deduccion |
+| [murdokujuego.com y murdoku.fans (satélites SEO en español)](https://murdokujuego.com/) | Webs de contenido/SEO · Escena · casos imprimibles y guías | VERIFICADO (Semrush): murdokujuego.com España 448 escritorio + 1.286 móvil (103 palabras clave), Colombia 58, México 48, Chile 39; murdoku.fans Alemania 1.251 + 806 móvil, España 460 (191 palabras clave), móvil México 257, Portugal 226, Argentina 200, Perú 105. | No verificada (presumiblemente anuncios y afiliación al libro). | Sí (murdokujuego íntegro en español; murdoku.fans bilingüe). | deduccion |
+| [Brainzilla (Zebra Puzzles y Logic Grid) y zebrapuzzles.com](https://www.brainzilla.com/logic/zebra/) | Webs de zebra puzzles y cuadrículas lógicas jugables e imprimibles | VERIFICADO (Semrush): brainzilla.com ~52.800 visitas orgánicas/mes EE. UU. con 17.271 keywords, 13.400 India, 7.700 Reino Unido; España solo 353/mes. zebrapuzzles.com ~7.200/mes EE. UU. Keywords ES: 'acertijos de logica' 720/mes, 'juegos de logica' 1.600, 'acertijos logicos' 170; MX 'acertijos de logica' 390. | Anuncios display (INFERIDO); sin suscripción documentada. | No verificado; contenido principal en inglés. | logica |
+| [Clones web anglófonos de caso diario (Daily Murder, Mysteryic, Murder OX, Daily Detective, murdersudoku.com)](https://dailymurder.com/) | Webs · Escena y Expediente · caso diario | VERIFICADO (Semrush, orgánico/mes): dailymurder.com 0; dailydetective.org 9; mysteryic.com 0; murderox.com 0; murdersudoku.com 1. Descargas de la app Daily Murder no obtenidas. | Daily Murder: gratis con anuncios + «Detective's Pass» (compra única que quita anuncios); resto gratis sin monetización visible. | No (solo inglés, inferido). | deduccion |
+| [Squabble](https://squabble.me) | Wordle multijugador battle royale en tiempo real (caso de pico viral sin hábito) | Verificado (Semrush, sept. 2026): squabble.me tiene 0 visitas orgánicas/mes en ES (2 palabras clave) y 1 visita/mes en US (6 palabras clave): tráfico residual. Cobertura de prensa en 2022 (Engadget, Tom's Guide, GameSpot, Inverse). | Gratuito, sin modelo de ingresos visible. | No, solo inglés. | social |
+| [Einstein's Riddle Logic Puzzle (Rottz Games)](https://play.google.com/store/apps/details?id=com.rottzgames.logic) | Zebra puzzle / acertijo de Einstein con multijugador en vivo | VERIFICADO (AppBrain/AppGrooves): 5,3M descargas; 4,78/5 con ~150.000-163.000 valoraciones; '#2 en Logic Puzzle Games' según AppGrooves. Keyword 'acertijo de einstein': 480/mes ES y 590/mes MX (Semrush). | Gratis 'sin muros de pago' con anuncios (intersticiales agresivos según reseñas) y suscripción premium que quita anuncios y que también se obtiene gratis por ranking en competiciones. Precio no verifi | Sí: español, alemán, francés, italiano, portugués, ruso y japonés (ficha Google Play). | logica |
+
+## Features destacadas por herramienta
+
+### 20minutos Pasatiempos
+20minutos promociona una sección de pasatiempos gratuitos (crucigramas, sudokus, sopas de letras) relanzada en verano de 2025 según su propio TikTok, pero no se ha podido verificar su URL exacta ni su tráfico.
+- Pasatiempos 'totalmente gratis' anunciados en TikTok (@20m, verano 2025) como contenido de vacaciones
+- Medio gratuito de gran audiencia, orientado a publicidad, sin muro de pago: perfil de cliente para un widget de caso diario financiado por anuncios
+- Sin racha, estadísticas ni compartir conocidos (inferido)
+- Sección no indexada como subcarpeta reconocible en Semrush (ni /pasatiempos/ ni /juegos/ ni subdominios), lo que sugiere poco peso SEO o un proveedor externo embebido (inferido)
+Fuentes: https://www.tiktok.com/@20m/video/7535491480463346966; Semrush domain_rank (varias subcarpetas y subdominios de 20minutos.es, base es: sin datos) y phrase_these (es), 6-9-2026. Nota: 20minutos.es bloquea el rastreador
+
+### Adventure Escape Mysteries (Haiku Games)
+La saga de escape rooms narrativos mejor valorada por la crítica: capítulos de misterio (asesinatos, secretos) con puzzles siempre resolubles y pistas de pago opcionales.
+- Historias por capítulos con detectives y asesinatos, mezcla de point-and-click clásico y escape room
+- Promesa explícita: 'no creamos puzzles imposibles para obligarte a pagar'; compra de pistas como apoyo voluntario
+- Más de 4,5 estrellas de media; elegida mejor escape room por AppPicker, TechWiser, Android Authority y AppUnwrapper
+- Ficha en Google Play localizada como 'Misterios de escape de aventura'
+Fuentes: https://www.haikugames.com/; https://play.google.com/store/apps/details?id=com.haiku.adventure.escape.game.mystery.stories&hl=en_US; https://apps.apple.com/us/app/adventure-escape-mysteries/id1419796608; https://haiku-games.fandom.com/wiki/Adventure_Escape_Mysteries; Semrush phrase_these es/mx
+
+### Amuse Labs PuzzleMe (proveedor B2B de juegos para prensa)
+El CMS de puzzles que usa El País (solo web), además de The Guardian, Washington Post, LA Times o The New Yorker: 30+ idiomas incluido español y red de constructores en España; es el estándar contra el que competirá cualquier licencia B2B nuestra.
+- Crucigramas, sudokus, sopas, jigsaws y juegos de palabras embebibles con muro de pago del medio
+- Analítica de engagement y retención para el editor; soporte de 30+ idiomas
+- Conecta a los medios con constructores profesionales (España incluida)
+- Limitación observada: en El País solo funciona en web, no en la app nativa (queja de suscriptores)
+- No ofrece ningún juego de deducción/misterio: hueco de catálogo para un 'caso del día' licenciable
+Fuentes: https://www.reddeperiodistas.com/la-web-de-el-pais-relanza-su-seccion-de-crucigramas-y-juegos/; https://amuselabs.com/solutions/publishers/; https://www.cbinsights.com/company/amuse-labs
+
+### Apalabrados (Etermax)
+El Scrabble por turnos que llegó a estar instalado en uno de cada dos smartphones de España: asíncrono, con chat, perfil del rival y notificaciones de turno.
+- Partidas asíncronas con amigos o rivales aleatorios; notificación cuando es tu turno; varias partidas simultáneas.
+- Chat dentro de la partida y perfil con porcentaje de victorias, derrotas y abandonos del rival.
+- Versión Pro sin anuncios; en la versión nueva los power-ups (bolsa de fichas, valoración de palabras) se desbloquean sin límite.
+- Aplicable a Sospechario: perfil público mínimo (casos resueltos, tiempo medio, % de acierto, % de abandonos) que haga comparables a los rivales en los duelos por enlace.
+Fuentes: https://www.swissinfo.ch/spa/etermax-diez-a%c3%b1os-como-exponente-de-los-juegos-para-m%c3%b3viles-en-latinoam%c3%a9rica/47021590; https://applicantes.com/etermax-apalabrados-2/; https://wordcrack.help.etermax.com/hc/es/articles/30113068658835-Nueva-Versi%C3%B3n-de-Apalabrados-para-Usuarios-Pro; https://apps.apple.com/sv/app/apalabrados/id441092257; Semrush domain_rank apalabrados.com (es)
+
+### Apple News+ Puzzles (Crossword, Mini, Quartiles, Sudoku, Emoji Game)
+Colección de puzzles diarios integrada en la app Apple News para suscriptores de News+, que Apple usa como valor añadido de retención y que incorpora un marcador de rachas por tipo de puzzle.
+- Puzzles diarios con archivo: crucigrama y mini (desde iOS 17, 2023), Quartiles (mayo 2024, formar palabras con fichas de 2-4 letras), sudoku y Emoji Game (julio 2025, completar frases con emojis en el menor número de movimientos; 6 es 'perfecto')
+- Puzzles Scoreboard con racha actual y racha máxima por tipo de puzzle, tasa de resolución y puzzles resueltos
+- Regla de racha estricta: solo cuenta si se resuelve el día de publicación y revelar todas las respuestas anula el día
+- Modo sin conexión para descargar puzzles (mayo 2024)
+- Compartir resultado desde la app (inferido a partir del formato de los demás juegos diarios; no verificado en fuentes)
+- Distribución masiva sin coste de adquisición: viene preinstalada en cientos de millones de iPhones
+Fuentes: https://www.apple.com/newsroom/2024/05/apple-news-plus-introduces-quartiles-a-new-game-and-offline-mode-for-subscribers/; https://www.apple.com/newsroom/2025/07/apple-news-plus-introduces-emoji-game/; https://support.apple.com/guide/iphone/find-puzzles-in-apple-news-iph4883822da/ios; https://support.apple.com/guide/iphone/play-emoji-game-iphd419e8234/ios; https://www.macworld.com/article/2956382/this-apple-news-word-game-is-better-than-wordle-connections-and-strands.html; https://www.cultofmac.com/how-to/daily-games-apple-news
+
+### Arkadium / Arkadium Arena
+Estudio neoyorquino que, además de su portal propio, alquila a periódicos y portales un catálogo de más de 500 juegos HTML5 (crucigramas, sudoku, mahjong, solitario, Hurdle) en un portal de marca blanca alojado en un subdominio del medio y monetizado con publicidad a reparto de ingresos.
+- Portal Arena en subdominio del medio con catálogo cerrado y slugs compartidos entre clientes: en España se reconocen por las URL /juegos/crucigramas-faciles, /juegos/crucigramas-dificiles, /juegos/mahjong, /juegos/mahjongg-solitaire, /todos-los-juegos [verificado por SERP Semrush]
+- Catálogo localizado al español (arkadium.com/es/ con Sudoku, Mahjong, Bubble Shooter, Block Champ, Hurdle) [verificado: Semrush]
+- Modelo económico: sin coste de desarrollo para el medio, reparto de ingresos publicitarios, hosting, analítica y soporte incluidos; opción de nivel sin anuncios/suscripción del medio [inferido]
+- Juegos casual genéricos: no hay puzzle narrativo ni de deducción diario en el catálogo, que es exactamente nuestro hueco [inferido, coherente con las palabras clave que posiciona]
+- Productos de audiencia: Hurdle (clon de Wordle), Arkadium Codeword, crucigramas Penny Dell; en EE. UU. opera AARP Games y USA Today Play [verificado por URL y Semrush]
+Fuentes: Semrush domain_ranks arkadium.com (global, es, mx) y www.arkadium.com/es/ (es), sept. 2026; Semrush resource_organic arkadium.com (es), sept. 2026; Semrush phrase_organic 'crucigramas dificiles', 'mahjong online', 'crucigrama online' (es), 'daily puzzle games' (us); Semrush domain_ranks juegos.as.com, juegos.abc.es, juegos.elpais.com, juegos.eleconomista.es (es); games.aarp.org, play.usatoday.com, www.cnn.com/games/ (us); Modelo de reparto de ingresos y detalles del contrato: conocimiento propio (corte junio 2026), sin verificar en esta sesión; arkadium.com bloqueado por el proxy
+
+### Boludle (boludle.com)
+Wordle con palabras y humor rioplatense que se ha convertido en marca propia en Argentina: 'boludle' tiene 49.500 búsquedas/mes y la web es #3 para 'wordle' en el país, por delante del NYT.
+- Localización cultural extrema (lunfardo, tono humorístico) como diferenciador
+- Marca propia buscada 49.500 veces/mes en AR (más que 'la palabra del día' allí)
+- #1 para 'wordle argentino' y #3 para 'wordle' y 'la palabra del dia' en AR
+- Prueba de que el sabor local (no solo el idioma) genera marca y boca a boca
+Fuentes: https://www.boludle.com/; Semrush domain_ranks / resource_organic boludle.com (AR); Semrush phrase_organic 'wordle' (AR)
+
+### Brain Test: Tricky Puzzles (Unico Studio)
+El fenómeno hipercasual de acertijos con trampa: cientos de niveles con humor, anuncio tras cada nivel y pista a cambio de vídeo, con más de 50M de instalaciones.
+- Niveles cortos de 'piensa fuera de la caja' con comentario gracioso al final de cada uno (compartibilidad)
+- Pista = ver anuncio recompensado; Premium abarata pistas y saltos
+- Franquicia con secuelas (Brain Test 2, 3, 4, 5) y versión web en Poki
+- Localizado en 19 idiomas
+- Queja dominante: anuncio después de cada nivel
+Fuentes: https://apps.apple.com/us/app/brain-test-tricky-puzzles/id1486214495; https://app.sensortower.com/overview/com.unicostudio.braintest?country=US; https://marketingtrending.asoworld.com/en/discover/unico-studio-surpasses-1-6-billion-downloads-with-brain-test-games/; https://www.amazon.com/Brain-Test-Tricky-Puzzles-Premium/dp/B08FMVYQN5; Semrush phrase_these es/mx
+
+### Brainzilla (Logic Grid Puzzles)
+Colección gratuita de logic grid puzzles jugables en navegador con versión imprimible, competidor directo de Puzzle Baron en el nicho de deducción anglosajón junto a Aha! Puzzles y Daydream Puzzles.
+- VERIFICADO: #2 en «printable logic puzzles» (1.300/mes US) con /logic/logic-grid/printable/ y #6 en «logic puzzles for kids» (2.900) con /logic/logic-grid/
+- Marca «brainzilla» 6.600/mes US; Aha! Puzzles («aha puzzles» 480) y Daydream Puzzles («daydream puzzles» 140) ocupan la misma SERP con formatos idénticos: online + PDF, por dificultad, sin narrativa
+- Juego en navegador con marcado de celdas y comprobación, más PDF descargable: el binomio que nosotros replicamos con caso diario + PDF
+- Daydream Puzzles tiene «Highway Murder Mystery» (#3 en «murder mystery logic puzzle», 260/mes US, KD 6): la fusión deducción + crimen existe en inglés pero es marginal
+- QUÉ FALTA: español (Brainzilla tiene sitio hermano en portugués, INFERIDO), historia, modo diario y compartir
+Fuentes: Semrush domain_ranks brainzilla.com, ahapuzzles.com, daydreampuzzles.com, murdermysterypuzzles.com; Semrush phrase_organic «printable logic puzzles», «logic puzzles for kids», «murder mystery logic puzzle» (us); Semrush phrase_these (us)
+
+### Brainzilla (Zebra Puzzles y Logic Grid) y zebrapuzzles.com
+Las dos webs de referencia en inglés para el acertijo de Einstein y las cuadrículas lógicas, con puzzles por dificultad, versión imprimible y claves de respuesta orientadas a docentes.
+- Zebra puzzles y logic grid clasificados por dificultad (muy fácil, fácil, medio)
+- Página de imprimibles y PDF por puzzle; claves de respuesta 'pensadas para educadores' (mismo nicho que nuestro pack PDF y modo Junior)
+- Sin cuenta ni app: juego directo en navegador
+- zebrapuzzles.com ofrece 'free daily logic puzzles'
+Fuentes: https://www.brainzilla.com/logic/zebra/; https://www.brainzilla.com/logic/logic-grid/; https://www.zebrapuzzles.com/; Semrush domain_ranks brainzilla.com (us/in/uk/es) y zebrapuzzles.com; phrase_these es/mx
+
+### Breakout EDU
+Referente estadounidense del «breakout» de aula: caja con candados físicos más plataforma con cientos de juegos digitales por materia y curso, con login de alumno y «Lock of the Day».
+- VERIFICADO (resource_organic us): tráfico casi 100 % de marca: «breakoutedu» 33.100/mes, «breakout edu» 27.100, «breakout edu login» 2.900, «student breakoutedu.com» 880, «breakout box» 1.600 (store.breakoutedu.com), «lock of the day» 1.300, «breakout edu kit» 210
+- Subdominios platform.breakoutedu.com (docente) y student.breakoutedu.com (alumno): modelo de juego digital con acceso por código de clase
+- Sin presencia en español: «breakout edu» 170/mes ES y «breakout educativo» 260/mes ES los capturan INTEF, Genially, UNIR y Wikipedia; «breakout edu español» 0/mes
+- Demanda de aula en EE. UU. que muestra el formato: «classroom escape room» 210 (KD 5), «digital escape room» 1.300 (KD 27), «escape room kit» 590 (KD 7); Breakout EDU solo es #9 en «classroom escape room» (TPT es #1)
+- Modelo de negocio de doble vía (hardware + suscripción) que valida el pago docente por juegos listos para usar
+- QUÉ FALTA: versión en español y puzzles de deducción; su catálogo es de candados/códigos, no de lógica narrativa
+Fuentes: Semrush domain_ranks breakoutedu.com; Semrush resource_organic breakoutedu.com (us); Semrush phrase_these (us/es); Semrush phrase_organic «classroom escape room» (us)
+
+### Brilliant
+Plataforma de lecciones interactivas de matemáticas, lógica, ciencia y programación que vende exclusivamente suscripción Premium con prueba gratuita de 7 días y una fuerte inversión en patrocinios de YouTube.
+- Sin anuncios y sin tier gratuito real: prueba de 7 días y muro sobre casi todo el contenido [inferido]
+- Precio de lista alto (en torno a 25 $/mes o ~150 $/año, con descuentos frecuentes del 20-30 %) que ancla el valor en 'aprender', no en 'jugar' [inferido]
+- Racha diaria y retos diarios como retención [inferido]
+- Adquisición por patrocinio masivo de creadores de YouTube con código de descuento, más SEO educativo [inferido]
+- Tráfico orgánico muy repartido (India primero) porque el contenido educativo viaja mejor que un juego [verificado: Semrush]
+Fuentes: Semrush domain_ranks brilliant.org (global y es), sept. 2026; Semrush phrase_these (us, es, mx, ar), sept. 2026; Precios y prueba gratuita: conocimiento propio (corte junio 2026), sin verificar; brilliant.org bloqueado
+
+### Britannica Games (Octordle, The Missing Letter, Tightrope, Revealed, Sudoku)
+Encyclopaedia Britannica agrupa juegos diarios gratuitos, entre ellos Octordle (ocho Wordles a la vez, 13 intentos) que absorbió como marca, un crucigrama diario con giro (The Missing Letter) y trivia diaria (Tightrope), para captar tráfico de búsqueda y retenerlo con publicidad.
+- Octordle con múltiples variantes diarias (Daily, Sequence, Gold, Chill, Extreme) para distintos niveles: el mismo motor genera varios 'rituales' por día
+- Tutorial y páginas por número de puzzle indexables (p. ej. /daily-sequence/1), estrategia SEO de archivo público
+- Trivia diaria (Tightrope) y puzzle de imagen (Revealed) además de sudoku: cartera amplia y barata de producir
+- Modelo de 'comprar un -dle popular y ponerlo bajo tu marca' (Merriam-Webster, filial de Britannica, compró Quordle en enero de 2023)
+- Gratis y con anuncios; sin suscripción conocida
+- Estadísticas y racha por juego (inferido a partir del formato Octordle; no verificado en fuentes)
+Fuentes: https://www.britannica.com/games/octordle/; https://www.britannica.com/games/octordle/daily-sequence/1; https://www.britannica.com/quiz/tightrope; https://www.britannica.com/games/revealed; https://games.slashdot.org/story/23/01/20/222214/merriam-webster-acquires-wordle-clone-quordle; Semrush domain_rank (www.britannica.com/games/, bases us/uk), 6-9-2026
+
+### Canva para Educación
+Canva regala su versión completa a docentes y alumnos, y sus plantillas de crucigrama, sopa de letras y «escape room» compiten en Google con los generadores especializados.
+- VERIFICADO: #12 en «generador de crucigramas» (880/mes ES) con canva.com/es_es/plantillas/s/crucigrama/
+- «canva educacion» 9.900/mes ES (KD 80), «canva escape room» 20/mes ES, «canva worksheet» 480/mes US
+- Plantillas editables (no generadores): el docente rellena a mano; sin lógica de puzzle
+- Referencia del formato que quieren los docentes: hoja A4 bonita, editable, con versión para imprimir y para pantalla
+- QUÉ FALTA: nada de deducción; oportunidad de plantilla oficial «hoja de trabajo de caso» compatible con nuestro PDF
+Fuentes: Semrush domain_ranks canva.com (base es); Semrush phrase_organic «generador de crucigramas» (es); Semrush phrase_these «canva educacion», «canva escape room» (es), «canva worksheet», «canva education» (us)
+
+### Caseoku – Daily Murdoku (CatLaboratory)
+App lanzada en mayo de 2026 con un caso «artesanal» nuevo cada día en tableros 6×6 y 8×8 y sincronización en la nube; crece rápido pero con quejas por reglas vagas (filas sin numerar) y anuncios largos.
+- Un caso diario, «pura lógica, sin suerte»
+- 6×6 rápido u 8×8 experto
+- Sincronización en la nube de progreso y estadísticas
+- Renombrada también como «Caseoku: Murder Sudoku Mystery»
+- Quejas: «rows and columns aren't numbered», «horrible ads are ruining the experience», «ads take so long to get through»
+Fuentes: https://play.google.com/store/apps/details?id=com.catlaboratory.crimoku; https://www.appbrain.com/app/caseoku-daily-murdoku/com.catlaboratory.crimoku; https://asospy.com/app/details/com.catlaboratory.crimoku/Caseoku+-+Daily+Murdoku
+
+### Chess.com Puzzles (Daily Puzzle, Puzzle Rush, Puzzle Battle)
+La mayor plataforma de ajedrez convierte los puzzles tácticos en hábito diario con Daily Puzzle a medianoche local, racha, Puzzle Rush contrarreloj y leaderboards de amigos en la propia pantalla de juego.
+- Daily Puzzle gratuito que se renueva a medianoche hora local, con racha de días y registro histórico (16 miembros lo han resuelto todos los días desde 2007).
+- Puzzle Rush (3 min / 5 min / supervivencia): resolver el máximo de puzzles hasta 3 fallos; leaderboards Global / Amigos / Personal visibles a la derecha del tablero.
+- Puzzle Battle: duelo 1v1 en tiempo real de puzzles; Puzzle Points con niveles (tiers), racha y leaderboard de amigos en el mismo bloque.
+- Cupo diario de puzzles en gratuito (≈5/día rated) como palanca de conversión a Gold/Platinum/Diamond; polémica pública por la letra pequeña de 'ilimitado'.
+- Aplicable a Sospechario: el 'Contrarreloj' Premium como Puzzle Rush (cuántos mini-casos en 3-5 min), leaderboard de amigos en la pantalla de resultado y un cupo diario visible que empuje a Premium sin tocar nunca el caso del día.
+Fuentes: https://support.chess.com/en/articles/8608686-how-do-puzzles-work-on-chess-com; https://support.chess.com/en/articles/9681952-what-are-puzzle-points-on-chess-com; https://support.chess.com/en/articles/8708990-how-do-i-find-the-daily-puzzle; https://www.chess.com/article/view/chesscom-records-2024; https://techcrunch.com/2025/04/24/chess-com-reaches-200-million-members/; https://www.chess.com/terms/chess-stats
+
+### Cifras y Letras (apps cadev 'Cifras y Letras 2', jviprz 'Cifras y Letras – Juego TV', chiffresetlettre.com/es)
+Varias apps independientes y una web francesa traducida capturan la demanda del concurso de RTVE/La 2; ninguna es oficial y ninguna domina, lo que deja 22.200 búsquedas/mes con oferta fragmentada.
+- Minijuegos de letras (palabra más larga con 9 letras) y cifras (llegar a un número con 6)
+- La versión de jviprz incluye rachas diarias y retos de cálculo mental (mecánica 'daily' ya presente)
+- 'Cifras y Letras 2' (cadev) gratuita y sin anuncios en iOS; variante Android con anuncios y versión de pago
+- La SERP de 'cifras y letras online' la gana chiffresetlettre.com/es (web francesa): hueco para un producto español bien hecho
+Fuentes: https://play.google.com/store/apps/details?id=com.cadev.cifrasyletras2&hl=es; https://apps.apple.com/es/app/cifras-y-letras-2/id1118989196; https://play.google.com/store/apps/details?id=com.jviprz.wordsandnumbers&hl=es; https://www.chiffresetlettre.com/es/lettres/jugar-las-palabras-mas-largas; Semrush phrase_organic 'cifras y letras online' (ES); phrase_these (ES)
+
+### Claringrilla / Clarín Juegos
+Clarín ha convertido su crucigrama diario en marca propia ('Claringrilla'), que acumula 20.000 búsquedas/mes de nombre en Argentina y se juega gratis online; el resto de la sección /juegos tiene poco peso SEO.
+- Crucigrama diario con nombre propio registrado en la mente del lector (claringrilla, 'claringrilla de hoy')
+- Archivo numerado (/claringrilla/00001...) jugable
+- Sección /juegos con otros pasatiempos, pero casi sin visibilidad orgánica
+- Ejemplo de que un periódico puede crear marca de juego diario distinta del nombre genérico
+Fuentes: https://www.clarin.com/claringrilla; https://www.clarin.com/juegos; Semrush resource_organic clarin.com/claringrilla (AR); phrase_organic 'crucigrama clarin' (AR); domain_ranks clarin.com/juegos/
+
+### Clones web anglófonos de caso diario (Daily Murder, Mysteryic, Murder OX, Daily Detective, murdersudoku.com)
+Oleada 2025-2026 de webs «free daily murder mystery» sin tráfico medible: Daily Murder (Expediente con autoeliminación, web + Android, «Detective's Pass»), Mysteryic (plano + regla sudoku, sin anuncios, pistas ilimitadas), Murder OX (✕/✓), Daily Detective (.org/.app) y murdersudoku.com. Nota: Detective Riddles (Mehul / mindyourlogic) y Unsolved Case Files 3D / Cold Case Inc. se revisaron y son acertijos visuales u objetos ocultos, no deducción con cuadrícula: no son competidores.
+- Daily Murder: caso a medianoche, 5-15 min, dificultad lunes-sábado, retratos de testigos, cuadrícula con autoeliminación
+- Mysteryic: sin registro, sin anuncios, pistas ilimitadas, un sospechoso por fila y columna sobre plano
+- Murder OX: sin cuenta, «clues fit together in exactly one way»
+- Todos copian la misma plantilla de landing «Free Online Murder Mystery Game — Daily Detective»
+- Daily Murder tiene página de prensa y app Android (com.dailymurder)
+Fuentes: https://dailymurder.com/how-to-play; https://play.google.com/store/apps/details?id=com.dailymurder; https://mysteryic.com/; https://murderox.com/; https://dailydetective.org/; https://murdersudoku.com/
+
+### Cluedo / Clue (Marmalade Game Studio, licencia Hasbro)
+La adaptación oficial de Cluedo: pago único, multijugador online y modo 'Ultimate Detective' con interrogatorios múltiples, monetizada con cosméticos y un Season Pass polémico.
+- Ultimate Detective Mode: interrogar a varios sospechosos a la vez; expedientes con transcripciones, pruebas y motivaciones
+- Modo clásico y modo rápido Clue Cards; partidas contra IA offline
+- Multijugador online abierto y privado (con amigos y familia); versión Steam y edición Classic
+- Hoja de deducción digital integrada (equivalente a nuestras anotaciones)
+- Season Pass y skins solo cosméticos: 'demasiado caro para lo que es' según jugadores
+Fuentes: https://play.google.com/store/apps/details?id=com.marmalade.cluedo2&hl=en-GB&gl=US; https://apps.apple.com/mx/app/cluedo/id6447306697; https://cluedo.fandom.com/wiki/Cluedo_Mobile_2023; https://store.steampowered.com/app/2506480/ClueCluedo/; https://appgrooves.com/app/clue-the-classic-mystery-game-by-marmalade-game-studio-limited/negative; Semrush phrase_these es/mx
+
+### Cluedoku.app (Detective Sudoku)
+El competidor más parecido a nuestro producto: caso diario «cosy» tipo Murdoku, gratis, con racha, traducido íntegramente al español (casos, pistas y sugerencias, no solo botones) y con landings SEO como /es/murdoku y /games-like-murdle; sin tráfico todavía.
+- Caso diario igual para todos, sin instalar nada
+- Racha y comparación de resultados con amigos
+- Sin cronómetro; juego sin conexión; multijugador según la ficha
+- Apps iOS y Android además de la web
+- Landings de intención: «Murdoku online en español», «Play a free Murdoku-style case every day», «Games like Murdle»
+Fuentes: https://cluedoku.app/; https://cluedoku.app/es/murdoku; https://cluedoku.app/murdoku; https://cluedoku.app/games-like-murdle; Semrush domain_ranks + phrase_these (es)
+
+### Clues by Sam (Ad Artis Oy)
+Puzzle diario del finlandés Johannes Ahvenniemi (mayo 2025): 20 personajes en una cuadrícula 4×5 que hay que clasificar como inocentes o criminales; el sistema impide adivinar y ya supera los 50.000 jugadores diarios.
+- Restricción integrada que obliga a que cada movimiento sea una deducción cierta (no se puede adivinar)
+- Pistas reveladas progresivamente al identificar a cada personaje
+- Curva semanal etiquetada: lunes Easy, martes Medium, luego Tricky, Hard, Brutal, Evil
+- Tocar una pista la atenúa y resalta en la cuadrícula los nombres y profesiones que cita; modo daltónico
+- Archivo diario y newsletter con puzzles extra
+Fuentes: https://cluesbysam.com/; https://en.wikipedia.org/wiki/Clues_By_Sam; https://aftermath.site/clues-by-sam-wordle-daily-puzzle-game/; https://thinkygames.com/games/clues-by-sam/; https://news.ycombinator.com/item?id=43923843; https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/CluesBySam
+
+### Conceptis Puzzles (web y apps por tipo de puzzle)
+El proveedor histórico de puzzles de lógica para prensa y apps: 11 tipos de puzzle diario gratis en web y una familia de apps sin anuncios que venden packs de 20 puzzles.
+- 11 puzzles diarios gratuitos en navegador (Battleships, Calcudoku, Hashi, Kakuro, Nurikabe, Slitherlink, Sudoku...), de 5-15 minutos cada uno, sin registro
+- Apps por tipo (Pic-a-Pix, Fill-a-Pix, Link-a-Pix, Tic-Tac-Logic...) con Auto X, pistas, comprobación de errores y deshacer multinivel
+- Sin anuncios 'ni trucos'; sincronización iCloud, VoiceOver, texto grande y modo oscuro
+- Puzzle extra gratis cada semana; los packs comprados se pueden borrar y rejugar
+- Modelo de licencia B2B a medios impresos (referencia para nuestra licencia a medios)
+Fuentes: https://www.conceptispuzzles.com/; https://www.conceptispuzzles.com/index.aspx?uri=mobile; https://apps.apple.com/us/developer/conceptis-ltd/id479420055; https://play.google.com/store/apps/details?id=com.conceptispuzzles.picapix&hl=en_US; https://www.funwithpuzzles.com/p/conceptis-daily-puzzles.html; Semrush domain_ranks conceptispuzzles.com (us/jp/de/es)
+
+### Criminal Case (Pretty Simple)
+La saga de objetos ocultos con temática policial (Grimsborough, Pacific Bay, Paris, The Conspiracy) con más de 100M de descargas en Android y una suscripción semanal que amplía la energía.
+- Bucle de investigación: escena del crimen, interrogatorio de sospechosos, análisis de pruebas y arresto
+- Energía por escena y varias entregas independientes como 'temporadas'
+- Suscripción 'Pizza' de 2,99 $/semana: barra de energía a 170 y sin anuncios
+- Juego del Año de Facebook 2013 (superó a Candy Crush); todavía activo en 2025
+- Localizado en 9 idiomas, incluido español
+- Contenido con asesinatos explícitos: nos marca el límite de lo que NO queremos ser en tono
+Fuentes: https://en.wikipedia.org/wiki/Criminal_Case_(video_game); https://www.appbrain.com/app/criminal-case/com.prettysimple.criminalcaseandroid; https://play.google.com/store/apps/details?id=com.prettysimple.criminalcaseandroid&hl=en-IN; https://apps.apple.com/us/app/criminal-case/id767473889; https://www.facebook.com/audiencenetwork/success-stories/pretty-simple; Semrush phrase_these es/mx
+
+### Crimoku: Puzle, lógica, crimen
+App con ficha en español que reconstruye la escena del crimen con lógica espacial («al lado», «enfrente») y se posiciona explícitamente para el público de «juegos tipo murdoku»; 100.000+ descargas en Google Play.
+- Dificultad progresiva de casos simples a «enigmas complejos»
+- Sin cronómetro ni prisa; modo sin conexión
+- Disponible también en App Store (id6765774034) y Google Play Games para PC
+- El package name incluye «cluedoku» y «murder» para capturar búsquedas
+- Tiene página «discover» propia en TikTok («Crimoku App»)
+Fuentes: https://play.google.com/store/apps/details?id=com.crimoku.cluedoku.murder&hl=es; https://apps.apple.com/gb/app/crimoku-puzle-l%C3%B3gica-crimen/id6765774034; https://play.google.com/pc-store/games/details?id=com.crimoku.cluedoku.murder&hl=es_US; https://www.tiktok.com/discover/crimoku-app; Semrush phrase_these (es)
+
+### Cross Logic: Smart Puzzle Game (Hitapps / Gismart)
+La app de cross-logic más descargada en Google Play (10M+), con puzzles cortos de emparejamiento y monetización puramente publicitaria.
+- Niveles de rejilla lógica con enunciado tipo historia y pistas
+- Sin cronómetro; progresión por niveles (los usuarios piden 'reposición diaria de pistas gratis')
+- Quejas: los puzzles se repiten en niveles altos; banner permanente y vídeo tras cada puzzle
+- Ratio 'anuncios cortos, se pueden saltar en <10 s' se cita como aceptable
+Fuentes: https://play.google.com/store/apps/details?id=com.hitapps.logicgram.game; https://apps.apple.com/us/app/cross-logic-puzzle-game/id1561830495; https://www.appbrain.com/appstore/cross-logic-puzzle-game/ios-1561830495; https://appgrooves.com/app/mr-logic-by-hitapps-inc/positive; Semrush phrase_these es
+
+### Cuadernos KDP en Amazon.es que ya usan «murdokus» y «acertijos para niños»
+Ya existen libros autoeditados en Amazon España que explotan el término «murdokus» y el nicho «acertijos para niños», señal de que los creadores KDP han detectado la ola y de que el término se está genericizando.
+- VERIFICADO (phrase_organic es): «MURDOKUS: Palabras... Adictivo... Desafíos... Concentración» (ASIN B0GYFV6MT9) rankea #11 en «murdokus» (1.000/mes ES, KD 26), por detrás de Planeta, El Corte Inglés y Orientación Andújar
+- VERIFICADO: «100 acertijos para niños... neuronas» (ASIN B094ZN6HBB) rankea #12 en «acertijos para niños» (2.400/mes ES; 18.100 MX; 6.600 AR)
+- amazon.es aparece #2-3 en «murdoku para niños», «murdoku fácil», «murdoku pdf» (ficha del libro oficial B0FGDJCKXS) y #3 en «pasatiempos para adultos» (página de búsqueda)
+- La investigación previa del repo documenta Amazon MX 4,7/5 con 757 reseñas para la edición española de Murdoku; para los cuadernos KDP no hay nota ni reseñas verificables (sitio bloqueado)
+- QUÉ FALTA: los KDP no garantizan solución única ni tienen motor; y usan una marca ajena (riesgo que nosotros evitamos por regla del proyecto). Nuestro PDF-REGALO/edición impresa debe competir con marca propia y garantía, no con nombre
+Fuentes: Semrush phrase_organic «murdokus», «acertijos para niños», «murdoku para imprimir», «murdoku facil», «pasatiempos para adultos» (es); /home/user/Proyecto-m4/docs/investigacion/resenas-libros-comunidad.md (tabla §1.1)
+
+### Discord (comunidades, Activities y bots de juegos diarios)
+Donde viven las comunidades de juegos diarios: Wordle oficial como Activity con resumen automático del servidor, y bots que registran rachas y rankings por servidor sin pegar emojis.
+- Wordle oficial (NYT) como Discord Activity: mismo puzzle sincronizado con la web y resumen automático del rendimiento del servidor, jugable en servidores o mensajes directos.
+- Bots (Wordplay, DWordle, wordlediscordbot) con leaderboards, rachas y soporte multilingüe; crean una 'cita diaria' en el servidor.
+- Servidores etiquetados por juego en directorios (Disboard) como canal de descubrimiento.
+- Aplicable a Sospechario: servidor propio con canal del caso del día y bot que lea el texto compartido y lleve ranking por servidor; a medio plazo, Activity para jugar el caso dentro de Discord.
+Fuentes: https://support-apps.discord.com/hc/en-us/articles/31598005086359-Wordle-FAQ; https://discord-media.com/en/news/wordle-on-discord.html; https://www.wordlediscordbot.com/; https://discord.bots.gg/bots/932035804224712714; https://expandedramblings.com/index.php/discord-statistics-facts/; https://thesocialshepherd.com/blog/discord-statistics
+
+### Discovery Education Puzzlemaker
+Generador clásico y gratuito de crucigramas, sopas de letras, criss-cross, criptogramas, laberintos y similares a partir de listas de palabras del profesor; no genera puzzles de lógica.
+- VERIFICADO: «puzzlemaker» 8.100/mes US (KD 69) y «discovery education puzzlemaker» 880/mes US: marca consolidada entre docentes
+- Tipos (conocimiento previo, INFERIDO): word search, criss-cross, double puzzles, fallen phrases, math squares, mazes, letter tiles, cryptograms, number blocks, hidden message
+- Sin cuenta, sin coste, salida imprimible; herramienta anexa al catálogo de pago de Discovery Education
+- Cubre exactamente lo que en español cubre Educima: «generador de crucigramas» y «generador de sopa de letras»
+- QUÉ FALTA: ningún generador gratuito, ni en inglés ni en español, produce cuadrículas de deducción con solución única; «logic puzzle generator» 140/mes US y «generador de puzzles» 70/mes ES sin oferta
+Fuentes: Semrush domain_ranks puzzlemaker.discoveryeducation.com; Semrush phrase_these «puzzlemaker», «discovery education puzzlemaker», «puzzle generator», «worksheet generator», «logic puzzle generator» (us)
+
+### Duolingo
+La app de idiomas cuya racha diaria con congelación, ligas semanales, widget de pantalla de inicio y notificaciones con mascota son el estándar de la industria para generar retorno diario.
+- Racha con congelación (Streak Freeze / protectores de racha) y reparación de racha; los usuarios con racha ≥7 días retienen 2,4× (dato de Duolingo citado por terceros).
+- Friend Streak (2024-2025): racha compartida con hasta 5 amigos, una racha independiente por pareja; quienes tienen al menos una tienen un 22 % más de probabilidad de completar la lección diaria.
+- Ligas semanales por XP (Bronce→Diamante) con ascensos y descensos; su introducción subió las lecciones completadas un 25 % (fuente secundaria).
+- Widget de pantalla de inicio y de bloqueo con Duo y el contador de racha: +60 % de compromiso al lanzarlo; la mitad de quienes lo instalan mantienen racha ≥6 meses (Duolingo vía prensa en español).
+- Notificaciones con personalidad (Duo 'triste'), apuestas de racha (+14 % D7) y Streak Society para rachas largas.
+- Aplicable a Sospechario: racha con gracia visible (ya prevista), 'racha con un amigo' como versión ligera y asíncrona de los duelos, atajo/widget PWA en pantalla de inicio con contador de racha y nº del caso; ligas semanales solo con masa crítica.
+Fuentes: https://duolingo.deconstructoroffun.com/mechanics/streaks; https://blog.duolingo.com/friend-streak/; https://blog.duolingo.com/widget-feature; https://sensortower.com/blog/duolingo-streak-feature-app-engagement-growth; https://www.strivecloud.io/blog/blog-gamification-examples-boost-user-retention-duolingo; https://lamanzanamordida.net/noticias/recomendaciones/manten-racha-wigets-duolingo/
+
+### EL PAÍS Juegos (crucigramas de Tarkus y Mambrino, mini, sudokus, sopa de letras)
+Sección relanzada por EL PAÍS (julio 2021) que digitaliza sus crucigramas históricos con actualizaciones diarias, crucigramas mini, sudokus en cinco niveles, sopa de letras temática dominical y solitario, comunicada como valor añadido a su base de suscriptores.
+- Crucigrama diario y dominical con firma de autor (Tarkus; archivo de 365 crucigramas seleccionados y digitalización del legado de Mambrino), mini crucigramas y archivo navegable
+- Sudokus con actualización diaria y cinco niveles; sopa de letras temática nueva cada domingo (Marisa Sanjurjo)
+- Marca con demanda de búsqueda propia enorme ('crucigrama el pais' 90.500/mes, 'juegos el pais' + 'el pais juegos' 66.200/mes, 'pasatiempos el pais' 22.200/mes) que ninguna otra sección de juegos española iguala
+- Sección integrada en la oferta de suscripción de EL PAÍS (comunicada a suscriptores) pero con acceso libre a parte de los juegos (inferido: no se pudo abrir la web)
+- No consta ningún juego de deducción, lógica narrativa ni formato 'Wordle' propio: hueco directo para nuestra licencia B2B
+- Sin racha ni compartir con emojis conocidos (inferido)
+Fuentes: https://www.reddeperiodistas.com/la-web-de-el-pais-relanza-su-seccion-de-crucigramas-y-juegos/; https://x.com/el_pais/status/1413482349698994176; https://www.tarkus.info/; Semrush domain_rank (elpais.com/juegos/, bases es/mx) y phrase_these (es/mx), 6-9-2026. Nota: elpais.com bloquea el rastreador, no se pudo verificar la página en directo
+
+### Educaplay
+Plataforma española freemium para crear crucigramas, sopas de letras, adivinanzas, mapas interactivos y otras actividades jugables en navegador, muy usada en aulas de España y LatAm.
+- VERIFICADO: marca «educaplay» 40.500/mes ES, 74.000 MX, 22.200 AR; tráfico ES 258.006/mes con 143.759 keywords (mucho contenido generado por usuarios indexado)
+- Catálogo de tipos de actividad de palabras y memoria; sin tipo «cuadrícula lógica» ni «misterio» (conocimiento previo, INFERIDO)
+- Actividades embebibles y compartibles por enlace, con informe de resultados para el docente: el formato interactivo que los profesores ya conocen
+- Compite en el mismo espacio que Wordwall (60.500 marca ES) y Liveworksheets (135.000 marca ES; 289k visitas/mes ES): las tres son «fichas interactivas», ninguna «deducción»
+- QUÉ FALTA: un tipo de actividad de deducción embebible; nuestro B2B-WIDGET podría ofrecerse como «actividad» a este ecosistema
+Fuentes: Semrush domain_ranks educaplay.com, wordwall.net, liveworksheets.com; Semrush phrase_these «educaplay», «wordwall», «liveworksheets» (es/mx/ar)
+
+### Educima (generador de crucigramas y sopas de letras en español)
+El generador en español mejor posicionado para crucigramas y sopas de letras de aula, con salida imprimible; muestra que la demanda hispana de generadores es de palabras, no de lógica.
+- VERIFICADO: #1 en «generador de crucigramas» (880/mes ES; 6.600 MX; 720 AR); competidores en la misma SERP: theteacherscorner.net (#2), edu-games.org (#3), puzzel.org (#4, con constructor de escape rooms), interacty.me (#5), teachany.com (#11), canva (#12)
+- «generador de sopa de letras» 1.300/mes ES, 6.600 MX, 2.400 AR: el generador más buscado en español
+- Blog propio («crea crucigramas como un profesional») que rankea #13 en su propia keyword
+- Formato: imprimible A4 y versión online; sin cuenta obligatoria (INFERIDO)
+- QUÉ FALTA: ni Educima ni sus competidores generan cuadrículas lógicas ni casos de misterio; «generador de acertijos» 20/mes y «generador de escape room» 20/mes ES siguen sin respuesta
+Fuentes: Semrush domain_ranks educima.com y puzzel.org; Semrush phrase_organic «generador de crucigramas» (es); Semrush phrase_these «generador de crucigramas», «generador de sopa de letras», «generador de puzzles», «generador de acertijos», «generador de escape room» (es/mx/ar)
+
+### Eduescaperoom
+Sitio español de un docente con generadores de candados digitales, cifrado César, codificador de colores y banco de retos y enigmas para montar escape rooms de aula.
+- VERIFICADO (resource_organic es): #1 en «cifrado césar» (1.300), «cifrado cesar» (1.600), «codigo cesar» (590), «candado digital» (260), «candados escape room» (70), «mensaje cifrado» (70); #3 en «acertijos para escape room» (70), «códigos escape room» (50); #7 en «pruebas escape room» (210)
+- #4 en «escape room educativo» (110/mes ES), por delante de INTEF y Vicens Vives
+- Sección /retos-y-enigmas/ y guía «cómo crear y usar candados digitales en tu escape room educativo o breakoutedu»
+- Casi todo su tráfico es la herramienta de cifrado César, no la narrativa: los docentes buscan piezas sueltas (candado, cifrado, reto) para ensamblar
+- QUÉ FALTA: retos de deducción con solución única; una pieza «caso de misterio embebible» encajaría en su banco de retos (posible alianza)
+Fuentes: Semrush domain_ranks eduescaperoom.com; Semrush resource_organic eduescaperoom.com (es); Semrush phrase_organic «escape room educativo» (es)
+
+### Eduki (antes Lehrermarktplatz)
+Equivalente europeo de TPT con edición en español: docentes venden fichas, escape rooms y juegos de aula por unidades a precios bajos.
+- VERIFICADO: único marketplace de pago por unidad con edición española y tracción medible (8.100 búsquedas de marca/mes en ES)
+- Tráfico en España aún modesto (17.528/mes, 12.806 keywords) frente a Alemania (340.247): el canal está por madurar
+- Modelo por unidad (1-10 € típicos, INFERIDO) que sirve de referencia de precio para PDF-AULA y PDF-JUNIOR
+- Permite publicar como vendedor: canal de distribución alternativo para nuestros packs, sin construir tienda propia
+- QUÉ FALTA: no tiene categoría ni oferta visible de puzzles de deducción en español (no verificable página a página)
+Fuentes: Semrush domain_ranks eduki.com (global y base es); Semrush phrase_these «eduki» (es)
+
+### Einstein's Riddle Logic Puzzle (Rottz Games)
+La app de zebra puzzle mejor valorada (4,78/5 con más de 150.000 valoraciones): pistas gráficas en lugar de texto, 15 puzzles nuevos al día y duelos en tiempo real sobre el mismo puzzle.
+- Más de 5.000 puzzles gratis y 15 puzzles nuevos cada día ('daily fresh content')
+- Multijugador en vivo: mismo puzzle para todos, gana el más rápido; rankings de partida y top mensual global
+- Pistas representadas con iconos/imágenes en vez de frases (los usuarios lo citan como razón para preferirla)
+- Tamaños desde 4x4 hasta rejillas grandes; 5 niveles de dificultad; tutorial guiado y filtros por categoría
+- Quedar bien en las competiciones regala días de suscripción premium: el premium se gana jugando
+- Queja principal: exceso de anuncios y clics accidentales que disparan más anuncios
+Fuentes: https://play.google.com/store/apps/details?id=com.rottzgames.logic&hl=en_US; https://www.appbrain.com/app/einsteins-riddle-logic-puzzle/com.rottzgames.logic; https://appgrooves.com/app/einstein-s-riddle-logic-puzzle-by-rottz-mobile-games-llc/negative; https://apps.apple.com/us/app/einsteins-riddle-logic-puzzle/id950326185; Semrush phrase_these es/mx
+
+### Elevate
+App de entrenamiento cognitivo con más de 40 juegos, entrenamiento diario gratuito de 3 juegos y suscripción Elevate Pro, con lanzamiento de una versión completa en español.
+- Freemium por límite diario: 3 juegos gratis al día, Pro para el resto, con rachas y ligas [inferido]
+- Elevate Pro en torno a 5 $/mes o 40 $/año y opción vitalicia; sin anuncios [inferido]
+- Premio App del Año de Apple (2014) y valoraciones muy altas en tiendas (≈4,8) [inferido]
+- Versión íntegra en español lanzada en 2022-2023, la única de las apps de brain training que generó juegos nativos en español en lugar de traducirlos [inferido]
+- Casi sin presencia web: todo el negocio vive en las tiendas de apps [verificado: Semrush]
+Fuentes: Semrush domain_ranks elevateapp.com (global y es), sept. 2026; Semrush phrase_these (us, es, mx, ar), sept. 2026; Precios, premios y versión en español: conocimiento propio (corte junio 2026), sin verificar; elevateapp.com bloqueado
+
+### Emol Juegos — El Mercurio (Chile)
+La sección de juegos de Emol es heredada (especiales de 2013, páginas .aspx) con crucigrama semanal, sudoku, memorice, ajedrez, solitario, banderas y trivias; funciona por hábito, no por SEO ni producto.
+- Crucigrama interactivo semanal con archivo y sudoku diario
+- Catálogo de clásicos (memorice, reversi, ajedrez, solitario, banderas) más trivias
+- Versión móvil separada (/movil/servicios/juegos/) — tecnología antigua
+- Sin juego diario moderno ni compartir social: hueco en el mayor grupo de prensa chileno
+Fuentes: https://www.emol.com/servicios/juegos/; https://www.emol.com/servicios/juegos/crucigrama.aspx; https://www.emol.com/servicios/juegos/sudokuemol.aspx; Semrush domain_ranks emol.com/servicios/juegos/; phrase_these (CL)
+
+### Enigmic: Crime Puzzle Cases (Infinity Games, Lda)
+La app con mayor tracción del género en 2026: 800+ niveles tipo Murdoku de un estudio portugués, en 18 idiomas incluido español, recomendada por Hipertextual como «el juego perfecto para el móvil», con anuncios tras cada nivel.
+- 800 niveles frente a los 80-100 de un libro; dificultad progresiva
+- Marcado de candidatos en cuadrícula y eliminación de sospechosos
+- 18 idiomas: español, catalán, inglés, francés, portugués, alemán, italiano, japonés, coreano, etc.
+- Anuncio intersticial tras cada nivel; quitar anuncios por 4,99 € («el precio de un café»)
+- Queja recurrente: «incluso los niveles más difíciles son muy fáciles» y «11 anuncios en 15 minutos»
+- No se ha verificado que tenga caso diario ni racha
+Fuentes: https://play.google.com/store/apps/details?id=com.tangramgamestudio.enigmic; https://apps.apple.com/us/app/enigmic-crime-puzzle-cases/id6763931528; https://www.appbrain.com/app/enigmic-crime-puzzle-cases/com.tangramgamestudio.enigmic; https://hipertextual.com/actualidad/me-he-vuelto-adicto-a-los-murdokus-y-ahora-he-encontrado-el-juego-perfecto-para-el-movil-hay-miles-y-son-100-gratis/; https://mwm.ai/apps/enigmic-crime-puzzle-cases/6763931528; Semrush phrase_these (es)
+
+### Escape Kit
+Editor francés que vende escape rooms completos en PDF para fiestas infantiles, familias y aulas, con página específica «escape room en la escuela» en español.
+- VERIFICADO: #7 en «escape room educativo» (110/mes ES) con su página escolar en español
+- Producto cerrado listo para imprimir (historia, pruebas, solución, materiales) por franjas de edad: es el formato «print and play» de misterio para familias que en España nadie hace en local
+- Tráfico fuerte en Francia e Italia y débil en España: el mercado hispano de kits imprimibles está sin líder
+- Demanda relacionada en ES: «escape room en casa» 590, «escape room casero» 210, «escape room para hacer en casa» 90, «kit escape room casero» sin dato, «escape room imprimible» 20, «print and play» 170; en US «printable escape room kit» 210 y «murder mystery party kit» 5.400
+- QUÉ FALTA: kits de misterio familiar en español con precio local y deducción real (los suyos son de pruebas/enigmas encadenados, INFERIDO)
+Fuentes: Semrush domain_ranks escape-kit.com; Semrush phrase_organic «escape room educativo» (es); Semrush phrase_these (es/us)
+
+### Escape rooms online en español (escaperoomlover.com, escaperoomonline.es, madescaperoom.com) y apps (101 Room Escape, Cube Escape, Unmemory, Asesinato en los Alpes)
+La demanda de 'escape room online' es pequeña (1.600/mes ES, 390 MX/AR) y la capturan directorios de escape rooms físicos con listas de 'gratis online' y apps internacionales traducidas; no existe ningún producto diario en este nicho.
+- escaperoomlover.com es #1 ES: directorio de salas físicas que añade escape rooms web gratuitos como imán de tráfico
+- Apps más citadas por la prensa española: 101 Room Escape Game (+320 niveles), Cube Escape (Rusty Lake), Unmemory (estudio español, narrativa de asesinato), Framed y 'Asesinato en los Alpes'
+- La SERP de 'juegos de misterio' ES la ocupan Amazon, CrazyGames, juegos de objetos ocultos y tiendas de juegos de mesa: cero productos de deducción online
+- Monetización de apps: pago único o free + anuncios; ninguna con suscripción diaria
+Fuentes: https://www.escaperoomlover.com/es/escape-room-online-gratis; https://escaperoos.es/blog/las-7-mejores-aplicaciones-de-escape-room-para-tu-movil/; https://androidayuda.com/juegos/listas/los-mejores-juegos-de-escape-para-android-vive-la-aventura-de-resolver-enigmas-en-tu-movil/; https://vinduapp.com/post/las-mejores-escape-room-en-movil-android-iphone.html; Semrush phrase_organic 'escape room online' y 'juegos de misterio' (ES); phrase_these (ES/MX/AR); domain_ranks escaperoomlover.com, escaperoomonline.es
+
+### EveryClue
+Whodunit diario con cuadrícula lógica, un solo culpable verificado por solver, ocho idiomas, archivo gratuito de 7 días y suscripción Sleuth+ para el archivo completo: el modelo de negocio más parecido al nuestro, sin tracción.
+- 5 sospechosos + cuadrícula lógica; acusación final cuando todo encaja
+- Sin cuenta; nuevo caso a las 00:00 UTC (no hora local)
+- «Solver-checked for one valid answer»
+- Ocho idiomas
+- Archivo de 7 días gratis; completo con Sleuth+ (docs internos)
+Fuentes: https://everyclue.com/; Semrush domain_ranks
+
+### Framed
+Juego diario de adivinar una película a partir de hasta seis fotogramas cada vez más reconocibles, con estadísticas, rachas y compartir sin spoiler, que refresca a la vez para todo el mundo cada 24 horas.
+- Seis intentos con revelación progresiva de fotogramas: la dificultad decrece con cada fallo, lo que mantiene alta la tasa de resolución
+- Estadísticas: rachas, distribución de intentos y partidas totales
+- Compartir el resultado con cuadros de colores sin desvelar la película (inferido; patrón de la familia '-dle')
+- Un solo puzzle global por día; sin archivo oficial ni modo ilimitado (clones y webs de respuestas cubren esa demanda)
+- Muy ligero de producir: un fotograma y un título por día
+Fuentes: https://framed.wtf/; https://walkthroughs.net/framed-answers; https://www.neogaf.com/threads/framed-the-daily-movie-guessing-game.1641579/; Semrush domain_ranks (framed.wtf, todas las bases) y phrase_these (es/mx/ar), 6-9-2026
+
+### Genially (plantillas de escape room y breakout educativo)
+Herramienta española de contenido interactivo que se ha convertido en el estándar de facto del escape room y breakout digital en aulas hispanohablantes gracias a sus plantillas gratuitas y a su blog.
+- VERIFICADO (resource_organic es): #1 en «genially escape room» (480/mes), «escape room genially» (210), «escape room educativo» (110), «escape room educativos» (70), «escape room escolar» (50), «crear escape room online» (40), «halloween escape room genially»; #2 en «escape room digital» (210), «escape room virtual» (260), «escape room halloween» (390), «escape room halloween gratis pdf» (140); #2 en «breakout educativo» (260) con blog.genially.com
+- Plantillas concretas: «Escape room educación», «Escape room Halloween», «El misterio del taller de Santa» (Navidad), «Halloween escape», más geniallys de usuarios que rankean solos (Oxford Christmas escape room, escape room día de la paz)
+- Página de producto dedicada genially.com/es/crear/escape-room/
+- Crea el contenedor (pantallas, candados, navegación) pero no la lógica del puzzle: el docente debe inventar los enigmas; ahí encaja un widget nuestro
+- Búsquedas «genially escape room plantilla» y «plantilla escape room genially»: 0/mes; la gente busca «genially escape room» a secas
+- QUÉ FALTA: enigmas con solución única y dificultad medida para meter dentro de la plantilla; hoy se rellenan con acertijos copiados
+Fuentes: Semrush domain_ranks genially.com; Semrush resource_organic genially.com (filtro «escape room», base es); Semrush phrase_organic «escape room educativo», «breakout educativo» (es); Semrush phrase_these (es/mx/ar/us)
+
+### GeoGuessr (Daily Challenge, Duelos, Daily Streak, Clubs)
+GeoGuessr combina un Daily Challenge gratuito con duelos ranked, leaderboards de amigos/país/club y una racha diaria que se mantiene tanto jugando el daily como ganando un duelo.
+- Daily Challenge: 5 localizaciones, el mismo reto para todos, con leaderboard de amigos específico de cada día (URL /daily-challenges/<fecha>/friends).
+- Duelos (solo y por equipos) con puntos de vida y leaderboards Me / Friends / Global / País; leaderboard de club añadido en julio de 2025.
+- Daily Streak: jugar el Daily Challenge o ganar un duelo ranked cuenta para la racha (notas de parche, junio 2026); la comunidad pide 'streak freeze' y leaderboard de rachas (Canny).
+- Clubs y competición oficial (World Championship) que alimenta contenido en YouTube/Twitch y esports.
+- Aplicable a Sospechario: nuestra racha común Escena+Expediente sigue este patrón (una racha, varias puertas); añadir leaderboard de amigos ligado al caso del día y club privado (oficina, familia) con ranking semanal en fase 2.
+Fuentes: https://www.geoguessr.com/daily-challenges/2025-08-04/friends; https://www.geoguessr.com/multiplayer; https://geoguessr.canny.io/changelog; https://geoguessr.canny.io/feature-requests/p/club-leaderboard-for-solo-duels; https://geoguessr.canny.io/feature-requests/p/daily-challenge-streak-freeze; https://www.similarweb.com/website/geoguessr.com/
+
+### Globle
+Juego diario en el que se adivina un país misterioso sobre un globo 3D: cada intento se colorea según la proximidad al objetivo, con racha, estadísticas y compartir, y un mismo país para todo el mundo a medianoche UTC.
+- Retroalimentación continua por color (frío/caliente) en lugar de acierto/fallo: cada intento informa, nadie se atasca
+- Un país diario global a medianoche UTC; modo práctica ilimitado y archivo en las apps derivadas
+- Racha diaria, estadísticas detalladas y compartir resultado sin spoiler
+- Familia de juegos hermanos (Worldle, Flagle) empaquetados en apps: un ritual se convierte en tres
+- Independiente del idioma: nombres de países bastan, de ahí su tráfico en España y Latinoamérica
+Fuentes: https://globle-game.com/game; https://en.wikipedia.org/wiki/Globle; https://play.google.com/store/apps/details?id=com.globle.app214867; https://wordle.global/en/globle; Semrush domain_ranks (globle-game.com, todas las bases), domain_rank (es) y phrase_these (es/mx/ar), 6-9-2026
+
+### Google H5 Games Ads (Ad Placement API) y redes de anuncios para juegos web
+Producto de AdSense para juegos HTML5 que permite intersticiales y vídeo con recompensa en juegos web mediante la Ad Placement API, junto a redes especializadas (AdinPlay, Playwire, GameDistribution, Venatus) que ofrecen mediación y reparto de ingresos a portales de juegos.
+- Dos formatos nativos de juego: intersticial en pausas naturales (fin de partida) y vídeo con recompensa iniciado por el usuario; ambos con reglas de colocación que prohíben interrumpir la partida [inferido]
+- Requiere cuenta AdSense aprobada, contenido propio y, en el EEE, una plataforma de consentimiento (CMP) certificada TCF desde enero de 2024, alineada con la guía de cookies de la AEPD [inferido; la exigencia de banner AEPD está en docs]
+- Órdenes de magnitud de RPM en España [inferido]: display banner 0,5-2 €; intersticial web 2-5 € eCPM; vídeo con recompensa web 5-12 € eCPM; en EE. UU. y UK, de 2 a 4 veces más. Coherente con los 1-3 € de RPM que asume el proyecto
+- Redes especializadas (AdinPlay, Playwire, GameDistribution) piden volumen mínimo (del orden de cientos de miles de páginas vistas/mes) y retienen 20-40 % [inferido]
+- Con 30.000 usuarios mensuales y 1 intersticial por sesión en la pantalla de resultado, el ingreso esperado es de decenas a pocos cientos de euros al mes, lo que confirma el umbral de activación de docs [cálculo sobre supuestos inferidos]
+Fuentes: docs/catalogo-productos.md §1.6 ADS y §5 D5; docs/analisis-estrategico.md §4.3 (RPM 1-3 € en España); docs/oportunidades-resenas.md P8 y M4; Formatos, requisitos CMP y rangos de eCPM: conocimiento propio (corte junio 2026), sin verificar en esta sesión; developers.google.com y adinplay.com bloqueados por el proxy
+
+### GridNoir – Murder Sudoku (Racorway)
+App con más de 1.500 casos en cuadernos temáticos (crucero, hotel, campus, tren, museo), reto diario con podio y ranking global y anuncios con recompensa para pistas; la mejor valorada de las apps «Murder Sudoku».
+- 1.500+ casos en cuadernos temáticos
+- Reto diario con podio y ranking global
+- Tarjetas de sospechoso y tablero con habitaciones y objetos
+- Anuncios con recompensa para pistas extra o acceso anticipado a casos
+- También en Microsoft Store (Windows)
+- Changelog reconoce que «the daily case elapsed timer would reset on restart»
+Fuentes: https://play.google.com/store/apps/details?id=com.racorway.murdersudoku; https://apps.apple.com/us/app/gridnoir-murder-sudoku/id6770519565; https://www.gridnoir.com/en/; https://apps.microsoft.com/detail/9nvl3d9ffp5j
+
+### Immaculate Grid (Sports Reference)
+Cuadrícula diaria 3×3 en la que hay que nombrar jugadores que cumplen dos criterios (equipo × equipo, equipo × logro) en nueve intentos, con una 'puntuación de rareza' que premia respuestas poco comunes; comprado por Sports Reference en 2023 y con versiones para MLB, NBA, NFL, NHL y fútbol.
+- Cuadrícula 3×3 de intersecciones: la mecánica de rejilla de doble criterio es prima hermana de nuestra cuadrícula lógica
+- Puntuación de rareza (suma del % de jugadores que dieron la misma respuesta; 100 por casilla vacía): una métrica social que convierte cada partida en comparación
+- Nueve intentos contados, acierte o no: escasez que obliga a pensar antes de probar
+- Multideporte con el mismo motor (MLB, NBA, NFL, NHL, fútbol, universitario): un formato, muchos rituales
+- Sustentado por la base de datos de Sports Reference: la 'verdad' la decide un dataset, no un autor
+- Contenido patrocinado y colaboraciones (p. ej. MLB Trade Rumors) como vía de ingresos
+Fuentes: https://www.sports-reference.com/immaculate-grid/; https://en.wikipedia.org/wiki/Immaculate_Grid; https://www.fox43.com/article/sports/what-is-the-immaculate-grid-online-game-sports-mlb-nfl-nba-soccer/521-22311be3-d00f-4636-aa10-20a2a2c5ce9a; https://www.mlbtraderumors.com/2025/07/immaculate-grid-a-perfect-game-for-baseball-fans-especially-amid-trade-deadline-chaos-sponsored.html; https://dougglanville.substack.com/p/the-rarity-score; Semrush domain_rank (www.sports-reference.com/immaculate-grid/ us; immaculategrid.com todas las bases), 6-9-2026
+
+### June's Journey: Hidden Objects (Wooga / Playtika)
+El juego de misterio 'cozy' de mayores ingresos del móvil (más de 1.000 M$ acumulados): historia detectivesca de los años 20 con energía, eventos semanales, clubes y suscripción.
+- Contenido narrativo semanal (capítulos) y eventos de temporada con colaboraciones (p. ej. Wicked)
+- Detective League: evento competitivo periódico criticado como 'money grab' (badges por diamantes)
+- Club Mysteries: cooperación social en clubes como palanca de retención
+- Energía por escena; anuncio recompensado que reduce el coste de energía (10 en vez de 15) durante 30 minutos
+- Loot boxes (Star Boxes) y moneda premium (diamantes); suscripción Orchid+
+- Estética y tono de misterio elegante y sin violencia explícita: mismo público objetivo 'cozy' que el nuestro
+Fuentes: https://investors.playtika.com/news-releases/news-release-details/junes-journey-worlds-top-grossing-hidden-object-game-surpasses-1/; https://mobilegamer.biz/junes-journey-hits-60m-downloads-over-500m-gross-lifetime-spend/; https://www.blog.udonis.co/mobile-marketing/mobile-games/junes-journey-monetization; https://www.gamedeveloper.com/design/june-s-journey-breakdown; https://app.sensortower.com/overview/net.wooga.junes_journey_hidden_object_mystery_game?country=US; https://play.google.com/store/apps/details?id=net.wooga.junes_journey_hidden_object_mystery_game&hl=en_US
+
+### Kahoot!
+Quizzes en vivo donde un anfitrión lanza preguntas y los participantes compiten desde su móvil con un leaderboard entre pregunta y pregunta; también retos asíncronos con plazo.
+- Unión por PIN sin crear cuenta; leaderboard en vivo tras cada pregunta; modos de equipo y podio final.
+- Retos asíncronos (self-paced) con fecha límite para hacer el mismo kahoot sin coincidir en el tiempo.
+- Generador de preguntas con IA y biblioteca pública de kahoots (contenido generado por usuarios).
+- Aplicable a Sospechario: 'modo sala' para aulas y oficinas en el que un anfitrión abre el caso y todos acusan; encaja con PDF-AULA y con la licencia B2B a medios y docentes.
+Fuentes: https://kahoot.com/files/2017/08/Kahoot-PressKit-Dec-2024.pdf; https://kahoot.com/press/2023/11/09/kahoot-reaches-10-billion-participants-before-exciting-new-chapter/; https://expandedramblings.com/index.php/kahoot-statistics-facts/; Semrush domain_rank kahoot.it y kahoot.com (es)
+
+### Kongregate
+Portal de juegos de navegador que pagaba a los desarrolladores un porcentaje de la publicidad y de las microtransacciones en Kreds, y que tras el fin de Flash y su giro a móvil y blockchain conserva una fracción de su audiencia.
+- Reparto de ingresos publicitarios con desarrolladores (25-50 % según exclusividad) y moneda virtual Kreds para compras dentro de los juegos [inferido]
+- Insignias y logros como retención comunitaria [inferido]
+- Cierre de subidas de nuevos juegos en 2020 y giro a publishing móvil y proyectos Web3 [inferido]
+- Tráfico orgánico actual del orden de 130k/mes en EE. UU., muy por debajo de su época Flash [verificado]
+Fuentes: Semrush domain_ranks kongregate.com (global y es), sept. 2026; Semrush phrase_these (us, es, mx, ar), sept. 2026; Reparto a desarrolladores y giro estratégico: conocimiento propio (corte junio 2026), sin verificar; kongregate.com bloqueado
+
+### LN Juegos — La Nación (lanacion.com.ar/juegos)
+Canal de juegos lanzado en enero de 2024 que ya es el referente de pasatiempos online en Argentina y el #1 para 'crucigrama' en MX y AR: seis juegos gratuitos y dos (trivias y criptograma) reservados a suscriptores.
+- Seis juegos abiertos (Crucigrama, Sopa de letras, Sudoku, Nunca cuatro, Palabras cruzadas, El telar) y dos exclusivos (Trivias, Criptograma)
+- Crucigramas temáticos de actualidad (p. ej. 'Copa América') que generan picos de búsqueda
+- 'Panal de letras' (clon de Spelling Bee) con 3.600 búsquedas/mes de marca
+- Portal propio LN Juegos + integración en el diario; adaptado a móvil
+- Etiqueta dorada 'LN' para distinguir contenido de suscriptor (upsell visual)
+Fuentes: https://www.lanacion.com.ar/sociedad/ya-esta-disponible-ln-juegos-el-canal-donde-podes-disfrutar-de-crucigramas-trivias-sudokus-y-nid12012024/; https://www.lanacion.com.ar/juegos/; Semrush domain_ranks lanacion.com.ar/juegos/; resource_organic (AR); phrase_these (AR); phrase_organic 'crucigrama' (MX, AR)
+
+### La Palabra del Día (Wordle en español)
+La versión en español de Wordle con más tráfico: una palabra diaria única que se renueva a las 00:00 hora española, modo infinito, estadísticas con racha, retos por enlace y compartir con emojis, todo gratuito en el navegador.
+- Palabra diaria idéntica para todos con corte a las 00:00 hora de España (no hora local: penaliza a Latinoamérica, un punto donde nuestro corte por hora local es mejor)
+- Modo infinito con palabras aleatorias ilimitadas: la demanda existe ('wordle infinito' 5.400 y 'wordle ilimitado' 2.900 búsquedas/mes en España), y es justo lo que nosotros ponemos en Premium
+- Estadísticas guardadas en local: partidas, % de victorias, distribución de intentos y racha actual
+- Retos por enlace: eliges una palabra de 5 letras y envías un enlace para que un amigo la adivine (equivalente rudimentario de nuestros duelos)
+- Compartir resultado con emojis de colores sin revelar letras
+- Sin registro, sin app, sin archivo ni suscripción; variantes en euskera, catalán, gallego y canario en el ecosistema de clones
+Fuentes: https://lapalabra-deldia.com/; https://lapalabra-deldia.com/guia-palabra; https://wordlegame.org/es; Semrush domain_ranks (lapalabradeldia.com, todas las bases), domain_rank (lapalabra-deldia.com, wordle.danielfrg.com, base es) y phrase_these (es/mx/ar), 6-9-2026
+
+### La Vanguardia Juegos (crucigramas fáciles y difíciles, sudokus, sopas de letras, trivia)
+Sección de juegos de La Vanguardia con crucigramas diarios en dos niveles, sopas de letras, sudokus, trivias y juegos interactivos, adaptados a móvil y completamente gratuitos, sin capa social ni de racha.
+- Crucigrama diario en dos niveles (fácil y difícil) en URLs separadas: segmentación por dificultad como página de entrada
+- Sudokus, sopas de letras, trivia y juegos interactivos actualizados a diario
+- Interactivos, adaptados a móvil y tableta, sin registro ni pago
+- Marca con demanda propia relevante ('juegos la vanguardia' 14.800 búsquedas/mes en España)
+- Sin racha, estadísticas ni compartir conocidos (inferido)
+- Sin ningún juego de deducción o narrativo: hueco para licencia
+Fuentes: https://en.wikipedia.org/wiki/La_Vanguardia; https://www.epasatiempos.es/directorio/crucigramas.php; Semrush domain_rank (www.lavanguardia.com/juegos/, base es) y phrase_these (es), 6-9-2026. Nota: lavanguardia.com bloquea el rastreador; las URLs juegos.lavanguardia.com/juegos/crucigramas-faciles y /crucigramas-dificiles proceden de extractos de buscador
+
+### La Vanguardia Juegos + Lexi Reto (motor Arambee)
+La Vanguardia empaqueta crucigramas de Jordi Fortuny, 'Entrenamentes' y el juego diario de letras 'Lexi Reto', servido por el proveedor barcelonés Arambee, que lo licencia también a ABC (Paraguay) y El Comercio (Perú): el caso más claro de licencia B2B de un juego diario en español.
+- Lexi Reto: juego diario de formar palabras con 7 letras (tipo Spelling Bee) con marca propia buscada 12.100/mes ES y 5.400/mes AR
+- Mismo juego sindicado a abc.com.py/juegos y elcomercio.pe/juegos con URL /es/lexireto (evidencia de modelo de licencia multi-medio)
+- Crucigramas de autor (Jordi Fortuny, casi 30 años) y 'Entrenamentes' (retos de ingenio)
+- Sección con 27.100 búsquedas/mes de marca ('la vanguardia juegos')
+Fuentes: https://www.lavanguardia.com/juegos/es/lexireto; https://www.abc.com.py/juegos/es/lexireto/; https://elcomercio.pe/juegos/es/lexireto/; https://cdnjuegos.arambee.com/es/lexireto; Semrush resource_organic lavanguardia.com/juegos/ (ES); phrase_organic 'lexi reto' (ES); phrase_these 'lexi reto' (ES, AR); domain_ranks arambee.com
+
+### Lichess Puzzle Racer / Puzzle Streak / Puzzle Storm
+Lichess ofrece tres mecánicas de puzzle puras y sin monetización: Puzzle Racer (carrera de 90 s con amigos por enlace), Puzzle Streak (sin reloj, un fallo y fin) y Puzzle Storm (3 min).
+- Puzzle Racer: hasta 10 jugadores, sala pública o privada por enlace para amigos, cuenta atrás al arrancar, barra de combo con bonus crecientes y un único 'salto' por carrera.
+- Puzzle Streak: puzzles progresivamente más difíciles, sin reloj, un error termina la sesión; un salto por sesión.
+- Puzzle Storm: 3 minutos con dificultad creciente; equipo y foro oficiales para compartir enlaces de carreras.
+- Todo gratuito y sin anuncios: demuestra que las mecánicas competitivas retienen sin necesidad de monetizarlas.
+- Aplicable a Sospechario: el 'salto' único por sesión es el equivalente exacto de nuestra comprobación única; la sala por enlace es nuestro duelo asíncrono; Puzzle Streak como 'modo escalera' Premium (casos cada vez más difíciles hasta fallar).
+Fuentes: https://lichess.org/page/racer; https://lichess.org/streak; https://lichess.org/storm; https://lichess.org/team/lichess-puzzle-racer; https://lichess.org/forum/lichess-feedback/how-does-puzzle-racer-work; Semrush domain_rank lichess.org (es)
+
+### LinkedIn Games (Queens, Tango, Zip, Pinpoint, Crossclimb, Mini Sudoku, Patches)
+Colección de 7-8 puzzles diarios de lógica y palabras dentro de LinkedIn, gratuitos, que usan la red de contactos como capa social (comparar tiempos con tu red) y han crecido a millones de jugadores diarios sin monetización directa.
+- Un puzzle por juego y día, de 1-3 minutos, con cronómetro; Queens (una corona por fila, columna y región de color, mecánica muy próxima a nuestro modo Escena) y Tango son los más populares
+- Racha con hitos desbloqueables y 'congelaciones de racha' (streak freeze) para no perderla en días ocupados
+- Capa social nativa: al terminar ves tu tiempo frente al de tus contactos, tabla de clasificación entre conexiones y botón para compartir el resultado en el feed o por mensaje sin revelar la solución
+- Newsletter diaria de Games (cerca de 830.000 suscriptores según WIRED) como recordatorio del ritual
+- Sin archivo público ni suscripción: solo el puzzle de hoy; el catálogo crece (Zip en 2025, Mini Sudoku y Patches en 2026) y LinkedIn contrató a un campeón de sudoku para diseñar los puzzles
+- Disponible en web y en la app; los puzzles se resuelven en la misma pantalla del feed, sin registro adicional
+Fuentes: https://theprint.in/feature/linkedin-sudoku-champion-puzzles/2982243/; https://contentmarketinginstitute.com/strategy-planning/linkedin-gaming-strategy; https://www.linkedin.com/help/linkedin/answer/a6863543; https://pinpointdaily.org/linkedin-games/; https://www.socialmediatoday.com/news/linkedin-adds-zip-puzzle-game/742847/; Semrush domain_rank (subcarpeta www.linkedin.com/games/, bases us/es) y phrase_these (es/mx/ar), 6-9-2026
+
+### Logic Grid Puzzles / Logic Puzzles Daily (Egghead Games, licencia Puzzle Baron y Penny Dell)
+La app 'seria' de cuadrículas lógicas: sin anuncios, con Smart Hints que explican el siguiente paso lógico y una suscripción a 10.000 puzzles; es la referencia de calidad que citan los jugadores veteranos.
+- Smart Hints: analiza tu tablero y explica exactamente qué pista permite rellenar otra celda (requiere internet). Es la 'pista útil' que echan en falta las apps del género
+- Auto-X, deshacer multinivel, comprobación de errores, cronómetro y estadísticas de tiempo medio por puzzle
+- Rejillas hasta 7x7 (raras en el mercado) y elección libre de dificultad sin desbloqueos
+- Texto ajustable y modo oscuro; sin anuncios ni avisos
+- Reseñas 2026: 'nunca he encontrado un error en años de uso' (unicidad y calidad editorial como argumento)
+Fuentes: https://eggheadgames.com/logicpuzzles/; https://play.google.com/store/apps/details?id=com.eggheadgames.lp&hl=en_US; https://apps.apple.com/us/app/logic-grid-puzzles/id919571269; https://apps.apple.com/us/app/logic-puzzles-daily/id1063740276; https://www.appbrain.com/app/logic-grid-puzzles-brain-game/com.eggheadgames.lp
+
+### Logic Puzzles - Brain Riddles (Easybrain)
+La entrada de Easybrain en las cuadrículas lógicas tipo Murdle: puzzles de emparejamiento por categorías envueltos en historias temáticas, con reto diario y eventos de temporada.
+- Cuadrícula de categorías x parámetros con pistas textuales; puzzles agrupados en 'historias' temáticas
+- Daily Challenges y Seasonal Events (mismo esquema que Sudoku.com)
+- Sin límite de tiempo; pistas para avanzar más rápido
+- Quejas recurrentes: muchos anuncios y es fácil marcar mal una casilla sin forma clara de deshacer (oportunidad para nosotros: deshacer ilimitado)
+- Ficha en la App Store de España como 'Logic Puzzles - Acertijos'
+Fuentes: https://easybrain.com/news/meet-logic-puzzles-a-new-riddle-game-by-easybrain; https://www.appbrain.com/app/logic-puzzles-brain-riddles/com.easybrain.cross.logic.puzzle; https://apps.apple.com/es/app/logic-puzzles-acertijos/id1641732564; https://play.google.com/store/apps/details?id=com.easybrain.cross.logic.puzzle&hl=en_US
+
+### Logic Puzzles by Puzzle Baron (web)
+La web anglosajona de referencia para cuadrículas lógicas: 25.000+ puzzles, cronómetro, competiciones mensuales y Hall of Fame, con Premium que solo quita anuncios.
+- Competiciones mensuales automáticas para usuarios registrados con trofeos por puntos, tiempo más rápido y tasa de acierto; Hall of Fame
+- Tiempos récord y estadísticas de tiempo medio por puzzle; guardado de progreso 24 h
+- Auto-X, deshacer multinivel, comprobación de errores personalizada y notas de texto junto al puzzle
+- Se puede jugar sin registrarse; imprimir y libros en papel como negocio paralelo
+- Premium: sin anuncios y área de juego más grande (nada de contenido exclusivo)
+Fuentes: https://logic.puzzlebaron.com/; https://www.puzzlebaron.com/portfolio-item/logic-puzzles-mobile-app/; https://logic.puzzlebaron.com/premium.php; https://www.metacritic.com/game/logic-puzzles-by-puzzle-baron/; Semrush domain_ranks puzzlebaron.com (us/uk/ca/es)
+
+### Lolita Perrins (cuadernos de actividades y pasatiempos para adultos)
+Editorial independiente que vende cuadernos de pasatiempos y actividades para adultos por su propia web, y que rankea en la búsqueda comercial del segmento junto a Amazon y Planeta.
+- VERIFICADO: #10 en «pasatiempos para adultos» (880/mes ES, KD 16) en una SERP donde también están amazon.es (#3, página de búsqueda), planetadelibros.com (#2, lista de libros de pasatiempos para adultos) y abacus.coop (#7)
+- Modelo directo al consumidor con cuaderno físico por colección (INFERIDO: precio 9-15 €); referencia para PDF-REGALO y para una posible edición en papel
+- Demanda de libro en ES: «libro de acertijos» 90, «libro de pasatiempos» 70, «libro pasatiempos adultos» 70, «cuaderno de pasatiempos» 40, «libro de enigmas» 40, «libro juego» 390, «libro resolver crimenes» 110
+- La SERP muestra que la compra de pasatiempos adultos es de LIBRO/CUADERNO, no de app: el PDF imprimible entra en esa misma intención
+- QUÉ FALTA: cuadernos de deducción/misterio en español fuera de Murdoku y Murdle (que son de Planeta y Duomo); no hay marca independiente
+Fuentes: Semrush domain_ranks lolitaperrins.com; Semrush phrase_organic «pasatiempos para adultos» (es); Semrush phrase_these (es)
+
+### Lumosity
+App y web de juegos de entrenamiento cognitivo con entrenamiento diario gratuito limitado y suscripción Premium mensual, anual o vitalicia, disponible en español y sancionada en 2016 por la FTC por sus promesas de beneficio cognitivo.
+- Tier gratuito limitado a un entrenamiento de 3 juegos al día; Premium desbloquea todos los juegos, historial y comparativas por edad [inferido]
+- Precio Premium en torno a 12 $/mes, 60 $/año o ~300 $ vitalicio, con plan familiar [inferido]
+- Multa de 2 M$ de la FTC en 2016 por publicidad engañosa: cualquier reclamo de 'mejora tu mente' exige cautela legal [conocimiento propio, hecho histórico]
+- Interfaz disponible en español, portugués, francés, alemán, japonés y coreano [inferido]
+- Compra búsqueda de pago en España (23 palabras clave, ~487 visitas de pago/mes): está monetizando activamente el mercado hispano [verificado: Semrush]
+Fuentes: Semrush domain_ranks lumosity.com (global y es), sept. 2026; Semrush phrase_these (us, es, mx, ar), sept. 2026; Precios, idiomas y sanción FTC: conocimiento propio (corte junio 2026), sin verificar en esta sesión; lumosity.com bloqueado
+
+### Minijuegos.com (secciones 'juegos diarios', 'wordle' y 'juegos de misterio')
+El mayor portal hispano de juegos de navegador: casi 1 M de visitas orgánicas/mes en Argentina y 640 k en España; aloja un Wordle y categorías de 'juegos diarios' y 'juegos de misterio' donde hoy no hay nada de deducción tipo Escena/Expediente.
+- Categorías indexadas 'juegos diarios' (#5 para 'juego diario' ES) y 'juegos de misterio' (#10 ES)
+- Wordle propio (#8 para 'wordle español' ES, #8 para 'wordle' AR)
+- Distribución de juegos de terceros (posible canal de embed/licencia para un juego diario)
+- Compra tráfico de pago en España (1.107 keywords Adwords, ~50 k visitas/mes pagadas)
+Fuentes: https://www.minijuegos.com/juego/wordle; https://www.minijuegos.com/juegos-diarios; https://www.minijuegos.com/juegos-de-misterio; Semrush domain_ranks minijuegos.com; phrase_organic 'juego diario', 'juegos de misterio', 'wordle español' (ES)
+
+### Murder Sudoku (Innerblooming LLC y «Murder Sudoku – Murdoku»)
+Dos apps con el mismo nombre: la de Innerblooming (cientos de casos artesanales, «misterio amable sin violencia», iOS y Android, con quejas de congelaciones) y «Murder Sudoku – Murdoku» (com.murder_sudoku: tutorial y 10 casos en 5 idiomas incluido español).
+- Innerblooming: cientos de casos, varias dificultades, posicionamiento familiar y sin violencia
+- Innerblooming: quejas de «hit buttons multiple times, freezes at times»
+- com.murder_sudoku: tutorial guiado y 10 casos de dificultad creciente
+- com.murder_sudoku: español, inglés, francés, portugués y alemán
+Fuentes: https://play.google.com/store/apps/details?id=com.innerblooming.murdersudoku; https://apps.apple.com/us/app/murder-sudoku-logic-puzzles/id6777103423; https://play.google.com/store/apps/details?id=com.murder_sudoku; https://www.appbrain.com/app/murder-sudoku-murdoku/com.murder_sudoku
+
+### Murdle (web oficial, G. T. Karber)
+Juego diario creado en 2022 e inspirado en Wordle: cuadrícula sospechoso × arma × lugar (× motivo), curva lunes-sábado y domingo especial con los seis asesinos de la semana como sospechosos; solo web y papel, sin app oficial.
+- Un caso diario idéntico para todos, con cambio de día global
+- Curva semanal: sábado el más difícil; domingo «conspiración» que reúne a los asesinos de la semana
+- Tutorial (?mode=tutorial) y página de erratas mantenida por el autor
+- «Crossover Murdles» de autores invitados y Murdle Jr. (murdlejr.com)
+- Sin app oficial en 2026: recomiendan «Añadir a pantalla de inicio» desde Safari; todo lo que hay en tiendas con ese nombre es ajeno
+Fuentes: https://murdle.com/; https://murdle.fandom.com/wiki/Murdle; https://cozyculprits.com/guides/is-there-a-murdle-app/; https://murdle.com/authors/; https://murdlejr.com/; Semrush domain_ranks + phrase_these (es)
+
+### Murdoku (Apo-Games, fan, sin anuncios)
+Producción de fans con más de 90 casos hechos a mano y un generador de casos, gratuita y sin publicidad; muy bien valorada en reseñas pero con muy pocas descargas: demuestra que «sin anuncios» solo no basta para crecer.
+- 90+ casos artesanales, de compactos a muy difíciles
+- Generador de casos «endless»
+- Sin anuncios ni compras
+- v1.2.0 (23 de julio de 2026)
+- Reseña: «excellent implementation, free and without ads, a great hobby fan production»
+Fuentes: https://play.google.com/store/apps/details?id=com.apogames.murdoku; https://www.appbrain.com/app/murdoku/com.apogames.murdoku
+
+### Murdoku (ES GAMES inc. / Eric Selva)
+App no oficial (Android app.whodoku.game de «ES GAMES inc.», iOS de Eric Selva, con la misma descripción de tienda: inferido que es el mismo producto) con reto diario, racha con medallas y duelos 1v1, y casos narrativos en Nueva York, Roma y Kioto; con quejas de puzzles con varias soluciones.
+- Daily Challenge con tablero único cada día y racha que da medallas
+- Duelos 1v1: gana la deducción más rápida
+- Casos con estética de expediente policial y pistas encadenadas
+- iOS 15+; APK de 6,47 MB; en Google Play desde junio de 2026
+- Quejas: «multiple solutions but only one is accepted» desde el puzzle 14; anotar celda a celda
+Fuentes: https://apps.apple.com/us/app/murdoku/id6787716218; https://play.google.com/store/apps/details?id=app.whodoku.game; https://www.appbrain.com/app/murdoku/app.whodoku.game; https://apkpure.com/es/murdoku/app.whodoku.game; https://www.tiktok.com/content/murdoku-app-iphone-espa%C3%B1ol
+
+### Murdoku (M. Garand / Temas de Hoy, Planeta)
+Serie de libros de deducción espacial que ha vendido más de 140.000 ejemplares en España (unos 300.000 en español) y cuya web oficial ofrece casos gratis, duelos, cooperativo y ligas semanales como promoción del libro.
+- 17 ediciones y viralidad en TikTok; 'murdoku' 33.100 búsquedas/mes en España con pico en los dos últimos meses [docs + Semrush]
+- Web oficial gratuita con duelos, modo cooperativo y ligas semanales; sin app oficial, y la app no oficial (NozCore) tiene 2,36/5 con 63.000 descargas en 30 días [docs]
+- Solicitud de marca en EE. UU. (USPTO 99677726); riesgo de que Planeta lance producto digital serio [docs]
+- Interfaz web con fuentes contradictorias sobre idiomas (EN/PT frente a 19 idiomas) [docs, pendiente de verificar a mano]
+- Ya tiene tráfico en Portugal, Argentina, Chile, Alemania y Brasil, además de España [verificado: Semrush]
+Fuentes: Semrush domain_ranks murdoku.com (global, es, mx), sept. 2026; Semrush phrase_these (es, ar, us, mx), sept. 2026; docs/contexto-proyecto.md (hechos de mercado); docs/analisis-estrategico.md §2.3 y §3.2; docs/oportunidades-resenas.md (app no oficial, quejas de traducción)
+
+### Murdoku (NozCore Tech, app no oficial)
+La app no oficial más descargada con la marca ajena «Murdoku», en español por defecto y con la peor valoración del género por errores de traducción, pistas que citan habitaciones inexistentes y ajustes que se pierden al reabrir.
+- Casos tipo Murdoku con interfaz en español por defecto
+- El ajuste de idioma y sonido se revierte cada vez que se abre la app (queja principal)
+- Pistas con errores: «listing people in rooms that did not exist on the map», «some clues were in Spanish even after changing to English»
+- Elogiada por no estar «bogged down by advertising»
+- 89,56 MB; v1.0.6 (30 de mayo de 2026); circula como APK MOD en sitios de terceros
+Fuentes: https://play.google.com/store/apps/details?id=com.nozcoretech.games.murdokuapp; https://www.appbrain.com/app/murdoku/com.nozcoretech.games.murdokuapp; https://apkpure.com/es/murdoku/com.nozcoretech.games.murdokuapp
+
+### Murdoku (web oficial, Manuel Garand)
+Versión oficial en navegador de la mecánica original (un sospechoso por fila y columna; el culpable es quien queda solo con la víctima), con casos publicados semanalmente y ordenados por dificultad, sin caso diario y sin interfaz en español.
+- Interfaz solo en inglés y portugués (según murdoku.fans); no hay UI en español pese a que España es su primer mercado de tráfico
+- Casos nuevos semanales (una fuente dice dos por semana), no diarios; ~23 puzzles online según un vídeo recopilatorio
+- Lista de casos por dificultad con estado completado / en curso
+- PDF de muestra imprimible y venta del libro (Planeta/Temas de Hoy en España, Hachette en inglés)
+- Comunidad oficial en Discord y subreddit
+- Ligas o premium: NO verificados en este barrido (los docs internos afirman que tiene ligas; pendiente de comprobar a mano)
+Fuentes: https://murdoku.com/play/; https://murdoku.com/; https://murdoku.fans/en/; https://murdoku.fans/en/puzzles/; https://www.youtube.com/watch?v=Mh3cjlwnZ58; https://www.elarbolblanco.com/que-es-murdoku-pasatiempo-misterio-logica/
+
+### Murdoku – Resuelve el crimen (Fran del Sol Bermejo)
+App indie en español (mayo 2026), ligera (8,79 MB), con casos únicos y dificultad progresiva; prueba de que desarrolladores españoles ya capturan la búsqueda «murdoku app» con la marca ajena.
+- Casos únicos con pistas que hay que conectar
+- Dificultad progresiva
+- Diseño limpio centrado en la deducción
+- v1.0.5 (20 de mayo de 2026)
+Fuentes: https://play.google.com/store/apps/details?id=com.murdoku.myapp; https://www.appbrain.com/app/murdoku-resuelve-el-crimen/com.murdoku.myapp
+
+### Murdoku: Endless Cases
+App no oficial con generador de casos infinitos a partir de un código compartible, tableros de 6×6 a 12×12, partidas clasificatorias con Elo y temporadas, y salas privadas para jugar el mismo caso con amigos.
+- Cada caso nace de un código: se puede escribir, pedir aleatorio o compartir para retar con el mismo puzzle
+- 10 escenarios: playa, zoo, mansión, museo, cocina de restaurante, club de lectura, piso compartido, camping, pueblo fronterizo
+- 4 dificultades, de 6×6 con pistas directas a 12×12
+- Modo Forense sin pistas: interrogar y cruzar declaraciones en 12×12
+- Ranking Elo con temporadas y salas privadas
+Fuentes: https://play.google.com/store/apps/details?id=com.murdokuec.app&hl=es
+
+### Myrdle y Ultra Murdle (clones de Murdle en tiendas)
+Como no existe app oficial de Murdle, las tiendas se llenan de clones: Myrdle (Morion Studio, «cross logic puzzles» diarios, 10.000+ descargas, 3,0 ★, con pista a cambio de anuncio que cierra el juego) y Ultra Murdle (iOS, 1.355 casos en 10 volúmenes, cuadrícula 5×5×5×5, inglés y árabe).
+- Myrdle: puzzles diarios tipo Murdle; nombre elegido para confundirse con el original
+- Myrdle: «trying to watch an ad for a hint crashes the game right after the video»
+- Ultra Murdle: 1.355 casos, 31 insignias, objetivos de colección, top 100
+- Ultra Murdle: soporte RTL y estética victoriana
+Fuentes: https://play.google.com/store/apps/details?id=com.morionstudio.murderpuzzle; https://www.appbrain.com/app/myrdle-cross-logic-puzzles/com.morionstudio.murderpuzzle; https://apps.apple.com/pl/app/ultra-murdle/id6784367922
+
+### Mystery-o-matic
+Misterio diario de 5 minutos generado automáticamente con fuzzing (Echidna sobre un contrato Solidity que codifica las reglas del juego), código abierto AGPL-3.0 y disponible en español desde 2023; el único precedente público de «motor que garantiza el caso».
+- Deducir asesino, arma y hora del crimen; 3-5 habitaciones con plano que cambia cada día
+- Modo fácil (todos dicen la verdad) o difícil (el asesino puede mentir)
+- Cada pista revelada resta puntuación; rango final en el «sleuth-o-meter»
+- Generación validada por fuzzing: si un movimiento rompe una regla, la transacción se revierte
+- Código abierto (125 estrellas, 11 forks) y archivo llms.txt
+- Queja en HN: ambigüedad de las marcas temporales («¿9:15 significa que entró o que salió?»)
+Fuentes: https://mystery-o-matic.com/en/; https://github.com/mystery-o-matic/mystery-o-matic.github.io; https://news.ycombinator.com/item?id=36629195; https://gigazine.net/gsc_news/en/20231202-mystery-o-matic; Semrush domain_ranks
+
+### NYT Games (Wordle, Connections, Strands, The Mini, Spelling Bee, Pips)
+Hub de juegos diarios del New York Times que fijó el molde 'un puzzle al día para todos + racha + compartir con emojis' y lo monetiza con una suscripción propia de Games dentro del paquete del periódico.
+- Ritual diario: un puzzle idéntico para todo el mundo que cambia a medianoche local; Wordle y ahora Connections/Strands gratis como puerta de entrada, The Mini pasó a estar tras muro de pago en el 3T 2025 dentro de nuevas suscripciones 'de un solo producto' más baratas
+- Racha y estadísticas por juego sincronizadas entre dispositivos mediante cuenta NYT (no hay 'congelación' de racha: un solo puzzle de 2024 rompió 5,6 millones de rachas, dato que ilustra el coste de no perdonar)
+- Compartir sin spoiler: cuadrícula de emojis (Wordle), grupos de colores (Connections), y función social de 'añadir amigos y seguir sus puntuaciones diarias' en Wordle, Connections, Spelling Bee y Mini
+- Archivo solo para suscriptores (más de 10.000 crucigramas; Wordle Archive de más de 1.000 puzzles desplegándose en 2025) y 5-6 puzzles nuevos por semana para suscriptores
+- Capa de análisis post-partida: WordleBot puntúa habilidad y suerte de 0 a 99 frente a la media diaria; 'Year in Games' (resumen anual tipo Spotify Wrapped) lanzado en 2025
+- Pistas integradas en la app para Wordle, Connections, Spelling Bee y Strands; planes familiares (Games Family 10 $/mes para 4 personas, All Access Family 30 $/mes) con 'un Wordle para cada uno'
+Fuentes: https://ppc.land/new-york-times-gives-games-subscribers-5-to-6-new-puzzles-a-week/; https://www.niemanlab.org/2025/09/the-new-york-times-launches-a-family-subscription-with-separate-wordles-for-everyone/; https://parade.com/news/nyt-games-year-in-games-2025-spotify-wrapped-wordle; https://tomsguide.com/gaming/nyt-games-rolling-out-wordle-archive-with-access-to-over-1,000-puzzles; https://www.aol.com/exclusive-wordle-puzzle-ended-5-013624721.html; https://play.google.com/store/apps/details?id=com.nytimes.crossword
+
+### Nonogram.com (Easybrain)
+El nonograma de Easybrain replica el esquema de Sudoku.com (reto diario, eventos, vidas y anuncios) y es una de las apps de lógica con más reseñas del mundo.
+- Daily Challenges con trofeo especial al completar el mes
+- Seasonal Events temáticos (cine, primavera, Acción de Gracias, Navidad) con postales coleccionables y niveles secretos
+- Sistema de vidas: perderlas obliga a esperar, ver un anuncio recompensado o pagar
+- Auto-cruces (rellena automáticamente lo ya deducido) y pistas
+- Premium: sin anuncios, tema oscuro, vidas ilimitadas
+- Versión web nonogram.com casi sin tráfico: el producto vive en la app
+Fuentes: https://easybrain.com/nonogram; https://play.google.com/store/apps/details?id=com.easybrain.nonogram; https://www.appbrain.com/app/nonogram-com-logic-games/com.easybrain.nonogram; https://appgrooves.com/app/nonogramcom-picture-cross-puzzle-game-by-easybrain-ltd; https://apps.apple.com/us/app/nonogram-com-number-games/id1452992954; Semrush domain_ranks nonogram.com; phrase_these es/mx
+
+### Nonograms Katana (ucdevs)
+El contrapunto indie a Nonogram.com: 1.001 nonogramas gratis, 15 pistas gratuitas por puzzle, editor para crear y compartir puzzles, y VIP barato en lugar de anuncios agresivos.
+- Todos los puzzles gratis (1.001 oficiales) más puzzles creados por la comunidad
+- 15 pistas gratis por puzzle; VIP añade 5 más y permite ver la solución
+- Editor de puzzles con compartición (contenido generado por usuarios como retención)
+- Versión navegador para PC/Mac y apps móviles
+- Reseñas que la comparan favorablemente con 'Picture Cross' por cuidado y respeto al jugador
+Fuentes: https://play.google.com/store/apps/details/Nonograms_Katana?id=com.ucdevs.jcross&hl=en_ZA; https://apps.apple.com/us/app/nonograms-katana/id1037710023; https://www.appbrain.com/app/nonograms-katana/com.ucdevs.jcross; https://justuseapp.com/en/app/1037710023/nonograms-katana/reviews; Semrush domain_ranks nonograms-katana.com
+
+### Orientación Andújar (serie de cuadernos «murdokus» y escape rooms imprimibles)
+El mayor portal docente en español publica desde junio de 2026 cuadernos PDF gratuitos de «murdokus» temáticos (animalitos, cuentos populares, Stranger Things, Mario Bros, «Murdoku Club A», «35 murdokus listos para jugar» con @primaria_con_inma) y escape rooms para primaria, y ya es quien captura las búsquedas docentes e infantiles del género.
+- VERIFICADO (Semrush, resource_organic es): posiciona #2 y #6 en «murdoku filetype:pdf» (390/mes), #3 en «murdoku para niños» (210, KD 0), #3 en «murdoku niños» (140), #4 en «murdoku en español para imprimir» (210), #8 en «murdokus en español», y aparece en top 15-25 de «murdoku gratis» (1.900) y «murdoku en español gratis» (1.300)
+- VERIFICADO: también #1 en «escape room primaria pdf gratis» (110), #6-7 en «escape room matemáticas» y «escape room primaria», con PDFs como «Escape room: el misterio del libro que susurra» (abril 2026) y «Scape room piratas primaria» (junio 2026)
+- Formato que ofrece: PDF A4 sueltos en wp-content/uploads, con soluciones, por temática o festividad (vacaciones, verano, Halloween, día del libro), sin niveles medidos ni garantía de unicidad (la investigación previa del repo señala que la mayoría son en realidad cuadrículas tipo Murdle personaje x objeto)
+- Usa la marca ajena «murdoku» como genérico y personajes con PI de terceros (Stranger Things, Mario Bros): riesgo que nosotros no podemos asumir, pero prueba de demanda de casos temáticos sin asesinato
+- Página hermana imageneseducativas.com (MX 536k visitas/mes) no posiciona nada con «murdoku» (verificado, resultado vacío)
+- QUÉ FALTA: guía docente, rúbrica, progresión por curso, licencia de aula y solución única garantizada; nada de eso existe en la serie
+Fuentes: Semrush domain_ranks orientacionandujar.es; Semrush resource_organic orientacionandujar.es (filtros «murdoku» y «escape room», base es); Semrush phrase_organic «murdoku para imprimir», «murdokus» (es); /home/user/Proyecto-m4/docs/investigacion/resenas-libros-comunidad.md §7.5; /home/user/Proyecto-m4/docs/arbol-web.md (línea 279)
+
+### Pasapalabra: Juego Quiz de TV (develUp Games) y ecosistema de roscos online
+La app no oficial más descargada del formato Pasapalabra (rosco + silla azul) y una constelación de roscos web educativos que se reparten 135.000 búsquedas/mes de la marca televisiva en España.
+- Reproduce las pruebas del programa (rosco de 25 letras, silla azul) con miles de roscos
+- Desafíos contra jugadores de todo el mundo y ranking
+- Aprovecha una IP televisiva sin licencia: la demanda es de marca ajena (como nos ocurre con 'murdoku')
+- La SERP la lidera antena3.com (dueño de la marca) y luego webs educativas (cristic, educaplay, palentino)
+Fuentes: https://applicantes.com/concurso-pasapalabra-juego-android/; https://play.google.com/store/apps/details?id=ar.com.develup.pasapalabra&hl=es_419; https://apps.apple.com/app/id6450698466; Semrush phrase_these 'pasapalabra', 'rosco pasapalabra', 'pasapalabra online' (ES/MX/AR/CL); phrase_organic 'pasapalabra online' (ES)
+
+### Preguntados / Trivia Crack (Etermax)
+El trivial por turnos más descargado del mundo hispano: partidas asíncronas contra amigos o desconocidos, duelos rápidos, personajes por categoría y notificación de 'es tu turno'.
+- Partidas asíncronas 1v1 contra amigos o rivales aleatorios; push cuando toca jugar; modo Duelo rápido y Triviatón (Preguntados 2).
+- Ruleta y seis personajes por categoría como progresión visible; coronas, niveles y colección de personajes.
+- Fábrica de preguntas: contenido generado y moderado por la comunidad (>50 M de preguntas).
+- Anuncios intersticiales justo al perder un turno, el momento de máxima tolerancia; suscripción para quitarlos.
+- Aplicable a Sospechario: 'es tu turno' como disparador de vuelta en duelos; colección de personajes/insignias (galería de Sabueso) como progresión no monetaria; contenido de usuarios solo si pasa por el motor determinista.
+Fuentes: https://es.wikipedia.org/wiki/Preguntados; https://www.etermax.com/news/15-anos-creando-experiencias-gamificadas-impulsadas-por-el-conocimiento; https://www.etermax.com/news/la-experiencia-de-los-usuarios-que-define-a-preguntados; https://www.thinkwithgoogle.com/_qs/documents/1032/preguntados-app-latinoamerica_case-studies.pdf; https://www.xatakandroid.com/juegos-android/preguntados-2-nueva-edicion-famoso-trivial-para-android-llega-a-google-play; https://www.adexchanger.com/mobile/trivia-crack-dev-good-product-is-more-important-than-good-marketing/
+
+### PuzzleMe (Amuse Labs)
+Plataforma de creación, alojamiento y embebido de crucigramas, sudokus, sopas de letras, WordRow (Wordle personalizable) y otros puzzles, que los medios integran por iframe/script en su propia web y conectan con su muro de pago.
+- Embebido por iframe/script en el dominio del medio (los puzzles se sirven desde amuselabs.com/pmm/ y puzzleme.amuselabs.com), con integración de muro de pago, cuentas y estadísticas del medio [verificado por URL; integración de paywall inferida]
+- Editor para constructores con nivel gratuito (puzzleme.amuselabs.com/pmm/puzzle-create) que actúa como embudo de adquisición: el tráfico orgánico entra por 'custom wordle', 'crossword maker' y 'word search generator' [verificado: Semrush]
+- Catálogo de tipos: crucigrama, mini, sudoku, sopa de letras, WordRow, acróstico, buscador de pistas de crucigrama [verificado por URL]
+- Clientes habituales en prensa anglosajona (The New Yorker, Vox, Los Angeles Times, cabeceras regionales y constructores independientes) [inferido]
+- Modelo de licencia por cuota anual según tráfico y número de puzzles, no por reparto publicitario, lo que lo hace comparable a nuestro B2B-WIDGET [inferido]
+Fuentes: Semrush domain_ranks amuselabs.com (global y es), sept. 2026; Semrush resource_organic amuselabs.com (us), sept. 2026; Semrush phrase_organic 'crucigrama online', 'sudoku online', 'pasatiempos online' (es) y 'crucigrama online' (mx): sin presencia; Clientes y modelo de precios: conocimiento propio (corte junio 2026), sin verificar; amuselabs.com y Wayback bloqueados por el proxy
+
+### Puzzmo (Hearst)
+Plataforma de Zach Gage y Orta Therox comprada por Hearst Newspapers en diciembre de 2023 que ofrece cada día una 'página de hoy' con crucigrama, SpellTower, Typeshift, Really Bad Chess, Flipart, Memoku y otros, con multijugador en vivo, grupos y suscripción Puzzmo Plus.
+- Página 'Today' con la selección diaria de puzzles; juego nuevo cada ~3 meses; cada juego lleva su propia racha, pistas usadas y mejor tiempo
+- Multijugador en vivo en todos los juegos y chat con amigos mientras se juega; grupos para comparar estadísticas colectivas (los grupos requieren suscripción)
+- Tablas de clasificación globales y locales para cada juego; avatares personalizables
+- Puzzmo Plus: archivo completo (más de 10.000 puzzles), acceso anticipado y juegos experimentales, sin anuncios
+- Estrategia de distribución B2B: integrado en unas 50 cabeceras de Hearst y licenciado en exclusiva a Postmedia en Canadá (abril 2024), modelo de referencia para nuestra licencia a medios
+- Lanzamiento con lista de espera y 500 claves al día (más de 1 M de intentos de acceso); app solo para iPhone desde mayo 2025 con Game Center, clasificaciones y retos diarios
+Fuentes: https://www.hearst.com/-/hearst-newspapers-acquires-puzzle-games-platform-puzzmo; https://www.hearst.com/-/puzzmo-launches-mobile-app-exclusively-for-iphone; https://www.businesswire.com/news/home/20240404561282/en/Postmedia-Launches-Puzzmo-Hearst-Newspapers%E2%80%99-Online-Puzzle-Games-Experience-Exclusively-in-Canada; https://www.makeuseof.com/puzzmo-alternative-to-nyt-games/; https://expansivedlc.com/puzzmo-is-an-unmissable-daily-collection-of-puzzles-with-a-very-exciting-future-ahead/; https://www.techradar.com/gaming/zach-gage-is-letting-500-people-into-his-new-puzzle-app-each-day-but-theres-a-catch
+
+### RTVE Wordlab (lab.rtve.es/lab/wordlab)
+El laboratorio de RTVE lanzó su propio Wordle ('Wordlab') que posiciona para 'palabra oculta', 'palabra secreta juego' y 6.º para 'palabra del dia': señal de que los medios públicos también ven el juego diario como formato editorial.
+- Marca de medio público, sin publicidad, sin registro
+- Posiciona en la cola de 'palabra del día' y en términos genéricos como 'palabra oculta' y 'juego de palabras'
+- Tecnología web ligera desde RTVE Lab (innovación), no producto comercial
+Fuentes: https://lab.rtve.es/lab/wordlab/; Semrush resource_organic lab.rtve.es/lab/wordlab/ (ES); phrase_organic 'la palabra del día' (ES)
+
+### Rooms & Exits: Escape Room Game (Webelinx Games)
+Escape room casual por niveles temáticos con animaciones, más de 10M de descargas y monetización por anuncios y compras.
+- Niveles con diseño único y nuevos niveles añadidos con regularidad
+- Protagonista recurrente (Fiona Fox) e historia ligera
+- Pistas y saltos; disponible en 8 idiomas
+- Valoración media (4,0) lastrada por anuncios
+Fuentes: https://play.google.com/store/apps/details?id=com.webelinx.Rooms.Exits.EscapeRoom.FreeEscapeGames&hl=en_US; https://www.appbrain.com/app/rooms-exits-escape-room-games/com.webelinx.Rooms.Exits.EscapeRoom.FreeEscapeGames; https://apps.apple.com/us/app/rooms-exits-puzzle-escape/id1549643882; https://appspirate.com/rooms-exits-escape-room-game-review/
+
+### Sherlock (Everett Kaser Software): Free / Pro / Ultra / Zen
+Veterano de los 90 convertido a móvil: colocar imágenes en una cuadrícula 4x4-6x6 a partir de pistas visuales de posición relativa, sin anuncios y con pago único.
+- Pistas puramente gráficas de relación espacial (junto a, misma columna, entre, izquierda de...) sin texto: elimina la ambigüedad léxica que sufren los Murdoku
+- Tamaños 4x4, 5x5 y 6x6 con filas temáticas (caras, casas, frutas, señales)
+- Volumen enorme: 30 puzzles (Free), 600 (Pro), 7.500 (Ultra), 150.000 (Zen)
+- Sin anuncios en ninguna versión; también Honeycomb Hotel (misma lógica en hexágonos)
+- Sin reto diario, sin eventos, sin social: producto de nicho para puristas
+Fuentes: https://www.kaser.com/sherwin.html; http://www.kaser.com/mobile.html; https://play.google.com/store/apps/details?id=com.kaser.sherlockzen; https://apps.apple.com/us/app/sherlock-pro/id626273932; https://www.appbrain.com/app/sherlock-zen/com.kaser.sherlockzen; Semrush domain_ranks kaser.com
+
+### Sporcle
+Mayor portal de quizzes generados por usuarios, monetizado con publicidad display, la suscripción sin anuncios Sporcle Orange y una línea B2B de trivia en vivo para bares y eventos corporativos.
+- Cientos de miles de quizzes UGC que generan más de 520.000 palabras clave posicionadas en EE. UU.: el SEO de cola larga como motor [verificado: Semrush]
+- Sporcle Orange: suscripción sin anuncios con estadísticas y funciones extra (en torno a 4-5 $/mes o 40-50 $/año) [inferido]
+- Sporcle Live: trivia presencial licenciada a bares y restaurantes con presentadores, y Sporcle Events para empresas [inferido]
+- App Sporcle Party para grupos [inferido]
+- Tráfico relevante en España (55.254/mes) pese a ser un producto en inglés [verificado]
+Fuentes: Semrush domain_ranks sporcle.com (global y es), sept. 2026; Semrush phrase_these (us, es, mx, ar), sept. 2026; Sporcle Orange, Live y Events: conocimiento propio (corte junio 2026), sin verificar; sporcle.com bloqueado
+
+### Squabble
+Versión battle royale de Wordle (febrero 2022) donde 2-99 jugadores pierden vida cada segundo y se curan acertando; tuvo cobertura masiva y hoy su tráfico es residual.
+- Modos Blitz (2-5 jugadores) y Royale (6-99); 100 HP que bajan 1 por segundo, los aciertos curan y los errores dañan.
+- Salas privadas para jugar con amigos y cuadrícula de resultado compartible heredada de Wordle.
+- Sin componente diario, sin racha ni progresión: la novedad se agotó tras la ola de prensa (Engadget, Tom's Guide, GameSpot).
+- Aplicable a Sospechario: advertencia empírica. El tiempo real vende titulares pero no retiene; nuestro duelo debe ser asíncrono por enlace y colgar del caso del día, como está previsto en el catálogo.
+Fuentes: https://en.wikipedia.org/wiki/Squabble_(video_game); https://www.engadget.com/wordle-multiplayer-battle-royale-182452666.html; https://www.tomsguide.com/news/squabble-is-wordle-but-in-battle-royale-form-and-its-both-brilliant-and-stressful; https://www.gamespot.com/articles/theres-now-a-wordle-style-battle-royale-game/1100-6500738/; Semrush domain_rank squabble.me (es, us)
+
+### Squaredle
+Juego diario de encontrar todas las palabras de una rejilla 4×4 (o 3×3 Express), con palabras bonus, revelaciones limitadas, clasificaciones y una suscripción 'Squaredle Squared' que da archivo, especiales semanales y más pistas.
+- Dos modos diarios (Classic 4×4 y Express 3×3) con 55+ palabras: el mismo día ofrece un ritual corto y otro largo
+- Palabras bonus que no puntúan pero salen en la clasificación: reconoce vocabulario sin castigar
+- Economía de pistas: 1 revelación gratis por puzzle, +1 si encuentras la 'palabra bonus del día', +4 con suscripción (buen modelo para nuestra 'comprobación')
+- Puzzles especiales semanales exclusivos para suscriptores y archivo de puzzles pasados
+- Apps nativas iOS/Android lanzadas en 2025; campaña de búsqueda de pago activa (≈6.650 visitas de pago/mes en EE. UU.)
+- Clasificaciones y estadísticas por jugador
+Fuentes: https://squaredle.app/; https://play.google.com/store/apps/details?id=com.kuantark.squaredleapp; https://apps.apple.com/us/app/squaredle/id6748396327; Semrush domain_rank (squaredle.app us/es; squaredle.com us), 6-9-2026
+
+### Strava
+La red social de actividad física cuyo modelo kudos + segmentos + clubes es la referencia de 'comparación con amigos' aplicada a un hábito, y la que más ha invertido en clubes en 2025-2026.
+- Kudos: reconocimiento social de un toque; 14.000 M en 2025 (+27 %); las actividades con foto reciben 3,1× más kudos.
+- Segmentos con leaderboards (KOM/QOM por velocidad y Local Legend por frecuencia) y récords personales.
+- Clubs: >1 M, casi ×4 en 2025 (running ×3,5, senderismo ×5,8) y eventos ×1,5; la pertenencia a un club multiplica ×3,5 la retención a 12 meses (fuente secundaria).
+- Year in Sport anual compartible y retos patrocinados con plazo.
+- Aplicable a Sospechario: insignia tipo Local Legend por constancia (no por velocidad), kudos en el feed de duelos, clubes privados de oficina/familia con ranking semanal, y resumen anual compartible.
+Fuentes: https://press.strava.com/articles/strava-releases-12th-annual-year-in-sport-trend-report-2025; https://www.bikeradar.com/news/strava-year-in-sport-2025; https://trophy.so/blog/strava-gamification-case-study; https://sacra.com/c/strava/; https://runninglookout.com/news/strava-2026-community-report-running-clubs-3-5x-growth-gen-z/; Semrush domain_rank strava.com (es)
+
+### Sudoku.com (Easybrain / Miniclip)
+La app de sudoku más descargada del mundo y el modelo de referencia de 'reto diario + eventos de temporada + anuncios recompensados + suscripción' que copian casi todas las apps de lógica.
+- Daily Challenges: un puzzle nuevo cada día que rellena un calendario de trofeos; completar suficientes días desbloquea una medalla mensual (retención por colección, no solo por racha)
+- Seasonal Events: eventos limitados con colecciones de medallas temáticas apiladas sobre el reto diario
+- Seis niveles de dificultad calibrados; notas/lápiz, pistas, comprobación automática de errores y estadísticas (mejor tiempo, partidas, etc.)
+- Límite de 3 errores (desactivable en ajustes) con 'segunda oportunidad' a cambio de un anuncio recompensado: el fallo es el gancho publicitario
+- Archivo web de retos diarios (sudoku.com/challenges) y cuenta para sincronizar entre dispositivos (quejas de login/sync en reseñas)
+- Versión web completa (sudoku.com) además de app; 'Killer Sudoku by Sudoku.com' como spin-off
+Fuentes: https://easybrain.com/sudoku; https://easybrain.com/news/sudoku-mobile-app-hits-the-web; https://www.sudoku-royale.com/resources/best-sudoku-apps; https://www.appbrain.com/app/sudoku-com-classic-sudoku/com.easybrain.sudoku.android; https://app.sensortower.com/overview/1193508329?country=us; https://sudoku.com/challenges
+
+### Sudoku.com (Easybrain)
+Sudoku líder mundial en móvil y web, propiedad de Easybrain, que monetiza con intersticiales, vídeo con recompensa por pistas y una suscripción para eliminar anuncios y desbloquear extras, con versión web en español.
+- Desafío diario, eventos de temporada y variantes (Killer, Expert) como motor de retención [inferido; el ritual diario es visible en la web]
+- Pistas y comprobaciones a cambio de vídeo con recompensa, e intersticiales entre partidas: el modelo que nuestro catálogo prohíbe expresamente [inferido y contrastado con las quejas del género en docs]
+- Suscripción para quitar anuncios y ampliar pistas/estadísticas (planes semanal, mensual y anual) [inferido]
+- Web multilingüe con landing /es que posiciona en España en la SERP de 'sudoku online' [verificado]
+- Easybrain vendida por Embracer a Miniclip en 2025 por unos 1.200 M$: la escala del negocio de puzzles con anuncios [inferido]
+Fuentes: Semrush domain_ranks sudoku.com (global, es, mx), sept. 2026; Semrush phrase_organic 'sudoku online' (es), sept. 2026; Semrush phrase_these (es, mx, ar, us), sept. 2026; docs/oportunidades-resenas.md P8 y docs/catalogo-productos.md §1.6 (regla de no vender pistas por anuncio); Venta a Miniclip, planes y eCPM: conocimiento propio (corte junio 2026), sin verificar; sudoku.com bloqueado
+
+### Superstar Worksheets (Logic Puzzles) y Woo! Jr.
+Dos portales de fichas gratuitas que dominan las búsquedas de puzzles lógicos para niños en inglés con PDF sin registro y financiación por publicidad.
+- VERIFICADO: superstarworksheets.com #3 en «printable logic puzzles» (1.300) y #2 en «logic puzzles for kids» (2.900); woojr.com #1 en «logic puzzles for kids» y #9 en «printable logic puzzles»
+- Volumen brutal para un sitio de fichas: 606k-792k visitas/mes US, marca 6.600/mes: el formato «ficha PDF gratis + SEO» escala
+- Demanda US que sirven: «logic puzzles for kids» 2.900, «logic puzzles for kids printable» 90, «printable logic puzzles for kids» 110, «logic puzzle worksheets» 10
+- Segmentación por edad/grado y por temporada, con clave de respuestas en la misma página
+- QUÉ FALTA: en español el equivalente («juegos de lógica para niños» 50-170 ES, 210 MX, 170 AR) lo ocupan tiendas de juguetes y blogs de acertijos verbales (conmishijos, guiainfantil, mundoprimaria #11), sin ninguna ficha de deducción
+Fuentes: Semrush domain_ranks superstarworksheets.com y woojr.com; Semrush phrase_organic «printable logic puzzles», «logic puzzles for kids» (us) y «juegos de logica para niños» (es); Semrush phrase_these (us/es/mx/ar)
+
+### SÍNTESIS DEL BARRIDO «EDUCACIÓN» (no es un producto: lectura transversal y huecos)
+Resumen accionable del barrido para director-producto y estratega: el segmento docente hispano es gratuito y en PDF, el escape room lo domina Genially, la deducción no la genera nadie en español, y las familias y mayores compran libro o cuaderno, no app.
+- QUÉ VENDEN Y A QUÉ PRECIO (verificado el modelo, inferidos los importes): gratis con publicidad es la norma en español (Orientación Andújar, Educaplay, Liveworksheets, Educima, ePasatiempos, Mundo Primaria); suscripción de plataforma 4-10 €/mes (Twinkl, Genially Edu, Wordwall); marketplace por unidad 1-10 € (TPT, Eduki); kits PDF 20-30 € (Escape Kit); hardware + suscripción (Breakout EDU, ~150 $ + ~50-60 $/año); cuaderno físico 6-15 € (Lolita Perrins, KDP, Planeta). Nuestro PDF-AULA a 14,99 € compite contra «gratis»: tiene que vender licencia de aula, guía docente, rúbrica y garantía de solución única, no los puzzles en sí
+- FORMATOS QUE PIDEN LOS DOCENTES (verificado por SERP): PDF A4 alojado con soluciones («murdoku filetype:pdf» 390, «escape room primaria pdf gratis» 110, «pruebas escape room pdf gratis» 170, «escape room para imprimir pdf gratis» 90, «juego de detectives para niños pdf» 70); por festividad (Halloween 40-50, Navidad 170, día de la paz 70, día del libro, fin de curso, vuelta al cole) y por curso (3.º Infantil a 6.º Primaria; en US «logic puzzles for middle school» 390, «for 4th graders» 70); versión interactiva embebible (Genially/Wordwall/Liveworksheets) además del papel; y en inglés PDF + Google Slides (TPT)
+- FORMATOS QUE PIDEN LAS FAMILIAS (verificado): «escape room para niños» 590 y «escape room infantil» 390 se los llevan locales físicos (SERP 100 % salas de escape); «escape room en casa» 590, «escape room casero» 210, «juego de pistas para niños» 110 ES / 260 MX / 170 AR, «gymkana para niños» 480, «quien es quien juego» 3.600, «cluedo junior» 720: hay demanda de misterio familiar imprimible sin ningún producto español posicionado; «juegos de detectives» (320 ES / 880 MX / 720 AR) se va a videojuegos y tiendas
+- HUECO 1 (verificado): no existe ningún generador de puzzles de deducción en español. Los generadores hispanos son de palabras (Educima #1 «generador de crucigramas» 880; «generador de sopa de letras» 1.300 ES / 6.600 MX); «generador de puzzles» 70, «generador de acertijos» 20, «generador de escape room» 20 sin oferta; en US «logic puzzle generator» 140 y «escape room generator» 70 tampoco tienen herramienta dominante. Nuestro motor puede ofrecerse como «crea tu caso para clase» (JUNIOR-WEB + B2B-WIDGET)
+- HUECO 2 (verificado): «murdoku para niños» (210, KD 0), «murdoku niños» (140), «murdoku fácil» (170, KD 0) y «murdokus» (1.000, KD 26) los cubren PDFs sueltos de Andújar, murdoku.com y murdokujuego.com (448 visitas/mes ES, clon). Nadie tiene página jugable infantil: /para-ninos y /facil siguen siendo el ataque más barato
+- HUECO 3 (verificado): en escape room educativo, la SERP española es institucional (Ministerio #1, INTEF, UNIR, Universidad Europea) y de plantillas Genially; las herramientas auxiliares (Eduescaperoom, Lockee, Flippity) dan candados y cifrados, no lógica ni narrativa. Un «reto de deducción con solución única» embebible en Genially es un producto B2B/docente nuevo; Genially y Educaplay son candidatos a alianza, no competidores
+- HUECO 4 (verificado): pasatiempos para adultos y mayores en español son crucigrama/sudoku (ePasatiempos #1 en «pasatiempos» 27.100 y «pasatiempos para mayores gratis» 1.300); el racimo de estimulación cognitiva («juegos de memoria para mayores» 720, «fichas de estimulación cognitiva» 480, «cuaderno de estimulación cognitiva» 170) justifica una variante «letra grande / tinta baja» de PDF-CLASICO para centros de día y un argumento extra para B2B-WIDGET en medios
+- MÉTODO Y LÍMITES: presupuesto de WebSearch agotado antes de la tarea (200/200) y todo el egreso web bloqueado (curl/WebFetch) para los 20 dominios probados; 44 informes Semrush ejecutados (domain_ranks, phrase_these es/mx/ar/us, phrase_organic, resource_organic, domain_organic_subdomains). Precios, planes, valoraciones y número de reseñas NO verificados: pendiente de comprobar a mano con navegador (Twinkl España, Genially Edu, Breakout EDU, Escape Kit, printable-puzzles.com, Amazon.es KDP). ALERTA DE MARCA D-006: ningún disparador cumplido; el uso genérico de «murdoku(s)» por docentes y KDP diluye la marca ajena, no la nuestra
+Fuentes: Semrush phrase_these bases es/mx/ar/us (unas 300 keywords consultadas); Semrush phrase_organic (es): murdoku pdf, murdoku para imprimir, murdokus, murdoku facil, acertijos para niños, escape room educativo, breakout educativo, pasatiempos para adultos, juegos de detectives, escape room para niños, generador de crucigramas, escape room online, juegos de logica para niños, sudokus para imprimir; (us): murder mystery logic puzzle, printable logic puzzles, logic puzzles for kids, classroom escape room; Semrush resource_organic: orientacionandujar.es, twinkl.es, genially.com, eduescaperoom.com, murdoku.com, murdokujuego.com, printable-puzzles.com, breakoutedu.com, epasatiempos.es, teacherspayteachers.com; /home/user/Proyecto-m4/docs/investigacion/resenas-libros-comunidad.md; /home/user/Proyecto-m4/docs/arbol-web.md; /home/user/Proyecto-m4/docs/catalogo-productos.md (PDF-AULA, PDF-JUNIOR, JUNIOR-WEB, B2B-WIDGET)
+
+### Teachers Pay Teachers (TPT)
+El mayor mercado de recursos docentes del mundo; en Google captura la demanda de puzzles lógicos estacionales y de «murder mystery» por materia, casi siempre vía páginas de búsqueda con filtro «free».
+- VERIFICADO (resource_organic us, filtro «logic puzzle»): #1 «thanksgiving logic puzzle» (260), #1 «christmas logic puzzles» (320), #1 «halloween logic puzzles», #2 «logic puzzles for middle school» (390), #5 «logic puzzles printable» (1.900), #8 «printable logic puzzles» (1.300), #1 «logic puzzles for 4th graders», «logic puzzles for 6th graders», «winter/summer/valentine's logic puzzle»: la demanda docente es ESTACIONAL y POR CURSO
+- VERIFICADO (filtro «mystery»): #1 «science murder mystery» (170), #1 «pythagorean theorem murder mystery» (110), #1 «virtual macromolecules murder mystery online» (390), #2 «math mystery» (1.000): el «murder mystery» de aula se vende como actividad curricular por materia, no como pasatiempo
+- Producto ejemplo indexado: «Halloween Logic Puzzles Printable + Digital FREE» (id 4965918): el formato estándar es PDF + versión digital (Google Slides/Easel)
+- #1 en «classroom escape room» (210, KD 5) con la búsqueda «escape room» filtrada a gratis
+- Existe categoría de recursos en español (World Language / Spanish), pero la plataforma y el pago son en dólares e inglés (INFERIDO)
+- QUÉ FALTA: en español casi no hay recursos de deducción; la búsqueda de marca en ES es 4.400/mes, MX 1.900, AR 390
+Fuentes: Semrush domain_ranks teacherspayteachers.com; Semrush resource_organic teacherspayteachers.com (filtros «logic puzzle» y «mystery», us); Semrush phrase_organic «classroom escape room», «printable logic puzzles», «logic puzzles for kids» (us); Semrush phrase_these (us/es/mx/ar)
+
+### The Guardian Puzzles (crucigramas web + app Guardian Puzzles)
+El Guardian publica crucigramas diarios gratuitos en la web (quick, cryptic, quiptic, speedy, prize, everyman) y vende una app de puzzles con archivo de más de 15.000 crucigramas, modo a dos jugadores y sudokus diarios.
+- Crucigramas diarios gratis en la web con progreso guardado, comprobación, pistas y solución; variedad de niveles (rápido a críptico)
+- App Guardian Puzzles: 15 crucigramas nuevos por semana, sudoku diario en cinco niveles y archivo de más de 15.000 puzzles con calendario navegable
+- Modo a dos jugadores para resolver con un amigo, cronómetro, compartir puntuaciones en redes y juego sin conexión
+- Suscripción independiente del periódico con prueba gratuita de una semana
+- Comunidad fuerte alrededor de los crucigramas crípticos (blogs de resolución, foros), que funciona como canal orgánico de retención
+- Sin racha explícita ni cuadrícula de emojis: el ritual se apoya en el hábito del crucigrama y en el calendario del archivo (inferido)
+Fuentes: https://www.inpublishing.co.uk/articles/the-guardian-launches-puzzles-app-15159; https://www.inkl.com/news/welcome-to-the-new-guardian-puzzles-app; https://www.dailycrosses.com/crossword/the-guardian; Semrush domain_rank (www.theguardian.com/crosswords/, bases uk/us), 6-9-2026
+
+### Twinkl España
+Suscripción freemium con decenas de miles de fichas en español, que incluye una colección propia de escape rooms de aula y juegos de detectives para primaria, todo en PDF descargable.
+- VERIFICADO (resource_organic es): colección «Escape rooms · recursos populares España» (#9 «escape room primaria», #23 «escape room educativo»), recursos «Escape room: escapa del caserón encantado (Halloween)» (#6 «escape room halloween primaria»), «Escape room de STEM: el trineo de Papá Noel (matemáticas 5.º)», «Escape room matemático y de azar» (#10 «escape room matemáticas»), «Escape room Peter Pan y los piratas», «Escape room: no hay vuelta al cole», «Escape room: escapa de la biblioteca»
+- VERIFICADO: juegos de misterio con víctima cero, exactamente nuestro enfoque Junior: «Juego de detectives: el caso del huevo de oro escondido (6.º primaria)», «Juego de detectives: ¿quién ha sido? El misterio del cuadro desaparecido», «Juego de rol: los detectives» (#13 «juego de detectives para niños pdf», 70/mes); ninguno posiciona en top 10, es decir, no dominan el nicho
+- Sección «Twinkl Puzzled: logical reasoning» y blog «juegos de lógica para niños» (posiciones 35-92, sin tráfico): la lógica deductiva no es un punto fuerte
+- Segmentación por país (recursos Chile, México, currículo español) y por curso; formatos PDF, PowerPoint y algunos interactivos
+- Búsquedas «twinkl gratis» y «twinkl precio» solo 20/mes cada una en ES: el precio no es un freno visible
+- QUÉ FALTA: puzzles de deducción con progresión y un formato jugable en pantalla; sus escape rooms son PDF lineales
+Fuentes: Semrush domain_ranks twinkl.es y twinkl.co.uk; Semrush resource_organic twinkl.es (filtros «escape room», «misterio», «detective», «lógica», base es); Semrush phrase_these «twinkl», «twinkl gratis», «twinkl precio» (es/mx/ar/us)
+
+### Waffle
+Juego diario independiente en el que se reordenan letras en una rejilla en forma de gofre para formar seis palabras en 15 intercambios, con estrellas por eficiencia, archivo, versión Deluxe y apps móviles.
+- Un puzzle diario global a medianoche GMT (el mismo para todos), con límite de 15 movimientos y estrellas según los movimientos sobrantes: la puntuación graduada genera conversación al compartir
+- Archivo de puzzles anteriores y versión Deluxe (rejilla mayor) como contenido extra
+- Estadísticas y racha en local con transferencia entre dispositivos mediante un ID de jugador (solución sin cuenta al problema de la sincronización)
+- Definiciones de todas las palabras al terminar (valor educativo que fideliza)
+- Apps en iOS y Android además de la web
+- Compartir con emojis de la rejilla (inferido a partir del formato; no verificado en fuentes)
+Fuentes: https://wafflegame.net/; https://play.google.com/store/apps/details?id=net.wafflegame.waffle; https://apps.apple.com/app/id6443867972; Semrush domain_ranks (wafflegame.net, todas las bases) y domain_rank (es), 6-9-2026
+
+### Washington Post Games (Keyword + hub de Arkadium)
+El Post combina un juego diario propio (Keyword) con un portal de juegos gratuitos en marca blanca de Arkadium (crucigramas diarios, mini, sudoku, KenKen, solitario), incluido un portal en español, financiado con publicidad y no con suscripción.
+- Keyword: juego propio de seis palabras con una letra que falta que revelan una palabra clave; publicado 7 días a la semana a medianoche ET en web, móvil y app
+- Crucigramas diarios que aumentan de dificultad a lo largo de la semana (misma curva que planeamos), más mini y medio
+- Hub games.washingtonpost.com 'powered by Arkadium': decenas de juegos diarios (Daily Crossword, Daily Solitaire, Word Search, Diagonal Sudoku) con categoría 'Daily'
+- Versión en español del hub (games.washingtonpost.com/es, 'Juegos Diarios') con juegos traducidos: un ejemplo de cómo una marca blanca de puzzles se localiza
+- Gratis sin muro de pago: el objetivo es tiempo en el sitio y publicidad, no conversión
+- Sin racha ni compartir destacables en el hub de Arkadium (inferido: es una plataforma genérica de juegos casuales)
+Fuentes: https://mediapost.com/publications/article/386538/washington-post-adds-crossword-puzzle-style-game.html; https://www.washingtonpost.com/games/crossword/; https://games.washingtonpost.com/all-games; https://games.washingtonpost.com/es; https://games.washingtonpost.com/es/categoría/diario; Semrush domain_rank (www.washingtonpost.com/games/ us; games.washingtonpost.com us; games.washingtonpost.com/es/ es), 6-9-2026
+
+### Whodoku y Cluedoku (apps homónimas de terceros)
+Familia de apps con nombres «-doku» sin tracción: Whodoku de Ara Schermer (caso diario, iOS/Android), Cluedoku: Logic Grid Puzzles de One Button (casos gratis + cuadernos de pago, package com.onebutton.whodoku) y Cluedoku de MTC (mapas con obstáculos: mansiones, barcos, trenes).
+- Whodoku: caso diario, pistas de coartada para eliminar inocentes
+- One Button: cuadrículas estilo plano, arte dibujado a mano, desbloqueo de «case books»
+- MTC: cada nivel es un mapa con obstáculos y espacios abiertos
+- Quejas comunes: anotación celda a celda («note multiple tiles with one letter at once»), falta de zoom, más variedad
+Fuentes: https://apps.apple.com/us/app/whodoku/id6765963976; https://play.google.com/store/apps/details?id=com.onebutton.whodoku; https://play.google.com/store/apps/details?id=com.mtc.cluedoku; https://www.taptap.io/app/33873608
+
+### Wordle (NYT)
+Un puzzle al día, igual para todos, con una cuadrícula de emojis compartible que presume del resultado sin revelar la respuesta: el mecanismo viral que define el género de juegos diarios.
+- Un único puzzle diario común a todo el mundo: la escasez convierte cada partida en conversación compartida y evita el desgaste.
+- Share grid de emojis (🟩🟨⬛) sin spoiler, sin enlace de pago y legible en cualquier chat; nació de los jugadores en Twitter/WhatsApp y se integró como botón.
+- Estadísticas de distribución de intentos, racha actual y máxima; el puzzle más duro de 2024 rompió 5,6 M de rachas (dato NYT), prueba de cuánta gente juega por la racha.
+- WordleBot (análisis de la partida) y archivo de puzzles anteriores como gancho de suscripción.
+- Aplicable a Sospechario: nuestro texto de compartir ya copia el formato; añadir '% que lo resolvió hoy', línea resumen legible para lector de pantalla y medir tasa de compartir ≥10 % de quienes acusan.
+Fuentes: https://www.moengage.com/blog/wordle-viral-growth-story/; https://beastoftraal.com/2022/01/04/wordles-viral-marketing-tactic-makes-brilliant-use-of-people-as-media/; https://dinogame.gg/blog/why-is-wordle-so-popular/; https://www.fastcompany.com/91539885/wordle-statistics-show-why-new-york-times-is-turning-game-into-nbc-tv-show; https://www.aol.com/exclusive-wordle-puzzle-ended-5-013624721.html; https://www.blog.udonis.co/mobile-marketing/mobile-games/wordle
+
+### Wordle Español ilimitado (wordleespanol.org, wordlees.com, wordleespanol.es y clones)
+Conjunto de webs que capturan las búsquedas 'wordle español', 'wordle infinito' y 'wordle ilimitado' ofreciendo la palabra diaria más partidas sin límite, financiadas con anuncios; muestra cuánta demanda hay en español para el 'jugar más de uno al día'.
+- Palabra diaria + modo ilimitado como propuesta central (la limitación de 'uno al día' es la principal queja que explotan)
+- Variantes por idioma cooficial (euskera, catalán, gallego) y por longitud de palabra
+- Estadísticas y racha en local, compartir con emojis (patrón estándar copiado de Wordle)
+- Cero marca, cero cuenta, cero app: viven de posicionarse en 'wordle español' (110.000 búsquedas/mes en España) y derivados
+- La versión original en español creada por el colombiano @danielfrg (wordle.danielfrg.com) ha quedado marginal (474 visitas/mes) frente a los clones optimizados para SEO
+Fuentes: https://wordleespanol.org/; https://wordlees.com/; https://wordleespanol.es/; https://www.minijuegos.com/juego/wordle; Semrush domain_rank (base es) y phrase_these (es/mx/ar), 6-9-2026
+
+### Wordle en español (wordle.danielfrg.com)
+La adaptación al español creada en dos tardes por el colombiano Daniel Rodríguez (enero 2022) que llegó a 1 millón de jugadores diarios; hoy vive de tráfico directo y de marcadores, casi sin visibilidad en buscador.
+- Tres variantes: normal, con tildes y científico (palabras temáticas)
+- Sin publicidad ni registro (proyecto personal)
+- Racha y estadísticas en localStorage; compartir con emojis
+- Creció 88 % desde España y 3 % Argentina en sus primeros días
+- Mostró que un solo desarrollador puede capturar un mercado idiomático entero en semanas
+Fuentes: https://www.lanacion.com.ar/tecnologia/wordle-en-espanol-asi-creo-el-colombiano-daniel-rodriguez-la-version-en-castellano-del-juego-del-nid13012022/; https://www.infobae.com/america/tecno/2022/05/11/wordle-en-espanol-un-millon-de-jugadores-al-dia-y-palabras-tematicas-el-boom-del-juego-continua/; https://www.xataka.com/videojuegos/wordle-espanol-cuatro-meses-despues-muchos-guinos-millon-personas-jugando-cada-dia; https://x.com/danielfrg/status/1492177677301829641; Semrush domain_ranks / resource_organic wordle.danielfrg.com
+
+### Words With Friends 2 (Zynga)
+El juego que demostró que el multijugador asíncrono con push de turno retiene durante más de una década; en 2024-2025 añadió modos solo y puzzle diario para dar motivo de volver aunque nadie responda.
+- Hasta 40 partidas simultáneas con push cuando es tu turno: el movimiento del rival es el recordatorio.
+- Modos solo y retos de puzzle diario (finales de 2024) como red de seguridad de retención.
+- Ladders, eventos, chat; el ruido de notificaciones obliga a permitir silenciarlas (Zynga lo recomienda públicamente en X).
+- Aplicable a Sospechario: duelo asíncrono = 'Ana ha resuelto el caso 47 en 6:12, ¿le ganas?'; una notificación por evento real, nunca por marketing, y silenciable en un toque.
+Fuentes: https://en.wikipedia.org/wiki/Words_with_Friends; https://apps.apple.com/us/app/words-with-friends-word-game/id1196764367; https://www.wayline.io/blog/asynchronous-multiplayer-reclaiming-time-mobile-gaming; https://x.com/WordsWFriends/status/1955274099070017573
+
+### Wordwall
+Generador de mini-juegos (rueda, emparejar, cuestionario, sopa de letras, crucigrama) a partir del contenido del profesor, con salida jugable e imprimible y comunidad masiva en países hispanohablantes.
+- VERIFICADO: marca «wordwall» 60.500/mes ES, 60.500 MX, 49.500 AR; tráfico global enorme (TR 2,47 M, PL 1,24 M, BR 917k, IT 722k/mes)
+- Cada actividad tiene versión interactiva y versión imprimible (PDF) desde la misma plantilla: el patrón «una fuente, dos formatos» que nos interesa
+- Plantillas de palabras, memoria y cuestionario; no hay plantilla de deducción ni de misterio
+- Modelo freemium con límite de recursos en gratis, que valida el pago mensual bajo de docentes
+- QUÉ FALTA: lógica deductiva; una plantilla de «caso» sería inédita en el ecosistema
+Fuentes: Semrush domain_ranks wordwall.net; Semrush phrase_these «wordwall» (es/mx/ar)
+
+### ePasatiempos (y Tarkus, Ecognitiva)
+Portal español que domina las búsquedas genéricas de pasatiempos para adultos y mayores con crucigramas, autodefinidos y sudokus diarios; muestra qué juega hoy el público adulto que no es de Murdoku.
+- VERIFICADO (resource_organic es): #1 en «pasatiempos» (27.100), «pasatiempos gratis» (12.100), «pasatiempos online» (6.600), «crucigramas gratis/online» (14.800), «pasatiempos para mayores gratis» (1.300), «pasatiempos y juegos gratis» (880); #2 en «pasatiempos diarios» (5.400) y #3 en «crucigramas» (60.500)
+- Formato: juego diario en navegador, sin registro, con publicidad; nada de deducción ni misterio
+- Tarkus (tarkus.info, marca 5.400/mes ES, 27.832 visitas/mes) y Ecognitiva (ecognitiva.com, marca 2.900, 7.416 visitas; #9 en «pasatiempos para adultos», #11 «sudokus para imprimir») completan el trío de pasatiempos adultos/estimulación cognitiva
+- Racimo mayores/estimulación cognitiva en ES: «juegos de memoria para mayores» 720, «actividades para personas mayores» 590, «juegos para personas mayores» 590, «fichas de estimulación cognitiva» 480, «cuaderno de estimulación cognitiva» 170, «pasatiempos para personas mayores» 170
+- QUÉ FALTA: pasatiempo de deducción diario en español para adultos y un PDF «tinta baja / letra grande» para mayores y centros de día (encaje directo para PDF-CLASICO y B2B-WIDGET)
+Fuentes: Semrush domain_ranks epasatiempos.es, tarkus.info, ecognitiva.com; Semrush resource_organic epasatiempos.es (es); Semrush phrase_organic «pasatiempos para adultos», «sudokus para imprimir» (es); Semrush phrase_these (es)
+
+### elDiario.es Juegos (Palabra del día, crucigramas, sudokus, memoria, 8 diferencias)
+Hub de 'juegos y retos diarios para una mente activa' de elDiario.es con Palabra del día (formato Wordle), sopa de letras, memoria, 8 diferencias y crucigramas diarios vinculados a la suscripción; el único medio español de la lista con un juego diario tipo Wordle propio.
+- Palabra del día propia: un medio español que ya ha adoptado el formato 'una palabra al día' como pieza de retención
+- Crucigramas diarios ligados a la suscripción de socios (según extracto de buscador): ejemplo de juego diario como beneficio de socio en España
+- Cartera variada y barata (sopa de letras, memoria, 8 diferencias, sudoku) que apunta a un proveedor de marca blanca (inferido)
+- Sin juego de deducción ni narrativo: hueco para licencia
+Fuentes: https://www.eldiario.es/juegos/; https://www.eldiario.es/juegos/game/crossword/; Semrush domain_rank (www.eldiario.es/juegos/, base es), 6-9-2026
+
+### murdokujuego.com y murdoku.fans (satélites SEO en español)
+Dos sitios no oficiales que ya capturan búsquedas en español con la marca ajena: murdokujuego.com (galería de casos visuales imprimibles con solución oculta: Escuela de Arte, Netflix, Campo de golf, Tribunal…) y murdoku.fans (guía bilingüe de reglas, vocabulario, PDF, comparativa de apps y enlaces a los casos oficiales).
+- murdokujuego: una URL por caso (/puzzle/asesinato-…), versión imprimible y solución oculta; también en Studocu
+- murdoku.fans: reglas, glosario de términos ambiguos (beside, south of, alone, shelf), checklist de estrategia
+- murdoku.fans: página de PDF y comparativa «app vs. juego oficial»; se declara «tributo» a Manuel Garand
+- Ambos posicionan por «murdoku pdf», «murdoku online» y «murdoku en español»
+Fuentes: https://murdokujuego.com/; https://murdokujuego.com/puzzle/asesinato-escuela-arte/; https://murdoku.fans/en/; https://murdoku.fans/en/pdf/; https://murdoku.fans/en/murdoku-app/; Semrush domain_ranks
+
+### sudoku-online.org (y hub de pasatiempos)
+Un sitio independiente sin marca de medio que gana la palabra 'sudoku' en España (673.000 búsquedas/mes) y factura por publicidad: la prueba de que un puzzle diario bien ejecutado puede vencer a los periódicos en buscador.
+- #1 en ES para 'sudoku', 'sudoku online', 'sudoku online gratis', 'sudokus' y 'sudoku extremo'
+- Sección /pasatiempos/ con crucigrama diario con fecha en la URL (páginas indexables por día)
+- Niveles de dificultad como landings independientes (/extremo.php)
+- Sin registro; juego inmediato en móvil; arquitectura de archivo por fecha (modelo replicable para nuestro /casos/<n>)
+Fuentes: https://www.sudoku-online.org/; https://www.sudoku-online.org/pasatiempos/crucigramas/2025-10-07.html; Semrush domain_ranks sudoku-online.org; resource_organic (ES)
+
+### wordle.global / wordleplay.com / wordly.org (clones internacionales con versión /es)
+Redes internacionales de juegos de palabras que añaden una pestaña en español y capturan una parte relevante de la demanda hispana sin ningún esfuerzo editorial local.
+- Decenas de idiomas y variantes (4-11 letras, ilimitado, temáticos) bajo un mismo dominio
+- wordle.global/es es #4 para 'wordle español' en ES y #7 para 'wordle' en MX y AR
+- wordleplay.com/es ofrece 'today' + archivo y decenas de spin-offs (contexto, nerdle...)
+- Monetización por display a escala global; UX genérica y traducida
+Fuentes: https://wordle.global/es; https://wordleplay.com/es/today; https://wordly.org/es; Semrush domain_ranks wordle.global, wordleplay.com; phrase_organic 'wordle español' (ES), 'wordle' (MX, AR)
