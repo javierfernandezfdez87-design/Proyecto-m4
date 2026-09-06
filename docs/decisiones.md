@@ -40,3 +40,12 @@ Una fila por decisión con fecha, contexto, alternativas descartadas y quién la
 - **Recomendación de partida:** Sospechario + mascota, descriptor fijo "el caso de misterio de cada día".
 - **Umbrales fijados antes del dato:** ≥60 % de comprensión temática espontánea y ≥85 % de escritura correcta al primer intento, con 100 personas. Anterioridad viva en clases 9/28/41 elimina. `.com` exacto por encima de 500 € baja a suplente.
 - **Regla de no bloqueo:** el desarrollo arranca el 2026-09-07 con el nombre en clave `caso-diario` y una capa de marca aislada en un único archivo de configuración. Si el 14 de septiembre no hay decisión, se lanza con el mejor candidato legalmente limpio.
+
+## D-005 · Aprobación provisional de la arquitectura de marca: Sospechario + mascota Sabueso
+
+- **Fecha:** 2026-09-05
+- **Decide:** usuario (Javier Fernández)
+- **Contexto:** lista corta de D-004 y recomendación híbrida del director de producto.
+- **Decisión:** se aprueba **provisionalmente** Sospechario como marca-concepto y Sabueso (basset hound, nombre común) como mascota y voz narradora, con descriptor fijo "el caso de misterio de cada día". El usuario se reserva cambiar el nombre si surge uno mejor antes del registro. La validación de 7 días de `docs/naming-shortlist.md` §5 sigue en pie: dominio en registrador, búsqueda de anterioridades por `experto-legal`, iconos y test con 100 personas.
+- **Efecto:** `disenador-ux-ui` puede empezar logotipo, icono y mascota con Sospechario como hipótesis de trabajo; el código sigue usando el nombre en clave `caso-diario` con capa de marca aislada hasta D-004.
+- **Pendiente del usuario:** autorización del gasto de registro (ver explicación de costes en la conversación del 2026-09-05 y en `docs/naming-criterios-negocio.md` §"Presupuesto de registro").
