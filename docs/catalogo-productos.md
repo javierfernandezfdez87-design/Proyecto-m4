@@ -1,7 +1,9 @@
 # Catálogo de productos
 
-Autor: `director-producto`. Fecha: 5 de septiembre de 2026. Versión 1.0.
+Autor: `director-producto`. Fecha: 5 de septiembre de 2026. **Versión 1.1** (6 de septiembre de 2026).
 Fuentes: `docs/contexto-proyecto.md`, `docs/analisis-estrategico.md`, `docs/equipo-agentes.md`.
+
+**Cambios de la versión 1.1.** Todo lo marcado con **[reseñas]** procede de `docs/oportunidades-resenas.md` y se decidió en **D-007** (`docs/decisiones.md`): son cambios derivados de quejas y peticiones reales de usuarios de productos del género, no de opinión interna. Coste incremental sobre el MVP: ≈ 7,25 persona-semana.
 
 Este documento es la **lista cerrada** de lo que vamos a construir y vender en los próximos 12 meses.
 Nada que no esté aquí se construye. Añadir un producto exige modificar este documento y registrar la decisión.
@@ -36,16 +38,19 @@ Motivo: si "Caso del día" fuera el nombre de la mecánica espacial, el caso dia
 
 - **A quién sirve.** Persona hispanohablante de 25-55 años que ha visto Murdoku en TikTok o ha leído el libro, busca "murdoku online gratis en español" en el móvil y quiere jugar en 30 segundos sin registrarse. +20.000 búsquedas/mes solo en España con esa intención.
 - **Qué incluye exactamente.**
-  - 1 caso Escena nuevo al día, cuadrícula 4×4 (lunes-martes), 5×5 (miércoles-sábado) y 6×6 (domingo, "caso XL").
-  - Tutorial interactivo de 60 segundos, obligatorio la primera vez, saltable.
-  - Cuadrícula táctil con anotaciones: colocar, marcar candidato, tachar, deshacer/rehacer ilimitado.
+  - 1 caso Escena nuevo al día, cuadrícula 4×4 (lunes-martes), 5×5 (miércoles-sábado) y 6×6 (domingo, "caso XL"). **[reseñas]** El tamaño sigue la curva pero **no la define**: la curva semanal se define por **dificultad medida por el motor** (pasos de inferencia), con **lunes el más suave y sábado el más difícil**; el domingo XL es el más grande y largo, **no el más duro** (es el día familiar). **[reseñas]** Prohibidas las pistas de testimonio falso ("alguien miente") en el caso del día entre semana; si alguna vez se usan, solo en el XL del domingo, etiquetadas en pantalla.
+  - **[reseñas]** Ejes de la cuadrícula **numerados y rotulados de forma permanente** (pasillo 1 = norte, ala 1 = oeste), también en 6×6. **Tocar una pista resalta las celdas que afecta.** Vocabulario espacial cerrado y versionado: una sola forma canónica por relación.
+  - Tutorial interactivo de 60 segundos, obligatorio la primera vez, saltable. **[reseñas]** Incluye una pantalla dedicada solo a la convención espacial: de dónde se cuentan filas y columnas.
+  - Cuadrícula táctil con anotaciones: colocar, marcar candidato, tachar, deshacer/rehacer ilimitado. **[reseñas]** Marcar o descartar un candidato en **varias celdas con un arrastre**, "borrar todas las anotaciones de este sospechoso", botón **"Empezar de cero"** visible durante la partida (no escondido en ajustes) y **zoom nativo del navegador nunca desactivado**.
   - **Comprobar**: hasta 1 comprobación por caso (marca cuántas celdas están mal, no cuáles).
-  - **Acusar**: acción final e irreversible que cierra el caso y muestra resultado, tiempo y explicación paso a paso de la solución.
+  - **Acusar**: acción final e irreversible que cierra el caso y muestra resultado, tiempo y explicación paso a paso de la solución. **[reseñas]** La explicación de cada caso se publica además como **página pública indexable el día 8**, cuando el caso sale del archivo gratuito.
+  - **[reseñas]** Botón **"reportar un problema con este caso"** en la pantalla de resultado, con página de erratas pública y **reparación automática de la racha de los afectados** cuando el error es nuestro.
   - Racha, calendario de últimos 30 días, estadísticas básicas (partidas, % resueltos, racha actual, racha máxima, tiempo medio).
-  - Gracia de racha automática: 1 día perdido cada 30 días naturales no rompe la racha.
-  - Compartir sin spoiler: texto con emojis + imagen 9:16 para Stories.
-  - Archivo de los últimos 7 días, jugables sin límite.
-  - Cuenta opcional por *magic link*; anónimo funciona con `localStorage` y fusiona progreso al registrarse.
+  - Gracia de racha automática: 1 día perdido cada 30 días naturales no rompe la racha. **[reseñas]** La gracia es **visible y explicada** en el calendario y en el mensaje ("tu racha sigue viva: has usado tu día de gracia"), y hay **48 h para recuperar el día perdido sin escribir a soporte** cuando la causa fue nuestra.
+  - Compartir sin spoiler: texto con emojis + imagen 9:16 para Stories. **[reseñas]** Con límite de tamaño de la cuadrícula, texto alternativo legible en la imagen y línea resumen legible, para que un lector de pantalla no lea decenas de emojis.
+  - Archivo de los últimos 7 días, jugables sin límite. **[reseñas]** Con aviso de caducidad ("este caso sale del archivo en 2 días"); el día 8 no es un 404 comercial sino una página con la explicación razonada y la oferta de Premium debajo.
+  - Cuenta opcional por *magic link*; anónimo funciona con `localStorage` y fusiona progreso al registrarse. **[reseñas]** La **sincronización entre dispositivos** (empezar en el móvil, seguir en el portátil) es la razón declarada para crear cuenta y un criterio de "hecho" verificable, no un muro.
+  - **[reseñas]** Ajustes (tema, sonido, autopropagación) persistidos en local y en cuenta, que sobreviven a recarga y a actualización del *service worker*; el cronómetro del caso no se reinicia al recargar.
   - Funciona sin conexión si el caso ya se descargó (PWA).
 - **Qué NO incluye.** Modo Expediente, dificultades seleccionables, casos ilimitados, contrarreloj, duelos, archivo anterior a 7 días, ranking global, chat, cuentas de menores de 14 años, anuncios (en MVP no hay).
 - **Precio.** Gratuito, sin registro obligatorio, para siempre. No se pondrá jamás detrás de pago el caso del día.
@@ -60,6 +65,8 @@ Motivo: si "Caso del día" fuera el nombre de la mecánica espacial, el caso dia
 
 - **A quién sirve.** Tráfico de búsqueda de intención ("murdoku online", "en español", "gratis", "para imprimir", "para niños", "fácil", "cómo se juega", "juegos como Murdle"). Es el canal de adquisición número uno.
 - **Qué incluye exactamente.** 8 páginas renderizadas en servidor, cada una con **un puzzle real jugable arriba del pliegue**, no un artículo: `/murdoku-online`, `/murdoku-en-espanol`, `/murdoku-gratis`, `/jugar-murdoku-online`, `/como-jugar` (tutorial interactivo), `/facil`, `/para-ninos`, `/juegos-como-murdle`. Cada una con metadatos, Open Graph generado, datos estructurados y enlace al caso del día.
+  - **[reseñas]** Dos páginas más, que no son landings de intención sino de confianza y de contenido: **`/una-sola-solucion`** (cómo garantizamos que cada caso tiene exactamente una respuesta y se resuelve sin adivinar, con la página de erratas enlazada) y **`/casos/<n>`**, la explicación razonada de cada caso publicada el día 8. Esta segunda captura la demanda real de "solución del caso N", que hoy se sirve en vídeos de terceros.
+  - **[reseñas]** Desde `/como-jugar` y desde la pantalla de resultado, **hoja de trabajo en blanco imprimible, gratis y sin pedir el correo** (PDF de una página, sin casos: no canibaliza `PDF-CEBO`).
 - **Qué NO incluye.** Uso de marca ajena en dominio, logo, nombre de producto o nombre de app. Solo mención comparativa en el cuerpo del texto, con los textos revisados por `experto-legal`. No son páginas puente vacías.
 - **Precio.** Gratuito.
 - **Fase.** MVP (semanas 6-8, publicadas el día del lanzamiento).
@@ -232,6 +239,8 @@ Cuatro SKU cerrados más un cebo gratuito. "murdoku pdf" (2.400/mes) + "para imp
 
 Suelo de ingresos, no producto. Reglas cerradas: **nunca durante la partida**; un único formato, intersticial o banner, **solo en la pantalla de resultado, máximo 1 por sesión**; nada de vídeo con recompensa; consentimiento con banner conforme a la guía de la AEPD; **cero anuncios en `JUNIOR-WEB`**. No se activa antes de **30.000 usuarios mensuales**: por debajo de esa cifra, el daño a la retención y al boca a boca cuesta más que los 1-3 € de RPM.
 
+**[reseñas]** Dos añadidos. Primero, regla nueva y permanente: **nunca un anuncio para desbloquear una pista, una ayuda o una comprobación** (cuatro productos del género se hunden exactamente ahí: «ads take so long to get through that it doesn't feel worth it», «6-12 hints to get an unhinted clue», y una app cuyo vídeo por pista cierra el juego). Segundo, estas reglas dejan de ser internas: se **publican como compromiso** en la página de precios, porque el público del género elogia explícitamente la ausencia de publicidad («not bogged down by advertising») y es el argumento más barato que tenemos.
+
 ---
 
 ## 2. Qué se descarta y por qué
@@ -248,6 +257,13 @@ Suelo de ingresos, no producto. Reglas cerradas: **nunca durante la partida**; u
 | Premium el día 1 | **Descartado** | Sin hábito medido no sabemos qué empaquetar; poner un muro el día 1 mata el bucle SEO + compartir que es toda nuestra adquisición. |
 | App nativa en el MVP | **Descartado** | 2-3 semanas de coste y revisiones de tienda que retrasan la ventana. Condicionada a D30 ≥ 25 %. |
 | Casos basados en crímenes reales o *true crime* | **Descartado** | Contradice la regla de contenido cozy y abre riesgo de derecho al honor. |
+| **[reseñas]** Zoom / pinch dedicado en el tablero | **Descartado** | RICE 0,5. F6 ya obliga a que un 6×6 sea legible y tocable en 360 px. Si F6 se cumple, el zoom sobra; si no, el problema es F6. Sí se acepta lo que cuesta cero: no desactivar el zoom nativo del navegador. |
+| **[reseñas]** Más comprobaciones o "vidas" por caso | **Descartado** | La queja del competidor es «no placeholders to test possible character positions»: piden anotar hipótesis, no más intentos. Se responde con anotación múltiple. Se mantienen 1 comprobación gratis / 3 Premium / 0 en duelo y una única acusación irreversible. |
+| **[reseñas]** Elo, temporadas y salas privadas | **Descartado 12 meses** | Un competidor en español ya lo tiene y no es su ventaja; mete presión competitiva que expulsa al casual. El duelo por enlace da el efecto social sin el coste. |
+| **[reseñas]** Modo cooperativo en la misma pantalla | **Descartado** | La cooperación que describe la prensa ocurre alrededor del papel, con varias personas mirando una hoja: nuestra pantalla ya lo permite sin construir nada. |
+| **[reseñas]** Anuncio con recompensa (vídeo por pista) | **Descartado permanentemente** | Cuatro productos distintos se hunden por esto y no hay ni una evidencia a favor. Pasa a ser regla escrita en `ADS`. |
+| **[reseñas]** Traducir el producto a otros idiomas | **Descartado 12 meses**, reafirmado | La queja número uno del género en papel **es la traducción** (20 erratas en 6 acertijos en una edición española). Traducir un juego de lógica es exactamente el error que este mercado castiga. Si algún día se hace, se **genera** en el idioma destino, no se traduce. |
+| **[reseñas]** Vender "generado por IA" como argumento | **Descartado** | «Poorly designed by AI» aparece como insulto asociado a pistas defectuosas. Prohibido en producto, tienda, landings y vídeos. |
 
 ---
 
@@ -268,7 +284,7 @@ Regla general: **Premium no quita nada de lo que hay hoy gratis**. Todo lo que a
 | 9 | Deshacer / rehacer | Ilimitado | Ilimitado |
 | 10 | Tutorial y explicación de la solución | Sí, completa | Sí, completa |
 | 11 | Racha | Sí, común a ambos modos | Sí |
-| 12 | Gracia de racha automática | **1 día cada 30** | 1 día cada 30 |
+| 12 | Gracia de racha automática | **1 día cada 30**, **[reseñas]** visible y explicada en el calendario | 1 día cada 30, visible y explicada |
 | 13 | Congelar racha manualmente | No | **4/mes**, aplicable hasta 48 h después |
 | 14 | Modo vacaciones (pausa de racha) | No | Hasta **14 días** seguidos, 2 veces al año |
 | 15 | Estadísticas básicas | Sí | Sí |
@@ -284,6 +300,9 @@ Regla general: **Premium no quita nada de lo que hay hoy gratis**. Todo lo que a
 | 25 | Sincronización entre dispositivos | Sí, con cuenta gratuita | Sí |
 | 26 | Exportar y borrar mis datos (RGPD) | Sí, 1 clic | Sí, 1 clic |
 | 27 | Soporte | Correo, mejor esfuerzo | Correo, respuesta en 48 h |
+| 28 | **[reseñas]** Reparación de racha cuando el error es nuestro | **Sí, automática**, sin escribir a nadie | Sí, automática |
+| 29 | **[reseñas]** Explicación pública de la solución de cada caso (día 8) | Sí, abierta a todo el mundo | Sí |
+| 30 | **[reseñas]** Hoja de trabajo en blanco imprimible | Sí, sin pedir el correo | Sí |
 
 **Ambigüedades resueltas explícitamente:**
 - "Casos ilimitados" significa generación bajo demanda con semilla nueva, no acceso anticipado al caso de mañana. **Nadie**, ni Premium, ve el caso del día antes de su publicación.
@@ -295,36 +314,38 @@ Regla general: **Premium no quita nada de lo que hay hoy gratis**. Todo lo que a
 
 ## 4. MVP: características con criterio de "hecho" verificable
 
-Alcance de las semanas 1-8. Si una característica no cabe, se corta de abajo hacia arriba: F17, F16, F13.
+Alcance de las semanas 1-8. Si una característica no cabe, se corta de abajo hacia arriba: F17, F16, F13. **[reseñas]** Dentro de los añadidos de D-007, el orden de corte es: primero la hoja imprimible en blanco, luego la anotación por arrastre, luego las páginas de explicación del día 8 (estas últimas se pueden desplegar en la semana 9 sin coste de oportunidad: por definición no hacen falta hasta el día 8). **F19 y la parte de accesibilidad de F12 no se cortan**: la primera es la queja que hunde a la app líder del género, la segunda es obligación legal.
 "Hecho" significa: implementado, con test automatizado que lo cubre, desplegado en producción y validado por `revisor-calidad`.
 
 | # | Característica | Criterio de "hecho" (verificable) | Responsable |
 |---|---|---|---|
 | F1 | Motor: generador + solver Escena | Genera 1.000 puzzles con semilla fija; **el 100 % tiene exactamente 1 solución** (conteo con parada en 2), **0 % requiere adivinar** (resoluble por la escalera de técnicas humanas), **0 pistas redundantes**; media < 400 ms por puzzle; salida reproducible bit a bit con la misma semilla. | `ingeniero-motor-puzzles` |
 | F2 | Métrica de dificultad | Cada puzzle sale etiquetado fácil/normal/experto por profundidad de inferencia; en una muestra de 60 casos resueltos a mano por 5 personas, la correlación entre etiqueta y tiempo real es ≥ 0,6. | `ingeniero-motor-puzzles` + `analista-datos` |
-| F3 | Validación de pistas escritas por IA | Toda pista redactada se vuelve a parsear a forma formal; si no coincide exactamente con la original, se descarta. Test: 500 pistas generadas, 0 casos de pista aceptada con semántica distinta. | `ingeniero-motor-puzzles` + `guionista-misterio` |
+| F3 | Validación de pistas escritas por IA | Toda pista redactada se vuelve a parsear a forma formal; si no coincide exactamente con la original, se descarta. Test: 500 pistas generadas, 0 casos de pista aceptada con semántica distinta. **[reseñas]** Además, tres validaciones nuevas y bloqueantes: (a) todo lugar citado en la pista existe en ese tablero concreto; (b) género y número de la pista concuerdan con la ficha del personaje (el fallo exacto que rompió el caso 60 de una edición del libro de referencia); (c) ningún texto pasa por un paso de traducción: el español es lengua de origen. Test: 500 pistas, 0 aceptadas con lugar inexistente y 0 con discordancia de género. | `ingeniero-motor-puzzles` + `guionista-misterio` |
 | F4 | Banco de 60 casos publicables | 60 casos en `content/casos/`, cada uno validado por el motor y **resuelto a ciegas por una persona** de `revisor-calidad` sin ambigüedad reportada; curva semanal 4×4 → 6×6 aplicada. | `guionista-misterio` + `revisor-calidad` |
-| F5 | Publicación del caso del día | Dado un usuario en cualquier zona horaria, cuando son las 00:00 de su fecha local, entonces ve un caso nuevo con número correlativo y el anterior pasa al archivo. La solución no viaja al cliente hasta que se acusa (verificable inspeccionando la respuesta de red). | `desarrollador-backend` |
-| F6 | Cuadrícula táctil | En un móvil de 360 px de ancho, una cuadrícula 6×6 es legible y cada objetivo táctil mide ≥ 44 px; el ciclo de estados por toque funciona sin retraso de 300 ms; probado en Chrome Android e iOS Safari reales. | `disenador-ux-ui` + `desarrollador-frontend` |
-| F7 | Anotaciones, deshacer y rehacer | Estado del puzzle como máquina de estados con historial; deshacer/rehacer ilimitado; test Playwright de 50 acciones aleatorias seguidas de 50 deshacer devuelve el tablero al estado inicial exacto. | `desarrollador-frontend` |
+| F5 | Publicación del caso del día | Dado un usuario en cualquier zona horaria, cuando son las 00:00 de su fecha local, entonces ve un caso nuevo con número correlativo y el anterior pasa al archivo. La solución no viaja al cliente hasta que se acusa (verificable inspeccionando la respuesta de red). **[reseñas]** Añadidos verificables: **un número de caso = un solo contenido para todo el mundo** (nunca dos casos distintos bajo el mismo número, el fallo que arruinó la comparación en Wordle #284); cuenta atrás visible hasta el siguiente caso; la zona horaria declarada solo puede cambiarse una vez cada 24 h; test de reloj simulado que cubre los dos cambios de horario de verano. | `desarrollador-backend` |
+| F6 | Cuadrícula táctil | En un móvil de 360 px de ancho, una cuadrícula 6×6 es legible y cada objetivo táctil mide ≥ 44 px; el ciclo de estados por toque funciona sin retraso de 300 ms; probado en Chrome Android e iOS Safari reales. **[reseñas]** Ejes numerados y rotulados visibles en todo momento, también en 6×6; tocar una pista resalta las celdas que afecta; el zoom nativo del navegador **no** está desactivado (`user-scalable=no` prohibido). | `disenador-ux-ui` + `desarrollador-frontend` |
+| F7 | Anotaciones, deshacer y rehacer | Estado del puzzle como máquina de estados con historial; deshacer/rehacer ilimitado; test Playwright de 50 acciones aleatorias seguidas de 50 deshacer devuelve el tablero al estado inicial exacto. **[reseñas]** Añadidos: marcar o descartar un candidato en varias celdas con un arrastre, "borrar todas las anotaciones de este sospechoso" y botón "Empezar de cero" visible durante la partida. | `desarrollador-frontend` |
 | F8 | Comprobar y acusar | Comprobar (1 uso) devuelve solo el número de celdas erróneas, nunca cuáles: verificable en la respuesta del servidor. Acusar es irreversible, pide confirmación y muestra la solución razonada paso a paso. | frontend + backend |
-| F9 | Tutorial de 60 segundos | Un usuario nuevo que nunca ha jugado completa el tutorial en ≤ 90 s en 8 de cada 10 pruebas con personas reales; se puede saltar y se puede repetir desde ajustes. | `disenador-ux-ui` |
-| F10 | Persistencia y cuenta opcional | Sin cuenta, cerrar y reabrir el navegador conserva la partida en curso y la racha. Al registrarse por magic link, el progreso anónimo se fusiona sin duplicar ni perder días (test con 3 escenarios de colisión). | `desarrollador-backend` |
-| F11 | Racha y calendario | La racha aumenta al resolver cualquiera de los casos del día; se rompe al segundo día perdido consecutivo (gracia de 1 día cada 30) y el calendario de 30 días muestra resuelto / fallado / gracia / sin jugar. Test de reloj simulado que cubre cambio de mes, año bisiesto y cambio de zona horaria. | `desarrollador-backend` |
-| F12 | Compartir sin spoiler | Genera texto con emojis y una imagen 9:16; **ninguna de las dos revela posiciones ni nombres** (revisado por `revisor-calidad` sobre 20 resultados distintos); usa Web Share API con alternativa de copiar al portapapeles; el enlace lleva parámetro de atribución. | `desarrollador-frontend` |
-| F13 | Archivo de 7 días | Muestra exactamente los 7 días naturales anteriores; un caso del día 8 devuelve 404 con invitación a la lista de espera Premium. | backend |
+| F9 | Tutorial de 60 segundos | Un usuario nuevo que nunca ha jugado completa el tutorial en ≤ 90 s en 8 de cada 10 pruebas con personas reales; se puede saltar y se puede repetir desde ajustes. **[reseñas]** Incluye una pantalla dedicada a la convención espacial (de dónde se cuentan filas y columnas); en la prueba con personas reales, 9 de 10 responden bien a "¿dónde está el pasillo 3?" al terminar. | `disenador-ux-ui` |
+| F10 | Persistencia, cuenta opcional y sincronización | Sin cuenta, cerrar y reabrir el navegador conserva la partida en curso y la racha. Al registrarse por magic link, el progreso anónimo se fusiona sin duplicar ni perder días (test con 3 escenarios de colisión). **[reseñas]** Criterio nuevo y verificable con **dos dispositivos reales**: empiezo el caso en el móvil, abro el portátil con la misma cuenta y encuentro la partida en curso, la racha y las estadísticas. El texto de registro dice qué gana el usuario ("guarda tu racha en todos tus dispositivos"), no qué pierde si no se registra. | `desarrollador-backend` |
+| F11 | Racha y calendario | La racha aumenta al resolver cualquiera de los casos del día; se rompe al segundo día perdido consecutivo (gracia de 1 día cada 30) y el calendario de 30 días muestra resuelto / fallado / gracia / sin jugar. Test de reloj simulado que cubre cambio de mes, año bisiesto y cambio de zona horaria. **[reseñas]** La gracia es **visible**: el día en azul lleva explicación al tocarlo y el mensaje dice "tu racha sigue viva: has usado tu día de gracia". Existe además una ventana de 48 h para recuperar el día perdido **sin intervención humana** cuando la causa fue nuestra (caída, errata o fallo de sincronización), disparada desde F18. | `desarrollador-backend` |
+| F12 | Compartir sin spoiler | Genera texto con emojis y una imagen 9:16; **ninguna de las dos revela posiciones ni nombres** (revisado por `revisor-calidad` sobre 20 resultados distintos); usa Web Share API con alternativa de copiar al portapapeles; el enlace lleva parámetro de atribución. **[reseñas]** Accesibilidad: la cuadrícula compartida tiene tamaño máximo acotado, la imagen lleva texto alternativo descriptivo y el texto incluye una línea resumen legible, de modo que un lector de pantalla no lea decenas de emojis uno a uno. No se corta. | `desarrollador-frontend` |
+| F13 | Archivo de 7 días | Muestra exactamente los 7 días naturales anteriores; un caso del día 8 devuelve 404 con invitación a la lista de espera Premium. **[reseñas]** Cada ficha del archivo indica cuándo caduca ("sale del archivo en 2 días"); el día 8 deja de ser un 404 comercial y pasa a ser la página pública `/casos/<n>` con la explicación razonada de la solución y la oferta de Premium debajo. | backend |
 | F14 | 8 landings SEO jugables | Las 8 URLs renderizan en servidor con el puzzle en el HTML inicial, Lighthouse móvil ≥ 90 en rendimiento y accesibilidad, metadatos y OG completos, y los textos con marca ajena aprobados por `experto-legal`. | frontend + `estratega-growth-seo` |
 | F15 | Analítica de eventos | La taxonomía de `docs/analitica/eventos.md` está implementada y **cada evento del embudo llega a PostHog en un recorrido de prueba grabado**: `caso_abierto`, `tutorial_completado`, `primera_celda`, `comprobacion_usada`, `acusacion`, `resuelto`, `abandono` (con el paso), `compartido`, `retorno_d1`. | `analista-datos` + frontend |
 | F16 | PWA y legal | Instalable, funciona sin conexión con el caso ya cargado, el service worker no rompe una partida en curso al actualizarse (test explícito). Aviso legal, política de privacidad, política de cookies conforme a la AEPD y banner de consentimiento publicados. | frontend + `experto-legal` |
-| F17 | Newsletter | Alta con doble opt-in desde la pantalla de resultado y desde la landing; envío diario automatizado; baja en un clic funcionando; prueba de entregabilidad ≥ 95 % en Gmail, Outlook y Apple Mail. | backend + `periodista-contenidos` |
+| F17 | Newsletter | Alta con doble opt-in desde la pantalla de resultado y desde la landing; envío diario automatizado; baja en un clic funcionando; prueba de entregabilidad ≥ 95 % en Gmail, Outlook y Apple Mail. **[reseñas]** Máximo **un correo al día**, sin excepciones ni campañas añadidas: el relato de prensa del género es "salir de las pantallas" y un producto digital que insiste pierde esa conversación. | backend + `periodista-contenidos` |
+| **F18** | **[reseñas] Promesa de solución única, erratas y reparación de racha** | Existe `/una-sola-solucion` explicando el método de verificación y una página de erratas pública. La pantalla de resultado tiene "reportar un problema con este caso" y el informe llega a una bandeja revisada a diario. Prueba end-to-end: se marca un caso como defectuoso y **la racha de todos los que lo jugaron ese día se repara sola**, con correo de aviso, sin que nadie escriba a soporte. | `desarrollador-backend` + `periodista-contenidos` |
+| **F19** | **[reseñas] Estabilidad y persistencia de ajustes** | Los ajustes (tema, sonido, autopropagación, idioma de variante) se guardan en local y en cuenta y sobreviven a recargar, a cerrar el navegador y a una actualización del *service worker*; el cronómetro del caso no se reinicia al recargar; la suite E2E se ejecuta en **un Android de gama media real**, no solo en emulador, sin bloqueos ni toques perdidos en 3 partidas completas. No se corta: es la queja que hunde a la app más descargada del género. | `revisor-calidad` + frontend |
 
-**Fuera del MVP, sin excepciones:** Premium y pasarela de pago, modo Expediente, duelos, packs PDF de pago (solo el cebo gratuito), app nativa, anuncios, sección infantil, B2B, editor, ligas.
+**Fuera del MVP, sin excepciones:** Premium y pasarela de pago, modo Expediente, duelos, packs PDF de pago (solo el cebo gratuito **y [reseñas] la hoja de trabajo en blanco, que no lleva casos**), app nativa, anuncios, sección infantil, B2B, editor, ligas. **[reseñas]** También fuera: la pista contextual del solver, condicionada a que el abandono antes de acusar supere el 35 % en el mes 2.
 
 ---
 
 ## 5. Decisiones abiertas que necesitan al usuario
 
-Cinco. Cada una bloquea trabajo; se necesita respuesta antes del final de la semana 1.
+Eran cinco; **quedan cuatro**: D4 se cerró en D-007. Cada una bloquea trabajo; se necesita respuesta antes del final de la semana 1.
 
 **D1. ¿Cómo se llaman los modos de cara al usuario?**
 El brief usa "Caso del día" para la mecánica espacial, lo que deja sin nombre al caso diario del modo lógico.
@@ -336,9 +357,7 @@ El brief usa "Caso del día" para la mecánica espacial, lo que deja sin nombre 
 **D3. ¿Cuándo se abre Premium y a qué precio?**
 *Recomendación:* **2,99 €/mes y 19,99 €/año**, con precio fundador de **14,99 €/año** para la lista de espera; se programa la pasarela solo si a los 60 días hay ≥ 5.000 usuarios mensuales, D7 ≥ 20 % y ≥ 2 % de apuntados. Alternativa descartada: 4,99 €/mes; en España, con un producto sin marca todavía, mata la conversión y el listón mental es NYT Games (≈ 40 $/año) para un catálogo mucho mayor.
 
-**D4. ¿A qué hora cambia el caso del día?**
-Es la decisión con más consecuencias técnicas del proyecto (rachas, anticheat, duelos, spoilers).
-*Recomendación:* **medianoche de la hora local del dispositivo**, como Wordle, con número de caso derivado de la fecha civil local. Ventaja: el ritual encaja con la vida del usuario y no penaliza a México ni a Argentina. Coste: hay que limitar el cambio de zona horaria declarada a **una vez cada 24 h** y calcular la racha en servidor para evitar que se adelante el caso saltando de zona. Alternativa descartada: 00:00 Europe/Madrid para todo el mundo; es más simple y hace la conversación más sincronizada, pero entrega el caso a las 16:00-19:00 en América y hunde el hábito allí.
+**D4. ¿A qué hora cambia el caso del día?** — **CERRADA el 6 de septiembre de 2026 en D-007. [reseñas]** Se adopta la recomendación: **medianoche de la hora local del dispositivo**, número de caso por fecha civil local, **un número = un solo contenido para todo el mundo**, cuenta atrás visible, cambio de zona declarada limitado a una vez cada 24 h y racha calculada en servidor. Ver §6.11. Ya no bloquea trabajo.
 
 **D5. ¿Activamos publicidad en el tier gratuito y cuándo?**
 *Recomendación:* **no antes de 30.000 usuarios mensuales**, y cuando se active, un solo formato en la pantalla de resultado, máximo uno por sesión, cero en la sección infantil. Por debajo de esa cifra son 30-90 €/mes a cambio de dañar la retención y el boca a boca, que son todo nuestro crecimiento. Alternativa descartada: anuncios desde el día 1 para financiar la infraestructura; la infraestructura cuesta 100-300 €/mes y es asumible.
@@ -359,6 +378,11 @@ No se reabren sin datos nuevos.
 8. Nada de UGC, ligas, tiempo real, merchandising ni idiomas adicionales en 12 meses.
 9. La app nativa está condicionada a D30 ≥ 25 %.
 10. Los anuncios no son un producto: son una capa con reglas fijas y umbral de activación.
+11. **[reseñas]** El caso del día cambia a **medianoche de la hora local del dispositivo**, con un solo contenido por número de caso. Cierra D4.
+12. **[reseñas]** La curva semanal se define por **dificultad medida por el motor**, no por tamaño de cuadrícula: lunes el más suave, sábado el más difícil, domingo el más grande pero no el más duro.
+13. **[reseñas]** Se mantienen 1 comprobación en gratis, 3 en Premium, 0 en duelo y **una única acusación irreversible**. Quien quiere probar hipótesis lo hace con anotaciones, no con más intentos.
+14. **[reseñas]** Nunca un anuncio para desbloquear una pista, una ayuda o una comprobación. Regla permanente y publicada.
+15. **[reseñas]** No se comunica "generado por IA" en ningún texto de producto o marketing. Se comunica "solución única verificada por el motor y caso resuelto por una persona antes de publicarse".
 
 ---
 
@@ -373,6 +397,12 @@ No se reabren sin datos nuevos.
 | Taxonomía de eventos antes de programar | Lista cerrada de eventos y propiedades | `docs/analitica/eventos.md` | Frontend puede instrumentar sin preguntar | `analista-datos` |
 | Riesgo de marca y textos comparativos | Guía de uso de marcas ajenas + textos legales | `docs/legal/` | Las 8 landings tienen los textos aprobados | `experto-legal` |
 | PRD del modo Expediente | PRD con criterios Given/When/Then | `docs/specs/modo-expediente.md` | Antes de la semana 9 | `director-producto` |
+| **[reseñas]** Vocabulario espacial cerrado y versionado, y curva semanal por dificultad medida | Lista canónica de relaciones (una forma por relación) + tabla lunes→domingo con rango de pasos de inferencia | `docs/diseno/mecanica-escena.md` | El motor puede etiquetar un caso como "martes" o "sábado" sin criterio humano | `disenador-puzzles` |
+| **[reseñas]** Las tres validaciones nuevas de F3 (lugar existente, concordancia de género, cero traducción) | Reglas implementadas + suite de 500 pistas | `engine/` | F3 verde con los tres tests nuevos | `ingeniero-motor-puzzles` |
+| **[reseñas]** Textos de `/una-sola-solucion`, página de erratas y compromiso público de anuncios | Tres páginas redactadas y revisadas | `web/`, `docs/legal/` | Publicadas el día del lanzamiento | `periodista-contenidos` + `experto-legal` |
+| **[reseñas]** F18 (reportar y reparar racha) y F19 (estabilidad y persistencia) | Endpoint + flujo de reparación; suite E2E en Android real | `web/`, `supabase/` | Prueba end-to-end de reparación automática pasando | `desarrollador-backend` + `revisor-calidad` |
+| **[reseñas]** Plantilla de `/casos/<n>` con la explicación razonada | Ruta SSG alimentada por la salida del motor | `web/` | Se despliega el día 8 tras el lanzamiento | `estratega-growth-seo` + frontend |
+| **[reseñas]** Las 10 comprobaciones manuales de la sección 5 de `docs/oportunidades-resenas.md` | Notas con capturas por comprobación | `docs/investigacion/` | Antes del final de la semana 2; las 2, 3 y 10 son urgentes | usuario + `analista-datos` |
 
 ---
 
