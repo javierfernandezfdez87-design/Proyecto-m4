@@ -1,6 +1,6 @@
 # Supuestos comunes del roadmap (leer antes de planificar un área)
 
-- **Arranque:** lunes 8 de septiembre de 2026 (semana 1). Semanas numeradas desde ahí.
+- **Arranque:** lunes 7 de septiembre de 2026 (semana 1; el 8 es martes). Semanas numeradas desde ahí.
 - **Hitos objetivo:** beta cerrada con 100-300 personas de la lista de espera y creadores en la **semana 7** (19-25 de octubre); lanzamiento público en la **semana 9-10** (2-13 de noviembre), es decir, los dos meses que estima el fundador. Fase 2 hasta el mes 6 (marzo de 2027).
 - **Equipo:** los 14 agentes de `.claude/agents/` hacen el trabajo de diseño, contenido, código y análisis. El fundador (Javier) aporta decisiones, pruebas con personas reales, firma humana de casos, comprobaciones manuales en navegador, registros y pagos. Estimar sus horas por semana de forma explícita: es el recurso escaso.
 - **Capacidad:** según D-009 el cómputo no es la restricción; lo son la ventana de mercado, el tiempo del fundador y la calidad. Las estimaciones se dan en días de agente y en horas del fundador.
