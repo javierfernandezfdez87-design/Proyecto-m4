@@ -253,7 +253,7 @@ Formato de `supuestos.md`. «Días» = días de agente. «Horas» = horas del fu
 |---|---:|---:|
 | A · Arranque y contratos | 4,5 | 1,5 |
 | B · Componentes | 4,5 | 1,5 |
-| C · Tablero de Escena | 6,0 | 8,5 |
+| C · Tablero de Escena | 7,0 | 8,5 |
 | D · Pistas, Sabueso, comprobación | 2,0 | 1,0 |
 | E · Resultado y reconstrucción | 4,5 | 3,0 |
 | F · Expediente e interrogatorio | 6,5 | 3,5 |
@@ -263,9 +263,9 @@ Formato de `supuestos.md`. «Días» = días de agente. «Horas» = horas del fu
 | J · PWA | 2,5 | 2,5 |
 | K · Analítica, pruebas, accesibilidad | 5,75 | 3,5 |
 | L · Beta y lanzamiento | 5,5 | 13,5 |
-| **Total** | **53,0** | **46,5** |
+| **Total** | **54,0** | **46,5** |
 
-Reparto: ≈5,3 días de agente por semana durante diez semanas, y **4-5 horas del fundador por semana**, concentradas en tres cosas que ningún agente puede hacer: probar en dispositivos reales, decidir microcopy con implicación legal y comprobar el comportamiento del CDN.
+Reparto: ≈5,4 días de agente por semana durante diez semanas, y **4-5 horas del fundador por semana**, concentradas en tres cosas que ningún agente puede hacer: probar en dispositivos reales, decidir microcopy con implicación legal y comprobar el comportamiento del CDN.
 
 ---
 
