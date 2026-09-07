@@ -37,9 +37,9 @@ Los ids **M-01 … M-53** son tareas de este roadmap. **No confundir con las pie
 
 > **M-CAP · 8 días de agente por semana de motor.** Un «día de agente» es una sesión enfocada con tests verdes y documentación mínima, no una jornada humana; ocho por semana son dos sesiones diarias de lunes a viernes con margen. Total S1-S10: **80 días de agente**.
 
-**El trabajo comprometido hasta el lanzamiento suma 79,5 días.** El plan no tiene holgura: cabe exactamente. Por eso la §9 lleva una lista de repliegue ordenada, y por eso digo el número en vez de esconderlo en una tabla. Si la capacidad real resulta ser 6 días/semana, el lanzamiento se va a la semana 13 salvo que se aplique el repliegue.
+**El trabajo comprometido hasta el lanzamiento suma 77,5 días, más 2,5 de reserva de estabilización: 80 exactos.** El plan no tiene holgura. Por eso la §9 lleva una lista de repliegue ordenada con los días que recupera cada corte, y por eso digo el número en vez de esconderlo en una tabla. Si la capacidad real resulta ser 6 días/semana, el lanzamiento se va a la semana 13 salvo que se aplique el repliegue.
 
-Horas del fundador comprometidas: **34 horas** en diez semanas (aprobaciones, resolución a ciegas, prueba de nombres con 5 personas, firma humana de 120 casos, veredictos de compuerta).
+Horas del fundador: **30 horas** en diez semanas (aprobaciones, resolución a ciegas, prueba de nombres con 5 personas, firma humana de 120 casos, veredictos de compuerta, revisión semanal).
 
 ### 0.4 Las tres promesas y dónde se ganan
 
@@ -57,16 +57,16 @@ Hasta la semana 3, cualquier documento del proyecto que diga «sin adivinar» o 
 
 ## 1. La ruta crítica del motor
 
-**La cadena que no admite paralelismo ni atajos**, 33 días de trabajo estrictamente secuencial de los 79,5 totales:
+**La cadena que no admite paralelismo ni atajos**, 36 días de trabajo estrictamente secuencial de los 77,5 comprometidos:
 
 ```
 M-01 contratos (1,5)  →  M-03 núcleo de máscaras X0 (2)  →  M-04 DSL de Escena (2,5)
   →  M-06 generador de Escena (3)  →  M-11 ESCALERA + CERTIFICADO (5)
   →  M-15 dificultad medida (2)    →  M-27 validación narrativa (2,5)
-  →  M-30 pipeline de publicación (3)  →  M-32 lote 1, la beta tiene contenido (1,5)
-  →  M-34 DSL de Expediente (2,5) → M-35 cuaderno↔permutaciones (1)
-  →  M-36 generador de Expediente (2,5) → M-39 escalera de Expediente (3)
-  →  M-40 el jueves (3)  →  M-45 lote 2 (1,5)
+  →  M-30 pipeline de publicación (3)  →  M-32 lote 1: la beta tiene contenido (1)
+  →  M-34 DSL de Expediente (2,5)  →  M-35 cuaderno↔permutaciones (1)
+  →  M-36 generador de Expediente (2,5)  →  M-38 escalera de Expediente (3)
+  →  M-39 el jueves (3)  →  M-43 lote 2: los 120 casos (1,5)
 ```
 
 Cinco cosas que decir sobre ella:
@@ -129,13 +129,12 @@ Columnas según `supuestos.md` §13. «Días» son días de agente; «h.f.» son
 | **M-25** | **V2 · Rastro del objeto** (viernes): predicados ordinales y criterio RO | `engine/dsl/escena/rastro.ts` | 1,5 | 0 | M-24 | S5 | S5 | Al menos una habitación de la solución solo se determina por el objeto (resolver sin las pistas del objeto deja ≥2 modelos) | Medio: dos caminos independientes hacen que la eliminación de redundantes borre el rastro y el objeto quede de decoración |
 | **M-26** | **V7 · El motivo como segunda fase**: micro-CSP de 3 candidatos y 2 pistas eliminatorias + comprobación de **no entrañamiento** | `engine/gen/motivo.ts` | 0,5 | 0 | M-24, M-03 | S5 | S5 | `pistas ∪ {motivo ≠ m*}` es satisfacible: el jugador no lo sabía ya | Bajo de motor, coste narrativo perpetuo |
 | **M-27** | **M6 · Validación de la capa narrativa**: retraducción contrastada (N retraducciones concordantes), registro de entidades, existencia, concordancia, detección de sinónimos prohibidos | `engine/validate/narrativa/`, `docs/motor.md` §4 | 2,5 | 0 | M-04, **plantillas por predicado de `guionista-misterio`** | S6 | S6 | Ningún texto entra sin su forma formal; el conjunto formal retraducido da la misma solución única; toda entidad citada existe | **Alto**: la retraducción por IA es una heurística fuerte, **no una prueba**, y así hay que decirlo en todos los documentos |
-| **M-28** | **V23** · registro de decorados, identificadores estables de entidad, presupuesto de texto como criterio de publicación | `engine/validate/narrativa/decorados.ts` | 1 | 0 | M-27 | S6 | S6 | Un elemento reinterpretado por el «y sin embargo» está en el registro de decorados y **no aparece en ninguna pista**; un caso que se pasa de presupuesto de texto no se publica aunque cumpla U+SA+NR | Bajo |
 | **M-29** | **Contrato de API con backend**: qué se sirve, qué no viaja nunca, versionado, verificación en servidor de duelos y marcadores | `docs/specs/api-motor.md` | 1 | 1 | M-09, **`desarrollador-backend`** | S6 | S6 | Backend puede modelar sus tablas sin preguntarme nada; la solución en claro no está en ningún payload | Medio: si el contrato se cierra tarde, backend programa contra un formato que cambia |
 | **M-30** | **Pipeline de publicación diaria**: lote nocturno, deduplicación por hash (solución canónica + multiconjunto de tipos de pista + huella del certificado), calendario, cron, estados del caso, regeneración parcial | `engine/publish/`, `docs/motor.md` §8 | 3 | 0 | M-15, M-27, M-29 | S6 | S6 | Un cron nocturno llena el depósito, el calendario asigna día y formato, y ningún caso duplicado por estructura llega a publicarse | **Medio-alto**: es la pieza que **ningún dictamen presupuestó** y sin ella no hay juego diario |
 | **M-31** | Panel de administración del motor en CLI: inspeccionar el calendario, sustituir un caso, forzar regeneración, ver métricas | `engine/cli/admin.ts` | 0,5 | 0 | M-30 | S6 | S6 | El fundador puede retirar un caso del calendario y ponerle otro sin tocar la base de datos | Bajo |
 | **M-32** | **Lote 1: 28 casos de Escena (4 semanas) + 28 vistazos**, validados, etiquetados, con certificado, listos para la beta. **Firma humana del fundador** | `content/casos/`, `docs/motor.md` §8 | 1 | 2 | M-30, M-32 depende de C-D | S6 | S6 | 28 casos en calendario, cero incidencias de unicidad, los 28 firmados | Medio: la etiqueta de dificultad es provisional y hay que decirlo en el informe interno |
 
-**Total S1-S6: 48 días de agente, 9 horas del fundador.**
+**Total S1-S6: 48 días de agente, 8 horas del fundador.**
 
 ---
 
