@@ -27,7 +27,12 @@ Los pesos se declaran antes de mirar ningún dato, como manda la casa. Suman 100
 | 9 | **Productividad de agentes de IA** (documentación, tipado, ejemplos) | **3** | Real pero secundario: D-009 dice que la capacidad de desarrollo no es la restricción |
 | 10 | **Realtime para duelos futuros** | **2** | **Peso deliberadamente bajo y justificado:** `catalogo-productos.md` define `DUELOS` como *reto asíncrono por enlace* con caducidad de 48 h y sala de 8. No hay tiempo real, ni chat, ni emparejamiento. Elegir plataforma por una necesidad de realtime que el producto no tiene sería el error clásico de esta comparativa |
 
-**Regla de descarte:** cualquier opción que puntúe cero en el criterio 1 queda fuera antes de comparar coste. Solo una lo hace, y es Firebase.
+**Dos reglas de descarte, aplicadas antes de sumar puntos.** Son requisitos duros del encargo, no criterios ponderables, y por eso van fuera de la tabla:
+
+- **R1 · Residencia.** Cualquier opción sin región europea real para el dato de identidad queda fuera. Solo una la incumple: **Firebase**, porque Firebase Authentication no tiene opción de residencia en la UE.
+- **R2 · Sin guardias.** Cualquier opción que traslade al fundador el parcheado, las copias, la restauración y la respuesta a incidentes queda fuera. La incumplen **Postgres autoalojado en Hetzner con Coolify**, **PocketBase** y **Umami autoalojado**. Se puntúan igualmente y se muestran en las tablas porque su puntuación es informativa —salen altas, y conviene ver por qué no se eligen—, pero están excluidas por regla.
+
+Sin R2, la tabla de §3.1 recomendaría autoalojar. Con R2, no. Merece decirse en voz alta: **la comparativa de coste puro da la razón al autoalojamiento, y lo que lo descarta es el modelo operativo de una persona sola, no el dinero.**
 
 ---
 
@@ -72,22 +77,24 @@ Puntuación de 0 a 5 en cada criterio, ponderada por §1. Se puntúa la opción 
 
 ### 3.1 Backend, base de datos y autenticación
 
-| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | RLS/anticheat (10) | Anónimo (8) | Operación (7) | Latencia (5) | IA (3) | Realtime (2) | **Total** |
+Escala de 0 a 5 por criterio. Máximo teórico 500.
+
+| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | RLS/anticheat (10) | Anónimo (8) | Operación (7) | Latencia (5) | IA (3) | Realtime (2) | **Total /500** |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| **Supabase (Postgres, Auth, Edge Functions, cron, Realtime, Storage)** | 5 | 4 | 4 | 4 | **5** | **5** | 4 | 4 | **5** | 5 | **436** |
-| **Neon + Drizzle + Better Auth** | 5 | 3 | **5** | 3 | 4 | 2 | 3 | 4 | 3 | 1 | 380 |
-| **Cloudflare D1 + Durable Objects + Workers** | 4 | **5** | 2 | 4 | 2 | 2 | 3 | **5** | 3 | **5** | 353 |
-| **Convex** | 2 | 2 | 1 | 2 | 4 | 4 | 4 | 3 | 4 | **5** | 251 |
-| **PlanetScale Postgres + Better Auth** | 4 | 2 | 4 | 3 | 4 | 2 | 3 | 3 | 3 | 1 | 316 |
-| **Appwrite Cloud** | 3 | 4 | 2 | 3 | 3 | 4 | 3 | 3 | 2 | 3 | 314 |
-| **Postgres autoalojado en Hetzner + Coolify** | **5** | **5** | **5** | **1** | 5 | 2 | **1** | 5 | 3 | 3 | 383 |
-| **PocketBase autoalojado** | 5 | 5 | 4 | 4 | 3 | 3 | 1 | 5 | 1 | 3 | 375 |
-| **Firebase / Firestore** | **0** | 3 | 1 | 3 | 2 | 5 | 4 | 3 | 4 | 5 | **descartado** |
-| **Clerk como auth (con cualquier BD)** | 3 | **0** | 2 | 3 | — | 4 | 4 | 4 | 4 | — | **descartado** |
+| **Supabase (Postgres, Auth, Edge Functions, cron, Realtime, Storage)** | 5 | 4 | 4 | 4 | **5** | **5** | 4 | 4 | **5** | 5 | **443** |
+| Postgres autoalojado en Hetzner + Coolify | **5** | **5** | **5** | **1** | 5 | 2 | **1** | 5 | 3 | 3 | *398 · fuera por R2* |
+| PocketBase autoalojado | 5 | 5 | 4 | 4 | 3 | 3 | **1** | 5 | 1 | 3 | *395 · fuera por R2* |
+| **Neon + Drizzle + Better Auth** | 5 | 3 | **5** | 3 | 4 | 2 | 3 | 4 | 3 | 1 | **373** |
+| **Cloudflare D1 + Durable Objects + Workers** | 4 | **5** | 2 | 4 | 2 | 2 | 3 | **5** | 3 | **5** | **351** |
+| **PlanetScale Postgres + Better Auth** | 4 | 2 | 4 | 3 | 4 | 2 | 3 | 3 | 3 | 1 | **313** |
+| **Appwrite Cloud** | 3 | 4 | 2 | 3 | 3 | 4 | 3 | 3 | 2 | 3 | **310** |
+| **Convex** | 2 | 2 | 1 | 2 | 4 | 4 | 4 | 3 | 4 | **5** | **252** |
+| Firebase / Firestore | **0** | 3 | 1 | 3 | 2 | 5 | 4 | 3 | 4 | 5 | *230 · fuera por R1* |
+| Clerk como capa de auth (con cualquier BD) | 3 | **0** | 2 | 3 | — | 4 | 4 | 4 | 4 | — | *fuera por coste, ver abajo* |
 
 **Lo que sostiene cada nota:**
 
-- **Supabase.** Regiones europeas suficientes: Fráncfort (`eu-central-1`), **París (`eu-west-3`)**, Estocolmo, Zúrich, Londres, Irlanda. El inicio de sesión anónimo es una fila real en `auth.users` que un magic link **asciende sin fusión**, que es exactamente la decisión 3 del plan; ningún otro proveedor de la lista lo da hecho. RLS de Postgres es el mecanismo más fuerte de la comparativa para la regla "ninguna política de escritura en `intentos`". `pg_cron` viene activado por defecto en todos los planes, con la limitación operativa de **no más de 8 trabajos concurrentes y 10 minutos por trabajo** —relevante para el correo, ver §4.4—. Generación de tipos TypeScript desde el esquema y un corpus de ejemplos enorme: es la mejor opción del estudio para el criterio 9. **Puntos flojos:** el coste de MAU a partir de 100.000 (§4.1), el coste por rama de vista previa (§4.5) y que PITR cuesta 100 $/mes por cada 7 días de retención, lo que lo saca del presupuesto del MVP.
+- **Supabase.** Regiones europeas suficientes: Fráncfort (`eu-central-1`), **París (`eu-west-3`)**, Estocolmo, Zúrich, Londres, Irlanda. El inicio de sesión anónimo es una fila real en `auth.users` que un magic link **asciende sin fusión**, que es exactamente la decisión 3 del plan; ningún otro proveedor de la lista lo da hecho. RLS de Postgres es el mecanismo más fuerte de la comparativa para la regla "ninguna política de escritura en `intentos`". `pg_cron` viene activado por defecto en todos los planes, con la limitación operativa de **no más de 8 trabajos concurrentes y 10 minutos por trabajo** —relevante para el correo, ver §4.4—. Generación de tipos TypeScript desde el esquema y un corpus de ejemplos enorme: es la mejor opción del estudio para el criterio 9. **Puntos flojos:** el coste de MAU a partir de 100.000 (§4.1), el coste por rama de vista previa —una rama viva en cómputo Micro cuesta unos 9,7 $/mes y **el crédito de cómputo de 10 $ del plan no la cubre**, ver la decisión E-5 de §8— y que PITR cuesta 100 $/mes por cada 7 días de retención, lo que lo saca del presupuesto del MVP.
 - **Neon + Drizzle + Better Auth.** Tras la compra por Databricks los precios **bajaron** (almacenamiento de 1,75 a 0,35 $/GB-mes) y desde diciembre de 2025 **no hay mínimo mensual**: 0,106 $/CU-hora en el plan Launch. Es el mejor plan de salida del estudio: Postgres puro, sin capa propietaria. Y **Auth.js está en modo mantenimiento desde que su equipo se unió a Better Auth en septiembre de 2025**, así que Better Auth es la elección obvia si se va por aquí. El problema es lo que hay que construir: magic link, sesión anónima, ascenso de anónimo a cuenta, límites de alta, cron, almacenamiento de ficheros. Son **6-10 días de agente** que en Supabase son uno (B-04), y la responsabilidad de seguridad de la autenticación pasa a ser nuestra. Por eso pierde en el criterio 6 pese a ganar en el 3.
 - **Cloudflare D1 + Durable Objects + Workers.** Lo más barato con diferencia (Workers de pago 5 $/mes con 10 M de peticiones y 30 M de CPU-ms; D1 a 0,001 $/M lecturas y 1 $/M escrituras; Durable Objects a 0,15 $/M peticiones más duración) y lo más rápido desde LatAm. Los Durable Objects admiten **restricción jurisdiccional `eu`**, que es una garantía de residencia mejor que la de casi todo el resto. Pero: **no hay RLS**, la seguridad de datos es código en el Worker; no hay auth anónima con ascenso; D1 es SQLite con límites de tamaño por base y sin la potencia de consulta que la racha necesita (`plan-backend.md` §4.2 pide una función SQL pura sobre tres tablas con ventanas); y salir de Durable Objects es reescribir. Buena plataforma, mal encaje con este esquema.
 - **Convex.** **Se descarta por Europa, no por producto.** Las regiones europeas existen, pero el precio es **1,3× el de Estados Unidos y el uso incluido de los planes Starter y Pro no se aplica a los despliegues europeos**, que se facturan íntegramente por consumo. Es decir: en la UE, Convex es un producto distinto y peor que el que anuncia. Añádase que la salida es una reescritura completa de funciones y esquema.
@@ -96,35 +103,39 @@ Puntuación de 0 a 5 en cada criterio, ponderada por §1. Se puntúa la opción 
 - **Clerk.** **Descartado por coste.** 50.000 MAU gratis y después **0,02 $ por MAU**: con un producto cuyo modelo es "cuenta anónima desde el primer toque", a 200.000 usuarios mensuales son unos 3.000 $/mes solo de autenticación. Es treinta veces el presupuesto entero.
 - **PocketBase y Appwrite.** PocketBase es excelente para prototipos y horrible para lo que pide este proyecto: un solo binario, SQLite, sin réplica, con copias y actualizaciones a mano; el mismo problema de guardias que Hetzner sin la ventaja de Postgres. Appwrite Cloud (Pro desde 15 $/mes) es un producto razonable y con buena historia de autoalojamiento, pero su corpus de ejemplos es pequeño, su modelo de permisos por documento es más débil que RLS para nuestro caso y no aporta nada que Supabase no tenga.
 
-**Ganador de la categoría: Supabase.** No por poco: gana los criterios 5, 6 y 9 de forma clara y no pierde ninguno de forma grave.
+**Ganador de la categoría: Supabase (443 sobre 500).** No por poco: gana los criterios 5, 6 y 9 de forma clara y no pierde ninguno de forma grave. Las dos opciones que se le acercan —Hetzner con Coolify (398) y PocketBase (395)— lo hacen ganando coste y salida y perdiendo operación, y están excluidas por la regla R2. Dicho de otra forma: **el segundo mejor backend de esta tabla es el que exige guardias, y por eso la regla R2 hay que tenerla escrita antes de puntuar y no después.** La siguiente opción realmente elegible, Neon con Better Auth, queda 70 puntos por detrás.
 
 ### 3.2 Hosting de la web
 
-| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | Operación (7) | Latencia ES/LatAm (5) | IA (3) | **Total ponderado** |
+Aquí no aplican los criterios 5, 6 y 10 (RLS, autenticación anónima y realtime son de la capa de datos). Se puntúa sobre los siete criterios restantes, 80 puntos de peso, máximo teórico 400.
+
+| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | Operación (7) | Latencia ES/LatAm (5) | IA (3) | **Total /400** |
 |---|---|---|---|---|---|---|---|---|
-| **Vercel Pro** | 3 | 3 | 4 | 3 | **5** | 4 | **5** | 355 |
-| **Cloudflare Workers / Pages (OpenNext)** | 4 | **5** | 3 | 4 | 4 | **5** | 3 | **404** |
-| **Netlify** | 3 | 2 | 4 | 3 | 4 | 3 | 4 | 302 |
-| **Fly.io** | 4 | 3 | 4 | 4 | 2 | 4 | 3 | 335 |
-| **Railway** | 3 | 3 | 4 | 4 | 3 | 3 | 3 | 322 |
-| **Render** | 3 | 3 | 4 | 4 | 3 | 3 | 3 | 322 |
-| **VPS Hetzner + Coolify** | **5** | **5** | **5** | **1** | **1** | 4 | 3 | 377 |
+| **Cloudflare Workers / Pages (OpenNext)** | 4 | **5** | 3 | 4 | 4 | **5** | 3 | **327** |
+| VPS Hetzner + Coolify | **5** | **5** | **5** | **1** | **1** | 4 | 3 | *321 · fuera por R2* |
+| **Fly.io** | 4 | 3 | 4 | 4 | 2 | 4 | 3 | **283** |
+| **Vercel Pro** | 3 | 3 | 4 | 3 | **5** | 4 | **5** | **280** |
+| **Railway** | 3 | 3 | 4 | 4 | 3 | 3 | 3 | **265** |
+| **Render** | 3 | 3 | 4 | 4 | 3 | 3 | 3 | **265** |
+| **Netlify** | 3 | 2 | 4 | 3 | 4 | 3 | 4 | **245** |
 
 - **Vercel** cambió de modelo en 2025-2026: Fluid compute con **precio por CPU activa** (0,128 $/CPU-hora en las regiones estándar), que solo cobra el tiempo en el que el código está realmente en CPU. Para nuestro perfil —funciones que esperan a Postgres— el cambio es una **rebaja**, no una subida. El plan Pro son 20 $/mes por asiento que despliega, **con 20 $ de crédito de uso incluidos**, 1 TB de ancho de banda y 10 M de peticiones de borde que no consumen crédito. Con un solo asiento y nuestro modelo, la factura es 20 $ hasta pasados los 50.000 usuarios. **Su punto flojo es el criterio 1**: se pueden fijar las funciones en `fra1`, `cdg1` o `dub1`, pero el plano de control, el soporte y los datos de cuenta están en Estados Unidos y Vercel Inc. es una sociedad estadounidense. El contrato de encargado y las cláusulas contractuales tipo cubren el trámite, y `experto-legal` tiene que verlo, pero no es residencia europea de verdad.
 - **Cloudflare Workers** gana la categoría por coste y por latencia. 5 $/mes cubren 10 M de peticiones; a 50.000 usuarios estamos en 9 M. La red tiene presencia en Madrid, Barcelona, Valencia, Bilbao y Málaga, y muchos más puntos en México, Colombia, Chile y Argentina que cualquiera de sus rivales: para el caso del día servido de CDN, que es el 90 % de nuestras peticiones, es la diferencia entre 20 ms y 150 ms para un jugador de Bogotá. Cloudflare Inc. es igualmente estadounidense, pero la Data Localization Suite y las jurisdicciones de Durable Objects dan controles más finos. **Su riesgo real es técnico:** Next.js sobre Workers mediante OpenNext funciona, pero la regeneración incremental y la revalidación bajo demanda —de las que dependen `/casos/<n>`, `/erratas` y el archivo— son la parte menos madura del adaptador, y el corpus de ejemplos es pequeño (criterio 9 en 3). Presupuestar **3-5 días de agente extra** y una tarde de sustos.
-- **Netlify, Fly.io, Railway, Render.** Ninguno aporta algo que Vercel o Cloudflare no den. Netlify incluye 125.000 invocaciones de función y cobra 25 $/M después, lo que a 2,4 M de llamadas autenticadas es caro. Fly, Railway y Render son plataformas de contenedores: mejores si algún día hay un proceso largo (el motor en batch ya vive en GitHub Actions), peores en CDN y en operación. Railway y Render son las opciones honestas si algún día hay que salir de Vercel sin ir a Cloudflare.
+- **Netlify, Fly.io, Railway, Render.** Netlify incluye 125.000 invocaciones de función y cobra 25 $/M después, lo que a 2,4 M de llamadas autenticadas es caro; queda último. Fly, Railway y Render son plataformas de contenedores: mejores si algún día hay un proceso largo (el motor en batch ya vive en GitHub Actions), peores en CDN y en operación. **Fly.io empata técnicamente con Vercel (283 frente a 280)**, y conviene decir dónde está la diferencia real, porque en la tabla es ruido: Vercel gana el criterio 9 con un 5 frente a un 3 y da la regeneración incremental sin configurar, que es exactamente lo que un calendario de nueve semanas necesita; Fly gana en precio y en no ser una caja negra. **Railway y Render son las salidas honestas** si algún día hay que dejar Vercel sin ir a Cloudflare: contenedor, base de datos al lado, precio previsible.
 
-**Ganador de la categoría: Cloudflare Workers por puntos; Vercel por riesgo de calendario.** Ver la recomendación en §7.2, que no es la que sugiere la tabla.
+**Ganador de la categoría por puntos: Cloudflare Workers (327 sobre 400).** La recomendación de §7.2 **no es esa**, y el motivo se explica allí: es una decisión de calendario, no de tabla.
 
 ### 3.3 Correo transaccional y diario
 
-| Opción | UE/RGPD (20) | Coste 50k (20) | Coste 200k | Salida (15) | Precios (10) | Operación (7) | IA (3) | **Total** |
+Seis criterios aplicables, 75 puntos de peso, máximo teórico 375. La columna "coste a 200.000" es informativa y no puntúa: a esa escala la migración de proveedor cuesta un día y medio, así que no debe decidir hoy.
+
+| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | Operación (7) | IA (3) | **Total /375** | *(Coste 200k)* |
 |---|---|---|---|---|---|---|---|---|
-| **Resend** | 3 | 4 | 2 | **5** | 3 | **5** | **5** | **362** |
-| **Amazon SES (eu-west-1)** | 4 | **5** | **5** | **5** | **5** | 2 | 3 | **394** |
-| **Postmark** | 3 | 1 | 1 | 5 | 4 | 5 | 4 | 282 |
-| **Brevo** | **5** | 2 | 3 | 4 | 3 | 4 | 3 | 331 |
-| **Loops** | 2 | 2 | 1 | 4 | 3 | 4 | 3 | 258 |
+| **Amazon SES (eu-west-1)** | 4 | **5** | **5** | **5** | 2 | 3 | **328** | *≈ 36 $* |
+| **Resend** | 3 | 4 | **5** | 3 | **5** | **5** | **295** | *≈ 200 $* |
+| **Brevo** | **5** | 2 | 4 | 4 | 4 | 3 | **277** | *≈ 300 $* |
+| **Postmark** | 3 | 1 | 5 | 4 | **5** | 4 | **242** | *≈ 600 $* |
+| **Loops** | 2 | 2 | 4 | 3 | 4 | 3 | **207** | *≈ 300 $* |
 
 Precios de 2026 para nuestro volumen: **Resend** gratis hasta 3.000 correos/mes *con tope de 100 al día* (relevante: con 60 suscriptores caben justo, con 200 no), 20 $ hasta 50.000, unos 35 $ hasta 100.000, y el plan Scale desde 90 $ (100.000) hasta 1.150 $ (2,5 M). **SES** cuesta 0,10 $ por cada 1.000 correos en cualquier región, más transferencia de datos. **Postmark** ronda los 85 $ por 50.000 y **Brevo** unos 74 $, ambos fuera de discusión para un correo diario masivo. **Loops** cobra por contacto (49 $/mes de 1.000 a 5.000 suscriptores), lo que a 12.000 suscriptores es peor que Resend.
 
@@ -136,13 +147,15 @@ Traducido a nuestros escenarios: 90.000 correos/mes a 50.000 usuarios cuestan **
 
 ### 3.4 Analítica de producto
 
-| Opción | UE/RGPD (20) | Coste 50k (20) | Coste 200k | Salida (15) | Precios (10) | Utilidad para los KPI (10) | Operación (7) | **Total** |
-|---|---|---|---|---|---|---|---|---|
-| **PostHog Cloud EU** | **5** | 2 | 1 | 4 | 2 | **5** | **5** | **345** |
-| **Plausible (nube UE)** | **5** | 3 | 2 | 4 | 4 | 1 | **5** | 320 |
-| **Umami autoalojado** | **5** | **5** | **5** | **5** | **5** | 2 | 1 | 372 |
-| **GA4** | 1 | **5** | **5** | 2 | 3 | 3 | 4 | 268 |
-| **Mixpanel** | 3 | 1 | 0 | 3 | 2 | **5** | 4 | 246 |
+Aquí los criterios 5 y 6 (RLS y autenticación anónima) no aplican y se sustituyen por uno específico de la categoría: **utilidad para los KPI declarados en `docs/contexto-proyecto.md`** —retención D1/D7/D30, punto de abandono por paso, tasa de compartir, conversión— con el peso combinado de ambos, **18**. Total de pesos 90, máximo teórico 450.
+
+| Opción | UE/RGPD (20) | Coste 50k (20) | Salida (15) | Precios (10) | Utilidad KPI (18) | Operación (7) | **Total /450** |
+|---|---|---|---|---|---|---|---|
+| Umami autoalojado | **5** | **5** | **5** | **5** | 2 | **1** | *368 · fuera por R2* |
+| **PostHog Cloud EU** | **5** | 2 | 4 | 2 | **5** | **5** | **345** |
+| **Plausible (nube UE)** | **5** | 3 | 4 | 4 | 1 | **5** | **313** |
+| **Mixpanel** | 3 | 1 | 3 | 2 | **5** | 4 | **263** |
+| **GA4** | 1 | **5** | 2 | 3 | 3 | 4 | **262** |
 
 - **PostHog Cloud EU** está en AWS Fráncfort (`eu-central-1`) como instancia completamente independiente, sin transferencia de datos a Estados Unidos, con generador de contrato de encargado autoservicio. Es lo único de la lista que mide de una pieza los embudos, la retención por cohorte, los indicadores de funcionalidad y el punto de abandono por paso, que son literalmente las métricas de `contexto-proyecto.md`. **Su problema es el precio y es serio:** primer millón de eventos gratis y después 0,00005 $/evento entre 1 y 2 M, 0,0000343 $ entre 2 y 15 M. Y un detalle que el plan no contempla: **los eventos identificados (con perfil de persona) cuestan del orden de 4 veces más que los anónimos** —unos 0,000198 $/evento, con su propio millón gratis—. Con nuestra taxonomía C7 de 6 eventos por sesión, 50.000 usuarios producen 3,6 M de eventos, que son **105 $/mes**; 200.000 usuarios producen 14,4 M, que son **475 $/mes**. Es, con enorme diferencia, el servicio más caro del stack y el único sin techo.
 - **Plausible** es europeo (Estonia), sin cookies y honesto, pero mide páginas y objetivos, no embudos ni cohortes. No sirve para "en qué paso se atasca el jugador", que es el dato que decide si un caso está mal calibrado. Como complemento del SEO sí; como analítica de producto no.
@@ -177,12 +190,14 @@ Precios efectivos calculados sobre nuestros dos puntos de precio reales: **2,99 
 
 ### 3.6 Errores y observabilidad
 
-| Opción | UE/RGPD (20) | Coste (20) | Salida (15) | Cubre B-23 y B-29 (17) | Operación (7) | IA (3) | **Total** |
+Los criterios 5, 6, 8 y 10 no aplican; se sustituyen por uno específico: **cubre B-23 (incidencia automática por caída de ≥ 20 min) y B-29 (panel de salud y tres alertas)**, con peso combinado **17**. Total de pesos 82, máximo teórico 410.
+
+| Opción | UE/RGPD (20) | Coste (20) | Salida (15) | Cubre B-23 y B-29 (17) | Operación (7) | IA (3) | **Total /410** |
 |---|---|---|---|---|---|---|---|
-| **Sentry (región UE, `de.sentry.io`) + Better Stack (monitor)** | **5** | 4 | 4 | **5** | **5** | 4 | **433** |
-| **Better Stack solo** (errores + registros + monitor + guardias) | 4 | 4 | 4 | **5** | **5** | 3 | 404 |
-| **Highlight** | 3 | 4 | 3 | 3 | 4 | 3 | 316 |
-| **Solo registros nativos de Vercel y Supabase** | 4 | **5** | **5** | **1** | 3 | 2 | 320 |
+| **Sentry (región UE, `de.sentry.io`) + Better Stack (monitor)** | **5** | 4 | 4 | **5** | **5** | 4 | **372** |
+| **Better Stack solo** (errores, registros, monitor y avisos en un paquete) | 4 | 4 | 4 | **5** | **5** | 3 | **349** |
+| **Solo registros nativos de Vercel y Supabase** | 4 | **5** | **5** | **1** | 3 | 2 | **299** |
+| **Highlight** | 3 | 4 | 3 | 3 | 4 | 3 | **273** |
 
 - **Sentry tiene región europea en Alemania (`de.sentry.io`), disponible en todos los planes incluido el gratuito Developer.** Un detalle operativo crítico: **la región se elige al crear la organización y es irreversible**; no hay migración posterior. Si se crea la cuenta en `sentry.io` por inercia, se pierde el argumento de residencia para siempre. El plan Team son 26 $/mes con 50.000 errores; el gratuito Developer basta al lanzamiento.
 - **Better Stack** incluye 100.000 excepciones al mes gratis, es compatible con el SDK de Sentry —lo que hace la salida trivial en ambas direcciones— y trae monitorización de disponibilidad, avisos y página de estado en el mismo paquete. Su nivel gratuito con comprobaciones cada 3 minutos **es suficiente para B-23**, cuyo umbral es de 20 minutos continuados de indisponibilidad.
@@ -196,7 +211,7 @@ Precios efectivos calculados sobre nuestros dos puntos de precio reales: **2,99 
 
 Son los cuatro sitios donde la factura deja de ser lineal. Tres de ellos no están en `plan-backend.md` §10.
 
-### 4.1 Usuarios activos mensuales de Supabase: el acantilago de los 100.000
+### 4.1 Usuarios activos mensuales de Supabase: el acantilado de los 100.000
 
 Supabase incluye **100.000 usuarios activos mensuales** en el plan Pro y cobra **0,00325 $ por usuario** a partir de ahí. Y **los inicios de sesión anónimos cuentan como MAU en cuanto se autentican**, igual que un usuario que solo refresca su token.
 
@@ -251,7 +266,7 @@ Dos cosas distintas con la misma causa.
 
 ## 5. Coste total mensual por escenario
 
-Tres combinaciones. Todas comparten Supabase, PostHog Cloud EU con el presupuesto corregido de §4.2, Sentry en región alemana y el nivel gratuito de Better Stack, porque esos tres los gana la misma opción en las tres combinaciones. Lo que varía es el hosting y la base.
+Tres combinaciones. Las tres comparten **PostHog Cloud EU** con el presupuesto corregido de §4.2, **Sentry en región alemana** y el **nivel gratuito de Better Stack** como monitor, porque esas tres categorías las gana la misma opción sea cual sea el resto del stack. Lo que varía es la base de datos y el hosting: **A** es el plan vigente, **B** cambia el hosting a Cloudflare y **C** cambia la base a Postgres puro con autenticación propia.
 
 Cifras en dólares donde el proveedor factura en dólares; total convertido a 1 $ = 0,92 €. **Todas las filas incluyen ya las dos correcciones de §4.1 y §4.2**; la línea "sin correcciones" del final muestra lo que costaría el plan tal y como está escrito hoy.
 
@@ -270,7 +285,7 @@ Cifras en dólares donde el proveedor factura en dólares; total convertido a 1 
 | Dominios y correo de dominio | 4 | 4 | 4 | 4 |
 | **Total $/mes** | **49** | **74** | **124** | **599** |
 | **Total €/mes** | **45 €** | **68 €** | **114 €** | **551 €** |
-| Con SES en lugar de Resend a 200.000 | — | — | — | **404 €** |
+| Con SES en lugar de Resend a 200.000 | — | — | — | **400 €** |
 
 ### Combinación B — Supabase (París) + Cloudflare Workers + Resend/SES + PostHog EU + Sentry EU
 
@@ -312,11 +327,15 @@ Para que la desviación quede en una cifra y no en un adjetivo:
 | | 1.000 | 10.000 | **50.000** | 200.000 |
 |---|---|---|---|---|
 | `plan-backend.md` §10 estima | 45-65 € | — | **95-110 €** | — |
-| Combinación A **sin** las correcciones de §4.1 y §4.2 | 45 € | 68 € | **203 €** | **1.090 €** |
+| Combinación A **sin** las correcciones de §4.1 y §4.2 | 45 € | 68 € | **179 €** | **1.092 €** |
 | Combinación A **con** las correcciones | 45 € | 68 € | **114 €** | 551 € |
 | Combinación B **con** las correcciones | 31 € | 54 € | **100 €** | 356 € |
 
-La desviación de 203 € frente a 110 € se reparte así: **+65 € de PostHog** (12 sesiones en vez de 6, y 6 eventos por sesión), **+24 € de observabilidad** que no estaba presupuestada, y **+4 € de correo** por el mismo motivo de sesiones. Ninguna es culpa de un proveedor: son dos hipótesis y un olvido.
+**A 50.000 usuarios la desviación es de 69 € y es prácticamente toda de PostHog** (+65 €): doce sesiones por usuario y mes en lugar de seis, con el presupuesto de seis eventos por sesión intacto. No es culpa de un proveedor ni de una subida de precios: es una hipótesis de uso que se ha doblado y un presupuesto que no se rehízo. Aplicando la corrección de §4.2 se recupera casi entera.
+
+**A 200.000 usuarios la desviación es de otra naturaleza y por eso importa más:** 1.092 € frente a 551 €, y ahí el reparto es 325 $ de MAU de Supabase (§4.1), 263 $ de PostHog (§4.2) y unos 45 $ de peticiones de borde y correo. **Las dos decisiones que quitan 588 $ de esa factura —cuenta anónima perezosa y presupuesto de eventos— hay que tomarlas en la semana 1**, porque una toca `auth.users` y la otra congela la taxonomía. Después cuestan lo que cuesta rehacer una serie histórica y una migración de identidades.
+
+Y una nota sobre observabilidad que la tabla esconde: la línea es de 0 € hasta los 50.000 usuarios porque los planes gratuitos de Sentry y Better Stack bastan. Que salga a cero no significa que estuviera contemplada: `plan-backend.md` §10 sencillamente no la tiene, y a 200.000 usuarios son 40 $.
 
 ### El punto de referencia que se rechaza: autoalojar en Hetzner con Coolify
 
@@ -411,7 +430,7 @@ Lo que cambia es C7, y es un cambio grande: **2 eventos por sesión al 100 %, cu
 - **Sentry en la región alemana (`de.sentry.io`)**, plan gratuito Developer al lanzamiento, plan Team (26 $/mes, 50.000 errores) cuando se supere la cuota. **La región se elige al crear la organización y es irreversible: hay que crearla bien en la semana 1** (B-02), no cuando haga falta.
 - **Better Stack en su nivel gratuito** como monitor externo de disponibilidad. Comprobaciones cada 3 minutos, suficientes para el umbral de 20 minutos de B-23. Es también el plan de salida de Sentry, porque acepta su SDK sin cambios.
 - **Las tres alertas y ninguna más** que ya fija `plan-backend.md` §9: caída, depósito de casos por debajo de 14 días, coste proyectado por encima del presupuesto. Se añade una cuarta condición dentro de la alerta de coste, no una alerta nueva: peticiones de borde por encima del 80 % de lo incluido.
-- Presupuesto: **0 $/mes al lanzamiento, 26-40 $/mes a partir de 50.000 usuarios.**
+- Presupuesto: **0 $/mes hasta los 50.000 usuarios** (cuotas gratuitas de ambos), **26-40 $/mes por encima**. Que la línea salga a cero no es motivo para no escribirla: lo que no está en el presupuesto no se vigila.
 
 ---
 
