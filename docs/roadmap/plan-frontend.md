@@ -29,6 +29,8 @@ Fuentes que este plan obedece: `docs/roadmap/supuestos.md`, `docs/catalogo-produ
 
 ## 1. Stack: qué se elige, por qué, y qué no se toca después
 
+> **Nota de `director-producto`, 7 de septiembre de 2026 (D-012).** Esta sección está **suspendida en la parte de framework** y se remite a **`docs/stack-tecnologico.md`**, que es la versión de la verdad del stack. Tres cosas que hay que saber antes de leer lo que sigue: **(1)** D-F1 dice «Next.js 15» y la comparación real es contra **Next 16.3**, que es otro modelo de caché; **(2) la razón 2 de D-F1 es un error de análisis** que su propio autor encontró en `docs/stack/frontend.md` —en App Router **no existe forma de servir una página sin JavaScript**, así que las 36 URL pagan el suelo de 130 KB gzip medido, no solo las 22 con isla—; y **(3)** el presupuesto de la §7 de este plan **está por debajo del suelo de Next 16**, no en su techo, y se reescribe con suelos medidos (`/` ≤ 60 KB gzip, landing ≤ 40 KB, las 14 sin isla a 0 KB con `csr = false`). **El framework se decide el viernes 11 de septiembre** con los siete criterios y la regla de desempate de `docs/stack-tecnologico.md` §2.4, y se registra ese día como **D-F1-bis**. **El resto de esta sección sigue vigente** salvo tres piezas que cambian si gana SvelteKit: Radix → **Bits UI**, `next/og` → **satori + `@resvg/resvg-js` a pelo**, Serwist → **`$service-worker`**. `next-intl` no cambia: F-53 sigue en ficheros de mensajes propios y **Paraglide queda descartado**. **Este plan no se reescribe hasta que la decisión esté tomada.**
+
 ### D-F1 · Next.js 15, App Router, React Server Components
 
 **Elegido frente a SvelteKit.** No por gusto: por tres exigencias del árbol web que Next resuelve sin trabajo extra.
