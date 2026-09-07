@@ -393,3 +393,42 @@ La primera pantalla tiene que cargar en menos de 2,5 s en un móvil medio con re
 - PostHog y Sentry cargan tras el primer render y tras el consentimiento.
 - Imágenes en AVIF/WebP con `width` y `height`; ninguna ilustración por encima del pliegue salvo el plano, que es CSS y SVG.
 - **`user-scalable=no` está prohibido** por una regla de lint que falla el build. El zoom nativo no se desactiva nunca.
+
+---
+
+## 8. Riesgos
+
+Ordenados por daño esperado, no por probabilidad. Cada uno con su repliegue escrito **antes** de que ocurra.
+
+| id | Riesgo | Probabilidad | Daño | Mitigación | Repliegue si ocurre |
+|---|---|---|---|---|---|
+| **R1** | **Safari iOS borra el almacenamiento.** Sin cuenta, IndexedDB y `localStorage` de un sitio no instalado se pueden eliminar tras **siete días sin visitas**. Un jugador de fin de semana pierde racha y estadísticas sin haber hecho nada mal, y nos culpa a nosotros | **Alta** | **Muy alto**: es exactamente la queja que hunde a la app líder del género | Detectar iOS + no instalado; ofrecer la cuenta como «guarda tu racha en todos tus dispositivos» tras el segundo caso resuelto; el prompt de instalación de F-46 es también mitigación, porque una PWA instalada no sufre esa caducidad; escribir el aviso en `/reglas` | Ventana de 48 h de recuperación de racha sin escribir a soporte (F18), que ya está comprometida por otro motivo y sirve para este |
+| **R2** | **Rendimiento del 6×6 en gama media.** 36 celdas, resaltado por pista, arrastre y animación de reconstrucción en un móvil de 2022 | Media | Alto: rompe INP y F6 | Selector por celda con `useSyncExternalStore`; el resaltado se pinta con variables CSS en el contenedor, no cambiando clases de 36 nodos; arrastre agrupado en `requestAnimationFrame`; medición desde S3, no desde S7 | Si el 6×6 del domingo no cumple INP, se simplifica **la animación**, nunca el tamaño del tablero |
+| **R3** | **iOS Safari no da prompt de instalación ni notificaciones push hasta instalar.** No hay `beforeinstallprompt` y la única palanca de retorno es el correo | Cierta | Medio | Instrucciones manuales ilustradas para «Añadir a pantalla de inicio»; la newsletter es la palanca de retorno, no el push (ya decidido en el catálogo) | Ninguno: es una restricción de plataforma y se asume |
+| **R4** | **Cuatro acciones necesitan conexión** (Sabueso, interrogatorio, Comprobar, acusar) por la regla de no filtrar la solución. Choca con la promesa «funciona sin conexión» | Cierta | Medio | Decirlo en pantalla; el juego, las anotaciones, el deshacer y el cronómetro **sí** funcionan sin conexión; acusar se encola y se resuelve al reconectar | Si la cola falla, el estado «pendiente» conserva la partida y el tiempo; nunca se pierde progreso |
+| **R5** | **La actualización del service worker rompe una partida en curso.** Es la queja que hunde a la app más descargada del género (F19) | Media | Muy alto | El service worker nuevo **no toma el control durante una partida**: se aplica al cambiar de pantalla o al recargar fuera de partida; versionado del esquema de persistencia con migración; test explícito en Playwright | Botón «recargar» manual con guardado previo forzado |
+| **R6** | **UX-11 (pantalla de resultado) llega tarde** y la reconstrucción se desplaza | Media | Alto | Está escrito que se firma antes de programar; lo pido en S3 día 3, con dos semanas de margen | Se programan los cuatro bloques con el orden ya decidido en PR10 y copy provisional, y se ajusta el diseño encima; el **orden** no se toca |
+| **R7** | **Los textos de las 30 páginas no llegan** para CF-3 | Media | Alto | Sistema de bloques (F-39) que acepta textos por goteo; las URL existen con el puzzle y la respuesta directa desde el principio | Se publican con menos páginas y se añaden en S8-S10. Nunca se publica una landing sin puzzle jugable: sería exactamente la página puente vacía que el catálogo prohíbe |
+| **R8** | **El CDN bloquea a los rastreadores de IA por defecto.** Cloudflare y Vercel activan esa regla en algunos planes; si `OAI-SearchBot` recibe 403, no existimos para ChatGPT por bien escrito que esté el `robots.txt` | Media | Alto | Comprobación explícita en F-42 y en CF-5, con `curl` y agente de usuario simulado **contra producción** | Desactivar la regla del CDN; es un ajuste, no desarrollo |
+| **R9** | **La Compuerta 0 deja el interrogatorio en rojo** en la semana 6 | Media | Bajo para el calendario, alto para el relato | La bandera existe desde el primer día y el miércoles «clásico» ya está construido (es el martes con otro caso) | El miércoles se lanza como clásico; F-32 sale en fase 2 sin tocar nada más |
+| **R10** | **Expediente en el lanzamiento no está en el árbol web** ni en el catálogo (que lo pone en semanas 10-14) | Alta | Medio | Paquete F-40 de cinco URL preparado y presupuestado | Si se confirma que Expediente es fase 2, se cae el bloque F (6,5 días) y el plan gana holgura; **no al revés**: decidirlo en S8 sí duele |
+| **R11** | **El calendario tiene tres semanas de trabajo por delante de la beta y una sola de correcciones.** Es poco para un producto que se juega a diario | Media | Alto | La congelación de funcionalidad el lunes de S7 es dura; S8 entera está reservada a correcciones | Si CF-4 sale en rojo, el lanzamiento se mueve a S10 (13 de noviembre, el límite que da `supuestos.md`), no se recorta la accesibilidad ni los tests |
+
+---
+
+## 9. Contradicciones entre documentos aprobados que necesitan una decisión (no las resuelvo yo)
+
+1. **Expediente el día 1 o en fase 2.** `supuestos.md` lo mete en el lanzamiento; `catalogo-productos.md` lo pone en las semanas 10-14 y `arbol-web-final.md` asume lo segundo. Son 6,5 días de agente y cinco URL. **Decisión para el fundador, antes de S4.**
+2. **«Solver en cliente».** `propuesta-jugabilidad.md` lo lista como dependencia de V4 y V11; el catálogo prohíbe que la solución viaje al cliente antes de acusar. Este plan resuelve el choque llevando las cuatro acciones al servidor, y hay que **registrarlo como decisión** porque cambia dos contratos de backend y la promesa de «sin conexión».
+3. **`/caso/[hoy]` responde 302 a `/`, pero el caso del día cambia a la medianoche local del jugador** (F5), no a la del servidor. Con SSG-diario a las 00:00 Europa/Madrid, un jugador en México ve el caso «de hoy» de España durante siete horas. **Necesito de backend y de producto la regla exacta**: o el número de caso se resuelve en el borde por zona declarada, o la promesa se reescribe. Va en BE-12 y hay que cerrarlo antes de S6.
+4. **La ficha técnica depende de un dictamen legal** (LG-01) que aún no existe. Si no llega, la cabecera se publica sin ficha y PR1 se cae del lanzamiento.
+
+---
+
+## 10. Cómo trabajo, para que nadie tenga que preguntarlo
+
+- Código en `web/`. Commits pequeños, en español, con el id de la tarea al principio (`F-12: render del tablero sin re-render global`).
+- **Nada se fusiona sin tests y sin Lighthouse verde en móvil.** No hay excepción por prisa; si hay prisa, se recorta alcance, no la puerta.
+- **Antes de implementar una pantalla compruebo que existe su especificación de estados en `docs/diseno/ux/`.** Si falta, la pido a `disenador-ux-ui` y **no la invento**. La única excepción escrita es R6, y con el orden de bloques ya fijado.
+- **El cliente nunca recibe la solución en claro.** La comprobación se hace contra `desarrollador-backend`. Hay un test de CI que rompe el build si la respuesta del caso público contiene el campo de solución.
+- Las decisiones técnicas se documentan en `web/README.md` (el detalle) y en `docs/decisiones.md` (la decisión y lo que se acepta a cambio), no en la conversación.
