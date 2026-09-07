@@ -122,3 +122,147 @@ Día -2: CF-5. Día 1: publicación, alta en Search Console y Bing, vigilancia d
 
 ### S10 (9-15 nov) · Estabilización
 Web Vitals de campo frente al presupuesto de laboratorio, primeras correcciones de accesibilidad reportadas, `web/README.md` y `docs/decisiones.md` al día.
+
+---
+
+## 4. Tabla de tareas
+
+Formato de `supuestos.md`. «Días» = días de agente. «Horas» = horas del fundador (decisión, prueba en dispositivo real o comprobación manual en navegador). Dependencias: `F-xx` de este plan; `M-xx`/`B-x` del motor; `BE-xx` de backend; `UX-xx` de diseño; `AN-xx` de datos; `LG-xx` de legal.
+
+### Bloque A · Arranque, contratos y calidad (S1)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-01** | Decidir y registrar el stack | `docs/decisiones.md` (D-F1), `web/README.md` | 0,5 | 1 | — | S1-S1 | D-F1 escrita con las tres razones y con lo que se acepta a cambio; el fundador la ha leído y no la reabre | Bajo |
+| **F-02** | Esqueleto de la aplicación | `web/` (Next 15, TS estricto, ESLint, Prettier, grupos de rutas) | 1 | 0 | F-01 | S1-S1 | `pnpm build` verde; `/` responde con HTML que contiene texto real; `tsc --noEmit` sin `any` implícito | Bajo |
+| **F-03** | Tubería de tokens de diseño | `web/src/estilos/tokens.css`, `scripts/tokens.ts` | 0,5 | 0 | UX-01 (`tokens.json` v1) | S1-S1 | Cambiar un valor en `tokens.json` y reconstruir cambia la pantalla; ningún color literal en el código (regla de lint que falla el build) | Medio: depende de que UX entregue el día 2 |
+| **F-04** | Contratos tipados del caso y del certificado | `web/src/contratos/` + `tests/fixtures/` | 1 | 0 | Motor B-0 | S1-S2 | Los tipos se generan desde el esquema del motor, no se escriben a mano; 30 fixtures (uno por día de la semana ×4 + 2 de Expediente) se cargan y validan en test | **Alto: es la compuerta CF-0** |
+| **F-05** | CI con presupuesto | `.github/workflows/web.yml` | 1 | 0 | F-02 | S1-S1 | Un PR que sube el JS de `/` por encima del presupuesto de §7 **falla**; typecheck, lint, Vitest, build, axe, Lighthouse CI y validador de JSON-LD en la misma tubería | Medio |
+| **F-06** | Sentry | `web/sentry.*.config.ts` | 0,5 | 0,5 | F-02 | S1-S1 | Un error provocado en móvil llega con mapa de fuentes legible y sin PII; `replaysSessionSampleRate = 0` | Bajo |
+
+### Bloque B · Sistema de componentes (S2)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-07** | Primitivas accesibles | `web/src/components/ui/` | 1 | 0 | F-03, UX-02 | S2-S2 | Diálogo, hoja inferior, acordeón, pestañas, interruptor, aviso y ayuda emergente pasan axe y se manejan solo con teclado; foco devuelto al cerrar | Bajo |
+| **F-08** | Componentes de producto | `web/src/components/juego/cabecera/`, `.../botonera/` | 1 | 1 | F-07, UX-03, LG-01 | S2-S2 | Cabecera con las **tres** fichas técnicas (A, B, anulado) renderizadas desde datos; cuenta atrás al siguiente caso; botonera con Comprobar, Deshacer, Rehacer y «Empezar de cero» **visible durante la partida** | Medio: los textos de ficha no salen sin aprobación legal |
+| **F-09** | Marco de la aplicación | `web/src/app/(juego)/layout.tsx`, fuentes autoalojadas, iconos, mascota | 0,5 | 0 | UX-02, UX-04 | S2-S2 | Dos caras de fuente, `woff2`, subconjunto latino, `font-display: swap`; sin salto de maquetación al cargar (CLS 0 medido) | Bajo |
+| **F-10** | Página de estilos viva | `web/src/app/(sistema)/_estilos/` (noindex) | 0,5 | 0,5 | F-07 | S2-S2 | Todos los componentes y todos sus estados en una URL; `disenador-ux-ui` la usa para revisar sin abrir el código | Bajo |
+| **F-11** | Máquina de estados del tablero | `web/src/dominio/tablero/` | 1,5 | 0 | F-04, UX-05 | S2-S2 | Reductor puro; historial de comandos; deshacer/rehacer ilimitado; **50 acciones aleatorias + 50 deshacer devuelven el estado inicial exacto** (test de propiedad con 1.000 semillas) | Medio |
+
+### Bloque C · Tablero de Escena (S3) — ruta crítica
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-12** | Render del tablero sin re-render global | `web/src/components/juego/tablero/` | 1 | 1 | F-11, UX-05 | S3-S3 | CSS Grid pintado desde el HTML servido, sin esqueleto que se reemplace al hidratar; tocar una celda de un 6×6 vuelve a pintar **una** celda (medido con el perfilador de React) | **Alto: es el riesgo de rendimiento R2** |
+| **F-13** | Gestos táctiles | (mismo componente) | 1 | 2 | F-12 | S3-S3 | Objetivos ≥44 px en 360 px; ciclo de estados por toque sin retraso de 300 ms; arrastre para marcar o descartar candidatos en varias celdas; **`user-scalable=no` prohibido** por lint; probado por el fundador en Chrome Android e iOS Safari reales | Alto |
+| **F-14** | Ejes rotulados y tirar del hilo | (mismo componente) | 0,5 | 0 | F-12, Motor M4 | S3-S3 | Ejes numerados y rotulados visibles también en 6×6; tocar una pista resalta exactamente las celdas que devuelve `cells(pista, estado)`, sin que el frontend recalcule nada | Medio |
+| **F-15** | Teclado y lector de pantalla | (mismo componente) + `docs/decisiones.md` | 1 | 2 | F-12, UX-06 | S3-S3 | Tab, flechas, teclas **1-6**, Espacio/Enter, Escape, foco visible, `prefers-contrast` y `forced-colors`; roles de rejilla y celda con etiqueta «pasillo 3, ala 2, vacía»; una partida completa con VoiceOver y otra con TalkBack, hechas por el fundador | Alto |
+| **F-16** | Variantes de día | `web/src/components/juego/tablero/variantes/` | 1,5 | 0 | F-12, F-14 | S3-S4 | Celdas bloqueadas (sábado), dos plantas con una escalera (domingo), rastro del objeto (viernes) y sobres por progreso (lunes) se renderizan **desde el campo del caso**, sin condicional por fecha en el código | Medio |
+| **F-17** | Persistencia local y cronómetro | `web/src/dominio/persistencia/` | 1 | 1,5 | F-11 | S3-S3 | IndexedDB con repliegue a `localStorage`; cerrar y reabrir conserva partida, ajustes y racha; **el cronómetro arranca en la primera interacción con el tablero**, no al cargar, y no se reinicia al recargar; se guardan tiempo activo y tiempo total por separado | **Alto: caducidad de almacenamiento en iOS (R1)** |
+| **F-18** | Portada del caso y tutorial | `web/src/app/(juego)/_componentes/portada/`, `.../tutorial/` | 1 | 2 | F-12, UX-07 | S3-S4 | La regla del día se anuncia **en la portada**, nunca en un tutorial; tutorial de 60 s saltable y repetible desde ajustes, con pantalla dedicada a la convención espacial; 8 de 10 personas lo completan en ≤90 s | Medio |
+
+### Bloque D · Pistas, sobres, Sabueso y comprobación (S4)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-19** | Panel de pistas y sobres | `web/src/components/juego/pistas/` | 0,75 | 0 | F-14, UX-08 | S4-S4 | Pistas numeradas y secas, con resaltado bidireccional; los sobres se abren **por progreso**, nunca por acierto; el lunes abre con tres pistas y el juego dice cuántas faltan | Bajo |
+| **F-20** | Sabueso de dos niveles | `web/src/components/juego/sabueso/` | 0,75 | 1 | F-12, BE-04, UX-09 | S4-S4 | Un uso por caso; nivel 1 señala la pista, nivel 2 la habitación; **jamás da señal de error** y jamás recibe la solución: el peldaño llega del servidor a partir del estado enviado; sin conexión, el botón explica que necesita conexión | Medio |
+| **F-21** | Comprobar y contraprueba | `web/src/components/juego/comprobar/` | 0,5 | 0 | BE-03, UX-10 | S4-S4 | La respuesta trae **celdas vacías y celdas erróneas por separado**; el texto dice «te falta una» / «hay 3 fuera de sitio», **nunca en rojo**, y nunca existe la etiqueta contraria; se verifica en la respuesta de red que no viajan cuáles | Medio |
+
+### Bloque E · Resultado, reconstrucción y escalafón (S4)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-22** | Acusar | `web/src/components/juego/acusar/` | 0,5 | 0 | BE-05 | S4-S4 | Acción irreversible con confirmación; sin conexión se encola y el resultado se resuelve al reconectar, con estado «pendiente» explícito; una sola acusación por caso y persona | Medio |
+| **F-23** | Pantalla de resultado (PR10) | `web/src/app/(juego)/resultado/` | 1 | 1 | **UX-11 firmada**, F-22, BE-05 | S4-S4 | **Orden fijo de cuatro bloques**: veredicto → explicación de Sabueso (abierta si se falló, plegada si se resolvió) con «reportar un problema» discreto al final → tu racha → y ahora qué (botón principal, Compartir, cuenta atrás con la regla del día en lenguaje llano). **Ningún estadístico de posición por defecto.** Microcopy sobre el **número de caso**, nunca sobre la fecha | Medio |
+| **F-24** | Reconstrucción animada | `web/src/components/juego/reconstruccion/` (carga diferida) | 1,5 | 1 | F-04, UX-12, Motor M3 | S4-S5 | Se pinta **desde el certificado sin transformarlo**; 20-25 s; «saltar» con un toque **y el ajuste se recuerda**; «volver a verlo» y «paso a paso» con el tablero en cada peldaño y el nombre de la técnica; **Compartir nunca queda detrás**; respeta `prefers-reduced-motion` mostrando la versión en pasos | Medio |
+| **F-25** | Escalafón y cuaderno de técnicas | `web/src/app/(juego)/cuaderno/` | 1 | 1 | Motor (TR), UX-13 | S5-S5 | Doce a catorce técnicas con nombre, dibujo y frase de Sabueso; acreditadas en color, pendientes en gris con los casos que faltan; **un cuaderno, dos apartados, un rango**, y el rango se calcula sobre el apartado más avanzado, nunca sobre la suma; el rango **no baja nunca** | Medio |
+| **F-26** | Motivo como segunda fase | `web/src/components/juego/motivo/` | 0,5 | 0 | F-23 | S5-S5 | 60-90 s, tres motivos y dos pruebas; **saltable**; el botón de compartir está al lado, nunca detrás | Bajo |
+
+### Bloque F · Expediente (S5)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-27** | Cuaderno de Expediente | `web/src/components/juego/cuaderno-expediente/` | 1,5 | 1 | F-11, F-04, UX-14 | S5-S5 | Tres bloques, 48 casillas en 360 px con objetivos ≥44 px; ✓/✗ con el mismo historial de comandos que Escena; **autopropagación opcional y nunca obligatoria** (desactivada en experto); tirar del hilo entre bloques; guardar, restaurar y vaciar | Alto |
+| **F-28** | Dossier con fichas plegadas | `web/src/components/juego/dossier/` | 1 | 0,5 | F-07, UX-15 | S5-S5 | Ficha plegada muestra nombre, oficio y **etiquetas de atributo**; retrato y frase de carácter solo al tocar; el origen de la tira de orden va rotulado («desde la entrada») también en el texto alternativo; un contador comprueba el presupuesto de texto y **avisa en desarrollo si se pasa** | Medio |
+| **F-29** | Marcas del comisario y acusación atómica | (mismos componentes) | 1 | 0,5 | F-27, BE-06 | S5-S6 | Las marcas llegan como `givens` del caso y se distinguen visualmente de las del jugador; una es falsa y se puede refutar; la acusación es atómica con **tres** resultados; la contraprueba señala una casilla, a menudo en negativo | Medio |
+| **F-30** | Reconstrucción de rejilla | `web/src/components/juego/reconstruccion/rejilla.tsx` | 1 | 0 | F-24, F-04 | S6-S6 | **Mismo contrato de certificado, segundo renderizador**: las casillas se encienden en orden y se marca el salto entre bloques; cero cambios en el motor | Medio |
+| **F-31** | Tutorial del primer jueves | `web/src/app/(juego)/_componentes/tutorial/expediente.tsx` | 0,5 | 0,5 | F-18 | S6-S6 | Se dispara **solo la primera vez que el jugador llega a un jueves**, nunca antes; saltable y repetible | Bajo |
+| **F-32** | Interrogatorio de menú vivo *(detrás de bandera)* | `web/src/components/juego/interrogatorio/` | 1,5 | 1 | **Compuerta 0 del motor**, BE-07, UX-16 | S6-S6 | Tres preguntas, contador visible, menú servido por el backend en cada turno; **el cliente no recibe respuestas no formuladas**; la línea «cualquiera de estas cierra el caso» siempre visible; con la bandera apagada el miércoles se sirve como «clásico» sin rastro en el HTML | **Alto: depende de un número que aún no existe** |
+
+### Bloque G · Racha, archivo y cuenta (S5)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-33** | Racha y calendario | `web/src/app/(juego)/racha/` | 1 | 1 | BE-08, UX-17 | S5-S5 | Calendario de 30 días con cinco estados: resuelto, fallado, **gracia**, **día concedido** y sin jugar, cada uno con su color y su explicación al tocarlo; la racha se lee por **número de caso**, no por fecha; el mensaje dice «tu racha sigue viva: has usado tu día de gracia» | Medio |
+| **F-34** | Archivo de 7 días | `web/src/app/(contenido)/archivo/` | 0,75 | 0 | BE-09 | S5-S5 | Siete días naturales, ficha con aviso de caducidad («sale del archivo en 2 días»), filtro por modo; el día 8 lleva a la página de explicación, no a un 404 | Bajo |
+| **F-35** | Cuenta, sincronización y ajustes | `web/src/app/(cuenta)/` | 1,25 | 2 | BE-10 | S5-S6 | Magic link; el progreso anónimo se fusiona sin duplicar ni perder días; **prueba con dos dispositivos reales**: empiezo en el móvil, abro el portátil y encuentro partida, racha y estadísticas; los ajustes (tema, sonido, autopropagación, movimiento reducido) sobreviven a recarga, a cierre y **a una actualización del service worker** | Alto |
+
+### Bloque H · Compartir (S6)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-36** | Tarjeta de resultado en lienzo | `web/src/dominio/compartir/tarjeta.ts` | 1,25 | 1 | UX-18, `docs/specs/compartir.md` | S6-S6 | 9:16 y 1:1 generadas en el cliente con `OffscreenCanvas`; **ni posiciones ni nombres** (revisado sobre 20 resultados por `revisor-calidad`); tamaño de cuadrícula acotado, texto alternativo descriptivo y **una línea resumen legible** para lector de pantalla; paleta variable en alto contraste; el tiempo se etiqueta **«declarado»** | Medio |
+| **F-37** | Web Share y repliegue | `web/src/dominio/compartir/` | 0,5 | 1 | F-36 | S6-S6 | Web Share nivel 2 con imagen donde exista; repliegue a copiar al portapapeles con confirmación; enlace con parámetro de atribución; probado por el fundador en iOS Safari, Chrome Android y escritorio | Medio |
+| **F-38** | `/r/[id]` en servidor | `web/src/app/r/[id]/` | 0,75 | 0 | BE-11, LG-02 | S6-S6 | SSR con el caso **jugable arriba del pliegue**; `noindex, follow` y `X-Robots-Tag: noindex` en la imagen OG; identificador aleatorio ≥16 caracteres; 410 a los 30 días; si el caso ya salió del archivo, abre **la página del día 8**, no el caso; la imagen OG no lleva nada que no esté en la página ni identificadores de seguimiento | Medio |
+
+### Bloque I · Landings, SEO y GEO (S6-S7)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-39** | Sistema de página indexable | `web/src/components/contenido/` | 1 | 0 | F-07 | S6-S6 | Bloques reutilizables: respuesta directa de ≤60 palabras en el primer 30 %, definición «X es un Y que Z» bajo un h2 en forma de pregunta, FAQ, tabla comparativa en `<table>`, migas, fecha visible, autor; un lint avisa si la respuesta directa pasa de 60 palabras | Bajo |
+| **F-40** | Las 36 URL P0 (+5 de Expediente) | `web/src/app/(contenido)/**` | 2,5 | 2 | F-39, contenidos, F-16 | S6-S7 | Cada URL con su renderizado exacto del árbol (SSG-diario, SSG, ISR, SSR); **`curl` de cada URL P0 contiene el enunciado y las pistas**; canónicas absolutas sin `www` y sin barra final; 301 de las variantes; `/caso/[hoy]` responde 302 a `/`; hreflang `es-ES`/`es-419` preparado | **Alto: depende de que existan los textos** |
+| **F-41** | Datos estructurados | `web/src/dominio/schema/` + test de CI | 0,75 | 0 | F-40 | S6-S7 | Un **solo** bloque JSON-LD por página, con el tipo que le toca según la tabla §4.2 del árbol; **el build falla si no valida**; `BreadcrumbList` coherente con la miga visible; **nunca `AggregateRating`** | Bajo |
+| **F-42** | OG, sitemaps y ficheros de sistema | `web/src/app/opengraph-image.tsx`, `sitemap*.xml`, `robots.txt`, `llms.txt`, `feed.xml` | 1 | 1 | F-40 | S7-S7 | Imagen OG del caso del día **sin spoiler**, generada en el borde; índice de sitemaps con cuatro hijos, `lastmod` real, sin `priority` ni `changefreq`, solo URL 200 e indexables; `robots.txt` con `Allow` explícito a los tres grupos de rastreadores; **comprobado que el CDN no devuelve 403 a `OAI-SearchBot`** | Medio |
+| **F-43** | Vistazo embebible | `web/src/components/juego/vistazo/` | 0,5 | 0 | F-12, F-27 | S7-S7 | 3×3 de Escena y 3×3×3 de Expediente, con numeración propia, **no tocan la racha**, jugables dentro de una landing sin cargar el paquete del caso completo | Bajo |
+
+### Bloque J · PWA (S6)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-44** | Manifest, iconos y arranque | `web/public/manifest.webmanifest`, iconos, pantallas de arranque | 0,5 | 0,5 | UX-19 | S6-S6 | Instalable en Chrome Android y en iOS Safari («Añadir a pantalla de inicio»); iconos enmascarables; pantallas de arranque de iOS; la descripción del manifest es **literalmente** la frase de entidad de §4.1 del árbol | Bajo |
+| **F-45** | Service worker | `web/src/sw.ts` (Serwist) | 1,5 | 1,5 | F-17, F-44 | S6-S6 | Precaché del caso de hoy **y del de mañana** en cuanto se publica; el caso ya descargado se juega sin conexión; **una actualización del service worker no rompe una partida en curso** (test explícito: partida a medias → despliegue → recarga → tablero, cronómetro y ajustes intactos); la actualización se aplica al cambiar de pantalla, nunca durante la partida | **Alto** |
+| **F-46** | Prompt de instalación diferido | `web/src/components/sistema/instalar/` | 0,5 | 0,5 | F-44, F-52 | S6-S7 | No aparece antes del **segundo caso resuelto**; se puede rechazar y no vuelve en 30 días; evento `pwa_instalada`; en iOS, instrucciones manuales en vez de prompt, porque `beforeinstallprompt` no existe | Bajo |
+
+### Bloque K · Analítica, pruebas y accesibilidad (S6-S7)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-47** | Instrumentación de eventos | `web/src/analitica/` | 1 | 0,5 | **AN-01** (taxonomía con `modo`) | S6-S6 | Taxonomía tipada: un evento fuera de la taxonomía **no compila**; todos los eventos llevan la propiedad `modo`; el embudo completo llega a PostHog en un recorrido de prueba grabado, incluidos `pregunta_hecha`, `reconstruccion_completada`/`_saltada`, `tecnica_acreditada`, `rango_subido`, `sabueso_usado` (con nivel), `sobre_abierto`, `movil_acertado`, `racha_salvada` (con motivo) y `pwa_instalada` | Medio |
+| **F-48** | Pruebas de lógica | `web/tests/unit/` | 1 | 0 | F-11, F-27 | S6-S6 | Vitest sobre reductor, historial, autopropagación, persistencia y traducción certificado→fotogramas; invariante del certificado comprobada en el frontend (estado *k* = aplicar efectos sobre estado *k−1*) para las 30 fixtures | Bajo |
+| **F-49** | Pruebas de extremo a extremo en móvil | `web/tests/e2e/` | 1,5 | 0 | F-40, F-45 | S6-S7 | Playwright en móvil emulado: resolver un caso, romper y recuperar la racha, cambio de día a las 00:00 con reloj simulado, sin conexión, actualización del service worker a mitad de partida, y las 50+50 acciones de F-11 | Medio |
+| **F-50** | Presupuesto en CI | `lighthouserc.json` | 0,5 | 0 | F-05, F-40 | S7-S7 | Presupuesto de §7 por tipo de página; el PR falla si se pasa; se ejecuta contra las 36 URL en la rama principal | Bajo |
+| **F-51** | Accesibilidad WCAG 2.2 AA | informe en `web/README.md` | 0,75 | 2 | F-15, F-40 | S7-S7 | axe sin infracciones en las 36 URL; recorrido completo con VoiceOver (iOS) y TalkBack (Android) hecho por el fundador; `prefers-reduced-motion` y `forced-colors` respetados en tablero, cuaderno y reconstrucción | Alto |
+| **F-52** | Consentimiento y legales | `web/src/components/sistema/consentimiento/` | 0,5 | 1 | LG-03 | S7-S7 | Banner conforme a la AEPD: rechazar cuesta lo mismo que aceptar; **PostHog no carga hasta el consentimiento**; las cuatro páginas legales enlazadas desde el pie | Medio |
+| **F-53** | i18n | `web/messages/es-ES.json` | 0,5 | 0 | — | S6-S6 | Ningún texto literal en componentes (regla de lint); estructura de claves lista para `es-419` sin refactor; formatos de fecha y número por variante | Bajo |
+
+### Bloque L · Beta, lanzamiento y cierre (S7-S10)
+
+| id | Tarea | Entregable | Días | Horas | Dependencias | S | Criterio de «hecho» | Riesgo |
+|---|---|---|---:|---:|---|---|---|---|
+| **F-54** | Suite en Android real | informe | 0,5 | 3 | F-49 | S7-S7 | Tres partidas completas en un Android de gama media **real**, sin bloqueos ni toques perdidos (F19). No se sustituye por emulador | Alto |
+| **F-55** | Correcciones de la beta | commits | 2,5 | 4 | CF-4 | S7-S8 | Todo lo marcado «impide jugar» y «pierde progreso», cerrado; el resto, priorizado y registrado | Medio |
+| **F-56** | Ensayo de lanzamiento | lista de comprobación en `web/README.md` | 1 | 2 | CF-3 | S8-S9 | Ensayo del cambio de día a las 00:00 Europa/Madrid con reloj real; `curl` de las 36 URL; robots y sitemaps comprobados **contra el CDN**, no contra el repositorio; alta en Search Console y Bing | Medio |
+| **F-57** | Día 1 y guardia | — | 1 | 4 | CF-5 | S9-S9 | Web Vitals de campo vigilados las primeras 48 h; Sentry sin errores no gestionados; un problema que impida jugar se corrige el mismo día | Medio |
+| **F-58** | Documentación de decisiones | `web/README.md`, `docs/decisiones.md` | 0,5 | 0,5 | — | S9-S10 | D-F1 a D-Fn escritas con motivo y con lo que se acepta a cambio; cualquier agente entiende por qué el interrogatorio va contra el servidor sin preguntar | Bajo |
+
+### Totales
+
+| Bloque | Días de agente | Horas del fundador |
+|---|---:|---:|
+| A · Arranque y contratos | 4,5 | 1,5 |
+| B · Componentes | 4,5 | 1,5 |
+| C · Tablero de Escena | 6,0 | 8,5 |
+| D · Pistas, Sabueso, comprobación | 2,0 | 1,0 |
+| E · Resultado y reconstrucción | 4,5 | 3,0 |
+| F · Expediente e interrogatorio | 6,5 | 3,5 |
+| G · Racha, archivo, cuenta | 3,0 | 3,0 |
+| H · Compartir | 2,5 | 2,0 |
+| I · Landings, SEO y GEO | 5,75 | 3,0 |
+| J · PWA | 2,5 | 2,5 |
+| K · Analítica, pruebas, accesibilidad | 5,75 | 3,5 |
+| L · Beta y lanzamiento | 5,5 | 13,5 |
+| **Total** | **53,0** | **46,5** |
+
+Reparto: ≈5,3 días de agente por semana durante diez semanas, y **4-5 horas del fundador por semana**, concentradas en tres cosas que ningún agente puede hacer: probar en dispositivos reales, decidir microcopy con implicación legal y comprobar el comportamiento del CDN.
