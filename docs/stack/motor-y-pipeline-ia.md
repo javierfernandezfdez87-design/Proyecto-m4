@@ -183,6 +183,17 @@ Y el **tamaño del paquete**, que es lo que le importa a `desarrollador-frontend
 
 Consecuencia de arquitectura, que va en §3.2: **`engine/core` y `engine/dsl` no pueden importar `node:*` ni nada de Node.** Es una regla de lint, y es la que hace que este argumento siga siendo cierto dentro de tres meses.
 
+**Y lo que R3 pone del otro lado, que es un requisito de infraestructura y no mío.** Las cuatro acciones que se mudaron al servidor lo hacen con un presupuesto de **300 ms en p75** (D-011/R3), y eso obliga al servidor a **ejecutar el motor en cada petición**. El estudio hermano de arquitectura (`docs/stack/arquitecturas-alternativas.md`, requisitos R4 y R5) llega a la misma conclusión por su cuenta y saca la consecuencia que a mí me toca respaldar con números: un backend que no sea JS/TS necesitaría un proceso Node aparte o una reimplementación del solver, **y reimplementarlo está prohibido porque rompería «solución única»**. Con lo medido, el presupuesto no corre peligro por el lado del motor:
+
+| Acción de servidor | Coste del motor | Margen sobre 300 ms |
+|---|---|---|
+| Comprobar (celdas vacías y erróneas) | comparación contra la solución: **µs** | Total |
+| Acusar | ídem | Total |
+| Sabueso (dos niveles) | escalera desde el estado inicial: **0,047-0,123 ms** | ~2.500× |
+| **Menú vivo (MV / MV-E)** | árbol AND-OR sobre el residuo, memoizado | **La única sin cota trivial** |
+
+**El menú vivo es la única de las cuatro cuyo coste no está acotado por lo que he medido**, porque depende del tamaño del residuo y de la profundidad del presupuesto de preguntas. En Expediente está acotado por diseño (`n = 4`, `|M₀| = 576`, residuo de decenas tras las pistas de apertura: milisegundos). En Escena depende de la Compuerta 0-A. **Propongo que el presupuesto de 300 ms entre como criterio de la propia Compuerta 0-A** (M-21), medido en el peor residuo alcanzable y no en el medio: si el menú vivo no cabe en 300 ms en servidor, eso es un motivo de repliegue tan válido como una τ baja, y hoy no está en la lista de umbrales.
+
 ### 2.6 La matriz
 
 Pesos declarados antes de puntuar, siguiendo el método de D-010. Escala 0-10.
@@ -422,61 +433,67 @@ Y un corolario que hay que escribir en el contrato del pipeline: **el modelo nun
 ### 5.2 El diagrama
 
 ```
-                       ┌───────────────────────── DETERMINISTA · sin red · reproducible ─────────────────────────┐
-
- calendario     ┌────────────┐   plan.json   ┌──────────────┐  N candidatos  ┌──────────────┐   1 caso formal
-   + semilla ──▶│ 0· PLAN    │──────────────▶│ 1· GENERAR   │───────────────▶│ 2· SELECCIÓN │──────────────┐
-                │  tablero   │               │  X0 + DSL    │  por hueco     │  β banda     │              │
-                │  preajuste │               │  U·NR·SA·CAP │  (20-40)       │  δ diversidad│              │
-                │  mecánica  │               │  NV·NC·OR    │                │  cobertura TR│              │
-                └────────────┘               └──────┬───────┘                └──────────────┘              │
-                                                    │ rechazos con motivo                                  │
-                                                    ▼                                                      │
-                                            τ, δ, β  →  engine/bench (Compuerta 0)                          │
-                       └──────────────────────────────────────────────────────────────────────────────────┐│
-                                                                                                          ││
-                       ┌────────────────── NO DETERMINISTA · con red · con secretos ─────────────────┐    ││
-                                                                                                     │    ▼▼
-   content/biblia.md        ┌────────────────────────┐                        ┌──────────────────────────────┐
-   content/plantillas ─────▶│ 3· REDACCIÓN           │  texto por pista       │  clues_formal + board        │
-   guía de estilo           │  prefijo estático      │◀───────────────────────│  (SIN solución)              │
-   (prefijo cacheable,      │  + carga del caso      │                        └──────────────────────────────┘
-    idéntico en el lote)    │  plantilla cerrada     │
-                            └───────────┬────────────┘
-                                        │ {clue_id, plantilla_id, texto}
-                                        ▼
-                            ┌────────────────────────────────────────────────────────────┐
-                            │ 4· VALIDACIÓN DE IDA Y VUELTA                               │
-                            │                                                            │
-                            │  4a EMPAREJADOR DE GRAMÁTICA  (determinista, sin red)      │
-                            │      ¿el texto es la plantilla con sus huecos rellenos?     │
-                            │      SÍ → significado PROBADO por construcción ─────┐      │
-                            │      NO ↓  (objetivo: <10 % de las pistas)           │      │
-                            │  4b RETRADUCCIÓN  ×R independientes, prompt distinto │      │
-                            │      solo gramática del DSL, sin ver la forma original      │
-                            │      las R deben coincidir entre sí y con la original│      │
-                            │  4c RECOMPROBACIÓN FORMAL (determinista) ◀───────────┘      │
-                            │      el conjunto retraducido debe dar la MISMA solución     │
-                            │      única y la MISMA huella de certificado                 │
-                            │  4d LINTS (determinista): entidades, decorados, léxico,     │
-                            │      presupuesto de palabras, nombre canónico, 2ª persona   │
-                            └───────────┬────────────────────────────────┬───────────────┘
-                                        │ verde                          │ rojo
-                                        ▼                                └──▶ vuelta a 3 (máx. 2 reintentos)
-                            ┌────────────────────────┐                        └──▶ descarte del candidato,
-                            │ 5· CALIDAD Y SEGURIDAD │                             se toma el siguiente de 2
-                            │  determinista + modelo │
-                            │  cozy · tono · repetic.│
-                            └───────────┬────────────┘
-                       └───────────────────────────────────────────────────────────────┘
-                                        ▼
-                            ┌────────────────────────┐      ┌────────────────────────┐
-                            │ 6· COLA HUMANA         │─────▶│ 7· INGESTIÓN Y         │
-                            │  revisor-calidad · QA  │      │    PROGRAMACIÓN        │
-                            │  fundador · firma a    │      │  hash_contenido        │
-                            │  ciegas (D-011 R7)     │      │  → Postgres (B-17)     │
-                            └────────────────────────┘      │  → calendario (B-19)   │
-                                                            └────────────────────────┘
+   calendario del lote  +  semilla
+              │
+┌─────────────▼─────── DETERMINISTA · sin red · sin secretos · reproducible ───────────────┐
+│                                                                                          │
+│  0· PLAN         tablero, preajuste, mecánica estructural y banda objetivo de cada día   │
+│      │                                                                                   │
+│      ▼                                                                                   │
+│  1· GENERAR      X0 (enumerar M₀ + álgebra de máscaras) · DSL · U · NR · SA              │
+│      │           guardas: CAP · NV · NC · OR                                             │
+│      │           20-40 candidatos por hueco del calendario                               │
+│      │              └── rechazos con motivo ──▶ τ, δ, β  →  Compuerta 0                  │
+│      ▼                                                                                   │
+│  2· SELECCIÓN    banda β · diversidad δ (hash estructural) · cobertura de técnicas ·     │
+│      │           huecos narrativos: ¿admite contraprueba? ¿confesión? ¿«y sin embargo»?  │
+└──────┼───────────────────────────────────────────────────────────────────────────────────┘
+       │
+       │   UN caso formal:  board + clues_formal + registro de decorados
+       │   SIN solución · SIN certificado · SIN semilla
+       │
+┌──────▼──────────────── NO DETERMINISTA · con red · con secretos ─────────────────────────┐
+│                                                                                          │
+│  3· REDACCIÓN    prefijo estático (biblia + guía de estilo + plantillas cerradas)        │
+│      │           idéntico para todo el lote  ──▶ cacheable, 70-80 % de la entrada        │
+│      │           + carga del caso  ──▶  JSON { clue_id, plantilla_id, texto }            │
+│      │                                                                                   │
+│      │   3b· paquete POST-ACUSACIÓN (confesión, motivo, «y sin embargo»)                 │
+│      │       único punto del pipeline donde el culpable entra en un prompt,              │
+│      │       y no se sirve hasta que el jugador ha acusado                                │
+│      ▼                                                                                   │
+│  4· VALIDACIÓN DE IDA Y VUELTA                                                           │
+│      │                                                                                   │
+│      ├─ 4a EMPAREJADOR DE GRAMÁTICA   determinista, sin red.  Objetivo ≥90 %             │
+│      │      ¿el texto es la plantilla con sus huecos rellenos?                           │
+│      │      SÍ ──▶ significado PROBADO por construcción ─────────────┐                   │
+│      │                                                               │                   │
+│      ├─ 4b RETRADUCCIÓN ×R      solo lo que 4a rechaza               │                   │
+│      │      prompt distinto · solo la gramática del DSL ·            │                   │
+│      │      sin ver la forma formal original                         │                   │
+│      │      las R deben coincidir entre sí Y con la original ────────┤                   │
+│      │                                                               │                   │
+│      ├─ 4c RECOMPROBACIÓN FORMAL   determinista  ◀───────────────────┘                   │
+│      │      el conjunto retraducido debe dar la MISMA solución única                     │
+│      │      y la MISMA huella de certificado                                             │
+│      │                                                                                   │
+│      └─ 4d LINTS   entidades · decorados · léxico · cozy · presupuesto de palabras ·     │
+│         │          nombre canónico del objeto · segunda persona · iniciales              │
+│         │                                                                                │
+│         ├── ROJO ──▶ reintento (máx. 2) ──▶ si persiste: siguiente candidato de 2        │
+│         ▼ VERDE                                                                          │
+│  5· CALIDAD Y SEGURIDAD                                                                  │
+│         deterministas → BLOQUEAN        señales de modelo → ORDENAN LA COLA               │
+│         (una señal de modelo nunca aprueba sola)                                          │
+└─────────┼────────────────────────────────────────────────────────────────────────────────┘
+          ▼
+   6· COLA HUMANA        `revisor-calidad` (QA) ──▶ fundador (firma a ciegas, D-011/R7)
+          │              ordenada por RIESGO, no por fecha: formato estrenado, plantilla
+          │              estrenada, pistas validadas por retraducción y no por gramática
+          ▼
+   7· INGESTIÓN Y PROGRAMACIÓN
+          hash_contenido (idempotencia) ──▶ Postgres (B-17) ──▶ calendario (B-19)
+          el cron diario sirve ÚNICAMENTE casos ya firmados
 ```
 
 ### 5.3 Las ocho etapas: qué hace cada una y dónde corre
@@ -813,11 +830,13 @@ D-011/R3 ya corrige la dependencia «solver en cliente» y encarga la correcció
 
 **9.6 · La métrica del 90 % de emparejamiento por gramática** (§5.4). Propongo que entre en la Compuerta **G2** de `plan-contenido.md` como umbral, no como aspiración. Es la métrica que separa «probamos el significado de las pistas» de «lo contrastamos con una heurística», y es la frase que se puede decir en público. **Cerrar con `guionista-misterio`**, que es quien escribe las plantillas.
 
-**9.7 · El día de la decisión de SvelteKit.** El estudio hermano (`docs/stack/frontend.md`) recomienda cambiar de framework con una compuerta de reversión en S1. **Nada de este documento depende de esa decisión** —`motor-core` y `motor-dsl` son TypeScript sin framework y `contratos/` es zod—, y lo digo explícitamente para que el cambio de framework no se retrase por miedo a arrastrar al motor. No lo arrastra.
+**9.7 · Un umbral que falta en la Compuerta 0-A: los 300 ms del menú vivo** (§2.5). D-011/R3 da a las cuatro acciones de servidor un presupuesto de 300 ms en p75, y el menú vivo es la única cuyo coste no está acotado por lo ya medido. Propongo añadir a M-21, junto a τ, δ y β, una cuarta medida: **el tiempo de cálculo de `ofrecible(q, E, p)` en el peor residuo alcanzable**, con el mismo umbral de 300 ms. Un menú vivo correcto pero lento es igual de inservible que uno con τ baja, y hoy solo vigilamos una de las dos cosas. **Cerrar antes de S5.**
+
+**9.8 · El día de la decisión de SvelteKit.** El estudio hermano (`docs/stack/frontend.md`) recomienda cambiar de framework con una compuerta de reversión en S1. **Nada de este documento depende de esa decisión** —`motor-core` y `motor-dsl` son TypeScript sin framework y `contratos/` es zod—, y lo digo explícitamente para que el cambio de framework no se retrase por miedo a arrastrar al motor. No lo arrastra.
 
 ### Para `guionista-misterio`
 
-**9.8 · Las plantillas tienen que ser emparejables por gramática**, no solo legibles. Es un requisito nuevo que sale de §5.4: cada plantilla se declara con sus huecos marcados y su envoltorio delimitado, de forma que un `parse` determinista pueda separar el núcleo del predicado de la voz del personaje. Cambia poco cómo se escriben y cambia mucho lo que se puede prometer. **Lo necesito antes de C-04** (12 de octubre) y lo especifico yo en `docs/motor.md` §4 en cuanto se confirme.
+**9.9 · Las plantillas tienen que ser emparejables por gramática**, no solo legibles. Es un requisito nuevo que sale de §5.4: cada plantilla se declara con sus huecos marcados y su envoltorio delimitado, de forma que un `parse` determinista pueda separar el núcleo del predicado de la voz del personaje. Cambia poco cómo se escriben y cambia mucho lo que se puede prometer. **Lo necesito antes de C-04** (12 de octubre) y lo especifico yo en `docs/motor.md` §4 en cuanto se confirme.
 
 ---
 
@@ -832,4 +851,4 @@ D-011/R3 ya corrige la dependencia «solver en cliente» y encarga la correcció
 
 ---
 
-*Cambios a este documento: los registra `ingeniero-motor-puzzles`. Las decisiones de §9.1-9.2 las cierra `disenador-puzzles`; la de §9.3-9.4, `desarrollador-backend` y `desarrollador-frontend`; las de §9.5-9.7, `director-producto` en `docs/decisiones.md`; la de §9.8, `guionista-misterio`.*
+*Cambios a este documento: los registra `ingeniero-motor-puzzles`. Las decisiones de §9.1-9.2 las cierra `disenador-puzzles`; la de §9.3-9.4, `desarrollador-backend` y `desarrollador-frontend`; las de §9.5-9.8, `director-producto` en `docs/decisiones.md`; la de §9.9, `guionista-misterio`.*
