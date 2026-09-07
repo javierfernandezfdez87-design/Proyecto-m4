@@ -134,7 +134,7 @@ Columnas según `supuestos.md` §13. «Días» son días de agente; «h.f.» son
 | **M-31** | Panel de administración del motor en CLI: inspeccionar el calendario, sustituir un caso, forzar regeneración, ver métricas | `engine/cli/admin.ts` | 0,5 | 0 | M-30 | S6 | S6 | El fundador puede retirar un caso del calendario y ponerle otro sin tocar la base de datos | Bajo |
 | **M-32** | **Lote 1: 28 casos de Escena (4 semanas) + 28 vistazos**, validados, etiquetados, con certificado, listos para la beta. **Firma humana del fundador** | `content/casos/`, `docs/motor.md` §8 | 1 | 2 | M-30, C-D | S6 | S6 | 28 casos en calendario, cero incidencias de unicidad, los 28 firmados | Medio: la etiqueta de dificultad es provisional y hay que decirlo en el informe interno |
 
-**Total S1-S6: 48 días de agente, 8 horas del fundador.**
+**Total S1-S6: 48 días de agente, 9 horas del fundador.**
 
 ---
 
@@ -159,7 +159,7 @@ Columnas según `supuestos.md` §13. «Días» son días de agente; «h.f.» son
 | **M-47** | **V3 · Pistas visuales**: leyenda cerrada y versionada, un icono = un predicado, texto alternativo = frase canónica | `engine/schema/leyenda.v1.json` | 1 | 1 | M-27 | S10 | S10 | En el plano solo se dibuja lo que está en la leyenda; todo lo demás es decorado registrado y sin valor lógico | Bajo de motor; el coste real es de ilustración |
 | **M-48** | **Reserva de estabilización**: incidencias del lanzamiento con causa en el motor (las de la beta las absorbe M-33) | — | 2,5 | 1 | — | S10 | S10 | El lanzamiento no se para por un caso malo | — |
 
-**Total S7-S10: 32 días de agente (de los cuales 2,5 de reserva), 14 horas del fundador. Total del plan: 80 días de agente —77,5 comprometidos y 2,5 de reserva— y 22 horas del fundador ligadas a tarea, más 8 de revisión semanal: 30 en total.**
+**Total S7-S10: 32 días de agente (2,5 de ellos de reserva), 15 horas del fundador. Total del plan: 80 días de agente —77,5 comprometidos y 2,5 de reserva— y 24 horas del fundador ligadas a tarea, más 6 de revisión semanal: 30 en total.**
 
 ---
 
@@ -284,16 +284,19 @@ Ninguna la decido yo. Cada una rompe casos reales si se decide mal, y **tres blo
 
 | Qué | Horas | Cuándo |
 |---|---|---|
-| Aprobar los contratos congelados (M-01) | 1 | S1 |
-| Resolver a ciegas con la CLI: 3 casos al empezar y ~0,5 h por semana | 6 | desde S2 |
-| Veredicto de la Compuerta 0-A y decisión del interrogatorio | 1 | **S5** |
-| **Prueba de nombres de técnica con 5 personas**, en papel, **antes** de implementar las quince detecciones | 3 | S5-S6 |
+| Aprobar los contratos congelados (M-01) y cerrar con `disenador-puzzles` las tres confirmaciones que bloquean el DSL (M-04) | 2 | S1 |
+| Resolver casos **a ciegas** con la CLI (M-07): tres al empezar y uno por semana | 2 | desde S2 |
+| Revisar el certificado de la escalera con un caso real (M-11) | 1 | S3 |
+| Veredicto de la Compuerta 0-A y **decisión del interrogatorio** (M-21) | 1 | **S5** |
 | Confirmar el contrato de API con backend (M-29) | 1 | S6 |
-| Firma humana de 28 casos (lote 1) | 2 | S6 |
-| Veredicto de la Compuerta 0-B | 1 | S8 |
-| Primer jueves de Expediente en beta (M-39) y prueba de interrogatorio (M-41) | 2 | S8-S9 |
-| Firma humana de 92 casos (lote 2) | 5 | S9 |
-| Revisión semanal del área y decisiones de repliegue (0,5-1 h/semana) | 8 | S1-S10 |
+| **Firma humana de 28 casos**, lote 1 (M-32) | 2 | S6 |
+| Arranque de la beta y lectura de las primeras métricas del motor (M-33) | 1 | S7 |
+| Primer jueves de Expediente en beta (M-39) y veredicto de la Compuerta 0-B (M-40) | 2 | S8 |
+| Prueba del interrogatorio con 12 personas (M-41) | 1 | S9 |
+| **Firma humana de 92 casos**, lote 2 (M-43) | 5 | S9 |
+| **Prueba de nombres de técnica con 5 personas**, en papel, **antes** de implementar las detecciones (M-45) | 3 | S10 |
+| Guardia de lanzamiento, leyenda de iconos y reserva (M-46, M-47, M-48) | 3 | S10 |
+| Revisión semanal del área y decisiones de repliegue | 6 | S1-S10 |
 | **Total** | **30** | |
 
 ---
