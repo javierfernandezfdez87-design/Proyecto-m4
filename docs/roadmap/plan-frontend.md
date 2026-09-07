@@ -266,3 +266,130 @@ Formato de `supuestos.md`. «Días» = días de agente. «Horas» = horas del fu
 | **Total** | **53,0** | **46,5** |
 
 Reparto: ≈5,3 días de agente por semana durante diez semanas, y **4-5 horas del fundador por semana**, concentradas en tres cosas que ningún agente puede hacer: probar en dispositivos reales, decidir microcopy con implicación legal y comprobar el comportamiento del CDN.
+
+---
+
+## 5. Qué necesito de otras áreas, y cuándo
+
+La fecha de la columna «Para» es la **última** en que sirve. Un día más tarde, la tarea que depende se mueve o se hace con datos inventados y se rehace.
+
+### 5.1 De `disenador-ux-ui`
+
+| id | Qué | Para | Sin esto no puedo | Formato que necesito |
+|---|---|---|---|---|
+| **UX-01** | `docs/diseno/ux/tokens.json` v1: color (claro, oscuro y **alto contraste**), espaciado, escala tipográfica, radios, sombras, duraciones y curvas de movimiento | **S1, día 3** | F-03, y por tanto todo lo demás | JSON plano con nombres semánticos (`color.tablero.celda.candidata`), no nombres de color |
+| **UX-02** | Inventario de componentes y sus estados (reposo, foco, activo, deshabilitado, cargando, error) | S1, día 5 | F-07, F-09 | Tabla o Figma con nombre de componente = nombre de carpeta |
+| **UX-03** | Cabecera de partida en 360 px con la **ficha técnica** de una línea, la cuenta atrás y la regla del día | S2, día 2 | F-08 | Maqueta con el texto real de las tres fichas (A, B, anulado) |
+| **UX-04** | Iconografía y **mascota Sabueso**: reposo, olfateando, cansado, celebrando; favicon, icono enmascarable y pantallas de arranque | S2 (juego) y S6 (PWA) | F-09, F-20, F-44 | SVG optimizado; la mascota en dos tamaños |
+| **UX-05** | **Especificación de estados de la celda del tablero** y del ciclo por toque: vacía → candidata → descartada → colocada, más bloqueada, enfocada por teclado y resaltada por pista. Incluye el gesto de arrastre y qué pasa al soltar fuera | **S2, día 1** | F-11, F-12, F-13 | Diagrama de estados con las transiciones nombradas |
+| **UX-06** | Modelo de foco y de anuncios de lector de pantalla del tablero: qué se lee al entrar, al moverse y al colocar | S2, día 5 | F-15 | Texto literal de las etiquetas, no descripción |
+| **UX-07** | Portada del caso (con la regla del día) y las cuatro pantallas del tutorial, incluida la de convención espacial | S3, día 1 | F-18 | Maquetas con copy definitivo |
+| **UX-08** | Panel de pistas, sobres por progreso y estado «faltan tres declaraciones» | S3, día 5 | F-19 | Maqueta |
+| **UX-09** | Sabueso de dos niveles: el gesto «¿dónde quieres que huela?», los dos niveles, el estado «se ha cansado» | S3, día 5 | F-20 | Maqueta + microcopy |
+| **UX-10** | Microcopy de Comprobar en lenguaje llano y en gris, con la regla «nunca existe la etiqueta contraria» | S3, día 5 | F-21 | Lista de frases por caso (faltan N / hay N fuera de sitio / todo colocado) |
+| **UX-11** | **Especificación firmada de la pantalla de resultado** (los cuatro bloques de PR10, en orden, con el microcopy del número de caso) | **S3, día 3 — es puerta** | F-23. Está escrito en §8.2 punto 26 que se firma antes de que yo escriba nada | Maqueta + copy, firmada |
+| **UX-12** | Guion de la reconstrucción: 20-25 s, qué se enciende en cada peldaño, dónde va la tarjeta con el nombre de la técnica, cómo se ve «saltar» y «paso a paso» | S4, día 1 | F-24 | Guion con marcas de tiempo, y la variante para `prefers-reduced-motion` |
+| **UX-13** | Cuaderno de técnicas: 12-14 iconos, cinco rangos, estado acreditado/pendiente, insignia de doble especialidad | S4, día 3 | F-25 | SVG + maqueta |
+| **UX-14** | Cuaderno de Expediente: tres bloques y 48 casillas en 360 px, marca del jugador frente a marca del comisario, casilla refutada | **S4, día 3** | F-27, F-29. Es la maqueta más difícil del proyecto | Maqueta a tamaño real |
+| **UX-15** | Dossier: ficha plegada y desplegada, etiquetas de atributo, membrete, tira de orden con origen rotulado | S4, día 5 | F-28 | Maqueta |
+| **UX-16** | Interrogatorio: menú de preguntas, contador, retrato y respuesta | S5, día 3 (solo si la Compuerta 0 va verde) | F-32 | Maqueta |
+| **UX-17** | Calendario de racha con **cinco** estados y sus explicaciones al tocar | S4, día 5 | F-33 | Maqueta + copy de los cinco |
+| **UX-18** | Tarjeta de compartir 9:16 y 1:1, con paleta normal y **paleta variable de alto contraste** | S5, día 3 | F-36 | Especificación de medidas en píxeles, tipografía y márgenes |
+| **UX-19** | Iconos de PWA, pantallas de arranque, y el aviso de instalación diferido | S5, día 5 | F-44, F-46 | PNG/SVG en los tamaños de la lista |
+
+**Lo que no pido y quiero decir en voz alta:** no pido una maqueta por landing. Con el sistema de bloques de F-39 y dos maquetas de referencia (una landing de intención y un hub) me apaño; treinta maquetas serían trabajo tirado.
+
+### 5.2 De `desarrollador-backend`
+
+Los contratos se congelan **antes de S3**; después, cualquier cambio cuesta el triple. Pido esquema OpenAPI o tipos TypeScript compartidos, no prosa.
+
+| id | Contrato | Para | Nota que cambia el diseño |
+|---|---|---|---|
+| **BE-01** | `GET` caso público del día, por modo: enunciado, plano o categorías, pistas, `givens`, regla del día, ficha técnica, número de caso, **sin solución** | **S2, día 3** | Debe existir una versión «pública» del caso, distinta de la que guarda el motor. Si el mismo objeto lleva la solución, el HTML servido la lleva |
+| **BE-02** | `GET`/`PUT` partida en curso (estado del tablero, historial comprimido, cronómetro activo y total) | S3, día 5 | El historial se envía comprimido; hay que fijar el tope de tamaño |
+| **BE-03** | `POST` comprobar → `{ vacias: n, erroneas: n }` **separados**, nunca cuáles | S3, día 5 | Lo exige PR10; si se decide después, se rehacen endpoint y pantalla |
+| **BE-04** | `POST` sabueso `{ nivel, estado }` → peldaño del certificado, **uno solo** | S4, día 1 | La escalera se ejecuta **desde el estado inicial** y avanza hasta el último peldaño compatible con el tablero del jugador. Nunca da señal de error |
+| **BE-05** | `POST` acusar → veredicto, certificado completo, tiempo, racha resultante, etiqueta «probado»/«ganado por poco» | S4, día 1 | El certificado viaja **aquí y no antes**. Necesito que venga en la misma respuesta: una segunda petición retrasa la reconstrucción |
+| **BE-06** | Régimen de `givens` de Expediente y refutación de la marca falsa | S5, día 1 | — |
+| **BE-07** | `POST` interrogar `{ sospechoso, plantilla, estado }` → respuesta + menú siguiente | S5, día 3 | **Punto crítico:** el menú se calcula en el servidor. Si backend no puede, el interrogatorio no sale, porque en el cliente no cabe sin filtrar la solución |
+| **BE-08** | Racha, calendario de 30 días y motivo por día (resuelto, fallado, gracia, día concedido) | S4, día 5 | La racha va por **número de caso**, no por fecha (PR3) |
+| **BE-09** | Archivo de 7 días con caducidad por ficha | S5, día 1 | — |
+| **BE-10** | Magic link, fusión de progreso anónimo y sincronización entre dispositivos | S5, día 1 | Necesito el contrato de conflicto: qué gana si hay partida en los dos lados |
+| **BE-11** | Crear y leer `/r/[id]`, con las seis reglas de datos de PR4 | S5, día 5 | Caducidad a 30 días con 410; el borrado de datos del usuario borra también las páginas y sus OG en caché |
+| **BE-12** | Cabeceras de caché por tipo de ruta y disparadores de revalidación del build diario de las 00:00 Europa/Madrid | S6, día 1 | Sin esto, el caso del día se sirve viejo desde el CDN a media España |
+| **BE-13** | `POST` reportar un problema con este caso, con campo estructurado | S6, día 1 | Va en la pantalla de resultado (F18 del catálogo) |
+
+### 5.3 De `ingeniero-motor-puzzles`
+
+| id | Qué | Para | Por qué me bloquea |
+|---|---|---|---|
+| **MO-01** | **Certificado v1.0 congelado** (esquema de §8.2 de `propuesta-jugabilidad-expediente.md`), con localizador polimórfico, `rama` y `premisas.pasos` | **S1, día 3** | Es la compuerta CF-0. Reconstrucción, escalafón, Sabueso, contraprueba y «paso a paso» son **cinco piezas de un solo esquema**; si cambia después, se rehacen las cinco |
+| **MO-02** | Esquema del caso público de los dos modos, con `modo`, día, regla, tamaño, `board.blocked` (nunca dentro de `clues`), etiqueta de dificultad **recalculable** y número de pistas | S1, día 5 | F-04, F-16 |
+| **MO-03** | Contrato `cells(pista, estado)` por predicado (M4) | S2, día 5 | Tirar del hilo. Medio día si va escrito junto a cada predicado; tres días si lo añado yo después. No lo voy a reimplementar en el cliente |
+| **MO-04** | Campo `tecnica` por peldaño + tabla de nombres humanos de las 12-14 técnicas | S4, día 1 | Reconstrucción y escalafón. Sin nombres, la tarjeta del pico de la animación queda vacía |
+| **MO-05** | **Fixtures con semilla fija**: 4 casos por cada día de la semana + 6 Expediente + sus certificados + 3 casos anulados y 2 con rama | S2, día 5 | Trabajo sin backend durante S2-S4 y todos los tests. Es lo que me permite no bloquearme si backend llega tarde |
+| **MO-06** | Formato del vistazo 3×3 y 3×3×3 | S6, día 1 | F-43 |
+| **MO-07** | Resultado de la **Compuerta 0** de MV | **Antes de S6** | Decide si el interrogatorio se construye o el miércoles se lanza como «clásico» |
+
+### 5.4 De `analista-datos`, `experto-legal` y `periodista-contenidos`
+
+| id | Qué | De quién | Para |
+|---|---|---|---|
+| **AN-01** | `docs/analitica/eventos.md` cerrada, con la propiedad `modo` en **todos** los eventos y los nuevos de jugabilidad | `analista-datos` | **S5, día 5** (antes de instrumentar; añadirla después obliga a reprocesar) |
+| **AN-02** | Qué se mide del prompt de instalación y del embudo de compartir | `analista-datos` | S6, día 1 |
+| **LG-01** | Texto aprobado de las **tres fichas técnicas** (A, B y anulado) | `experto-legal` + `periodista-contenidos` | S2, día 1. Sin aprobación, PR1 no sale y la cabecera va sin ficha |
+| **LG-02** | Revisión de las seis reglas de datos de `/r/[id]` y de la imagen OG | `experto-legal` | S5, día 5 |
+| **LG-03** | Banner de consentimiento conforme a la AEPD y las cuatro páginas legales | `experto-legal` | S6, día 5 |
+| **CO-01** | Textos de las 30 páginas que hay que escribir, con la respuesta directa de ≤60 palabras ya redactada y la FAQ | `periodista-contenidos` | **S6, día 1** (30 páginas es la dependencia más voluminosa del plan) |
+| **CO-02** | Microcopy del juego: Comprobar, Sabueso, racha, gracia, día concedido, caducidad del archivo | `periodista-contenidos` | S3, día 5 |
+
+---
+
+## 6. Ruta crítica
+
+```
+MO-01 certificado congelado ─┐
+UX-01 tokens ────────────────┼─► F-04 contratos ─► F-11 máquina de estados ─► F-12/F-13 tablero
+UX-05 estados de la celda ───┘                                   │
+                                                                 ▼
+                              UX-11 spec de resultado ─► F-23 resultado ─► F-24 reconstrucción
+                                                                 │
+                                     F-27 cuaderno de Expediente ┤
+                                                                 ▼
+                                        F-40 las 36 URL ─► F-45 service worker ─► CF-4 beta ─► lanzamiento
+```
+
+**Las cuatro piezas que, si se retrasan un día, retrasan el lanzamiento un día:**
+
+1. **MO-01, el certificado.** Medio día del motor, cinco piezas de frontend. Es lo único de todo el proyecto con una fecha límite que ya está corriendo.
+2. **UX-05, los estados de la celda.** El tablero es seis días de trabajo y no se empieza a ciegas.
+3. **UX-11, la pantalla de resultado.** Está escrito que se firma antes de programarla; si llega en S5, la reconstrucción se va a S6 y la beta pierde su semana de correcciones.
+4. **CO-01, los textos de las treinta páginas.** No es trabajo mío, pero sin ellos las landings son maquetas y CF-3 no se cierra.
+
+**Lo que no está en la ruta crítica y por eso va donde va:** el interrogatorio (bandera), el motivo, el vistazo, las cinco URL de Expediente, el prompt de instalación. Si la semana 6 se tuerce, se cortan en ese orden y **no se corta la accesibilidad de teclado ni el compartir accesible**: la primera es compromiso de producto y requisito B2B (punto 27 de §8.2), y el segundo es F12 y está escrito que no se corta.
+
+---
+
+## 7. Presupuesto de rendimiento (es una puerta de CI, no una aspiración)
+
+La primera pantalla tiene que cargar en menos de 2,5 s en un móvil medio con red irregular. Eso se traduce en números que fallan el build:
+
+| Métrica | Presupuesto | Dónde se mide |
+|---|---|---|
+| LCP | **< 2,5 s** (p75, Moto G de gama media, 4G lenta) | Lighthouse CI en `/`, `/caso/*` y tres landings |
+| INP | **< 200 ms** | Lighthouse + campo (PostHog Web Vitals) |
+| CLS | **< 0,1** | Ídem |
+| HTML de `/` comprimido | ≤ 45 KB, con enunciado, plano y pistas dentro | Test de CI sobre la respuesta |
+| JavaScript de primera carga en `/` | **≤ 110 KB comprimido**, carga útil de RSC incluida | `@next/bundle-analyzer` en CI |
+| JavaScript de una landing | ≤ 40 KB (solo el tablero del vistazo) | Ídem |
+| Peticiones antes del primer render | 0 a terceros | Test de CI |
+| Fuentes | 2 caras, `woff2`, subconjunto latino, autoalojadas, `font-display: swap` | Ídem |
+
+**Reglas de construcción que sostienen el presupuesto:**
+
+- El tablero se pinta con CSS Grid **desde el HTML servido**. Nada de esqueletos que se reemplacen al hidratar (regla explícita de §6.6 del árbol).
+- Ninguna librería de animación en la ruta crítica. La reconstrucción se carga **después de acusar**, en diferido.
+- El lienzo del compartir, el cuaderno de técnicas y el tutorial son islas diferidas.
+- PostHog y Sentry cargan tras el primer render y tras el consentimiento.
+- Imágenes en AVIF/WebP con `width` y `height`; ninguna ilustración por encima del pliegue salvo el plano, que es CSS y SVG.
+- **`user-scalable=no` está prohibido** por una regla de lint que falla el build. El zoom nativo no se desactiva nunca.
