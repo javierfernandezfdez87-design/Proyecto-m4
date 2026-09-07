@@ -1,7 +1,17 @@
 # Catálogo de productos
 
-Autor: `director-producto`. Fecha: 5 de septiembre de 2026. **Versión 1.1** (6 de septiembre de 2026).
+Autor: `director-producto`. Fecha: 5 de septiembre de 2026. **Versión 1.2** (7 de septiembre de 2026).
 Fuentes: `docs/contexto-proyecto.md`, `docs/analisis-estrategico.md`, `docs/equipo-agentes.md`.
+
+> **Aviso de la versión 1.2 — leer antes que el resto del documento.**
+> **El alcance exacto del día del lanzamiento, las fases y el calendario ya no viven aquí: viven en `docs/roadmap.md`.** Este catálogo sigue siendo la lista cerrada de *qué* se construye y se vende; el roadmap es la única versión de la verdad sobre *cuándo* y *con qué alcance sale cada cosa*. Donde este documento y el roadmap discrepen en fechas o en alcance del día 1, **gana el roadmap**.
+> Lo que cambia respecto de la v1.1, por **D-010** y **D-011**:
+> - **Día del lanzamiento: martes 3 de noviembre de 2026** (ventana de retraso al 10). El alcance cerrado del día 1, en una lista de 17 puntos, está en `docs/roadmap.md` §1.2.
+> - **`MODO-EXPEDIENTE` entra el día 1** (el jueves, la tabla del comisario), no en las semanas 10-14, con la compuerta CP-7 del 29 de octubre y su repliegue escrito.
+> - **Arquitectura B-jueves**: Expediente solo el jueves; el formato de celdas bloqueadas de Escena se mueve al sábado.
+> - Se adoptan las **16 decisiones de jugabilidad** y los **34 cambios** de `docs/propuesta-mejoras-producto.md` §8.2 (D-010), incluidos el escalafón, la reconstrucción, Sabueso de dos niveles, el vistazo, el presupuesto de texto como criterio de publicación y la corrección del KPI de la newsletter.
+> - **`PDF-REGALO` se adelanta a diciembre de 2026** (cambio 22): es su única ventana real.
+> - **La firma humana se dice con precisión**: «una persona revisa cada caso antes de publicarlo y resuelve a ciegas los de cada formato nuevo» (D-011 R7). La fórmula anterior no es verificable y no se publica.
 
 **Cambios de la versión 1.1.** Todo lo marcado con **[reseñas]** procede de `docs/oportunidades-resenas.md` y se decidió en **D-007** (`docs/decisiones.md`): son cambios derivados de quejas y peticiones reales de usuarios de productos del género, no de opinión interna. Coste incremental sobre el MVP: ≈ 7,25 persona-semana.
 
@@ -9,7 +19,7 @@ Este documento es la **lista cerrada** de lo que vamos a construir y vender en l
 Nada que no esté aquí se construye. Añadir un producto exige modificar este documento y registrar la decisión.
 
 Precios en euros, **IVA incluido** (venta a consumidor en la UE).
-Fases: **MVP** = semanas 1-8 · **Fase 2** = meses 3-6 · **Fase 3** = meses 6-12.
+Fases (**v1.2**, ancladas al día L = 3 de noviembre de 2026): **MVP** = semanas 1-9, hasta el día L · **Fase 2** = semanas 10-26, hasta marzo de 2027 · **Fase 3** = a partir de marzo de 2027, condicionada al panel del día 90 (1 de febrero de 2027).
 
 ---
 
